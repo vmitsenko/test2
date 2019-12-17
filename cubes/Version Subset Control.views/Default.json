@@ -1,0 +1,59 @@
+{
+	"@type":"NativeView",
+	"Name":"Default",
+	"Columns":
+	[
+		{
+			"Subset":
+			{
+				"Hierarchy":
+				{
+					"@id":"Dimensions('Version Subset Measures')/Hierarchies('Version Subset Measures')"
+				},
+				"Elements":
+				[
+					{
+						"@id":"Dimensions('Version Subset Measures')/Hierarchies('Version Subset Measures')/Elements('Version')"
+					}
+				]
+			}
+		}
+	],
+	"Rows":
+	[
+		{
+			"Subset":
+			{
+				"@id":"Dimensions('LineItemList')/Hierarchies('LineItemList')/Subsets('Default')"
+			}
+		}
+	],
+	"Titles":
+	[
+		{
+			"Subset":
+			{
+				"Hierarchy":
+				{
+					"@id":"Dimensions('Version Subsets')/Hierarchies('Version Subsets')"
+				},
+				"Elements":
+				[
+					{
+						"@id":"Dimensions('Version Subsets')/Hierarchies('Version Subsets')/Elements('Analysis')"
+					},
+					{
+						"@id":"Dimensions('Version Subsets')/Hierarchies('Version Subsets')/Elements('Current')"
+					}
+				]
+			},
+			"Selected":
+			{
+				"@id":"Dimensions('Version Subsets')/Hierarchies('Version Subsets')/Elements('Analysis')"
+			}
+		}
+	],
+	"SuppressEmptyColumns":false,
+	"SuppressEmptyRows":false,
+	"FormatString":"0.#########"
+}

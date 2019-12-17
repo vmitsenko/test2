@@ -1,0 +1,5 @@
+{
+	"@type":"Subset",
+	"Name":"New Product2",
+	"Expression":"{ [Product].[New]}"
+}

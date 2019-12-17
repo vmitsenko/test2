@@ -1,0 +1,25 @@
+{
+	"@type":"Process",
+	"Name":"create_version",
+	"Code@Code.link":"create_version.ti",
+	"DataSource":
+	{
+		"Type":"None"
+	},
+	"Parameters":
+	[
+		{
+			"Name":"pNewVersion",
+			"Prompt":"New Version",
+			"Value":"",
+			"Type":"String"
+		},
+		{
+			"Name":"pLinkToDrivers",
+			"Prompt":"Link to Drivers ?",
+			"Value":"Y",
+			"Type":"String"
+		}
+	],
+	"Variables":[]
+}

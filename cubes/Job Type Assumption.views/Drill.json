@@ -1,0 +1,55 @@
+{
+	"@type":"NativeView",
+	"Name":"Drill",
+	"Columns":
+	[
+		{
+			"Subset":
+			{
+				"@id":"Dimensions('JobTypeAssumption')/Hierarchies('JobTypeAssumption')/Subsets('Default')"
+			}
+		},
+		{
+			"Subset":
+			{
+				"@id":"Dimensions('Year')/Hierarchies('Year')/Subsets('Default')"
+			}
+		}
+	],
+	"Rows":[],
+	"Titles":
+	[
+		{
+			"Subset":
+			{
+				"Hierarchy":
+				{
+					"@id":"Dimensions('Version')/Hierarchies('Version')"
+				},
+				"Elements":
+				[
+					{
+						"@id":"Dimensions('Version')/Hierarchies('Version')/Elements('Version 1')"
+					}
+				]
+			},
+			"Selected":
+			{
+				"@id":"Dimensions('Version')/Hierarchies('Version')/Elements('Version 1')"
+			}
+		},
+		{
+			"Subset":
+			{
+				"@id":"Dimensions('JobType')/Hierarchies('JobType')/Subsets('Drill')"
+			},
+			"Selected":
+			{
+				"@id":"Dimensions('JobType')/Hierarchies('JobType')/Elements('B')"
+			}
+		}
+	],
+	"SuppressEmptyColumns":false,
+	"SuppressEmptyRows":false,
+	"FormatString":"0.00"
+}

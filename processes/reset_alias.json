@@ -1,0 +1,25 @@
+{
+	"@type":"Process",
+	"Name":"reset_alias",
+	"Code@Code.link":"reset_alias.ti",
+	"DataSource":
+	{
+		"Type":"None"
+	},
+	"Parameters":
+	[
+		{
+			"Name":"pDimensionName",
+			"Prompt":"Dimension Name",
+			"Value":"",
+			"Type":"String"
+		},
+		{
+			"Name":"pSubsetName",
+			"Prompt":"Subset Name",
+			"Value":"",
+			"Type":"String"
+		}
+	],
+	"Variables":[]
+}

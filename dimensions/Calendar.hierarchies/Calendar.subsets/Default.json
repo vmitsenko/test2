@@ -1,0 +1,46 @@
+{
+	"@type":"Subset",
+	"Name":"Default",
+	"Elements":
+	[
+		{
+			"@id":"Dimensions('Calendar')/Hierarchies('Calendar')/Elements('Current Month')"
+		},
+		{
+			"@id":"Dimensions('Calendar')/Hierarchies('Calendar')/Elements('Current Quarter')"
+		},
+		{
+			"@id":"Dimensions('Calendar')/Hierarchies('Calendar')/Elements('Current Year')"
+		},
+		{
+			"@id":"Dimensions('Calendar')/Hierarchies('Calendar')/Elements('Current Version')"
+		},
+		{
+			"@id":"Dimensions('Calendar')/Hierarchies('Calendar')/Elements('Compare Against')"
+		},
+		{
+			"@id":"Dimensions('Calendar')/Hierarchies('Calendar')/Elements('Fcst Month')"
+		},
+		{
+			"@id":"Dimensions('Calendar')/Hierarchies('Calendar')/Elements('Model Version')"
+		},
+		{
+			"@id":"Dimensions('Calendar')/Hierarchies('Calendar')/Elements('Base Directory')"
+		},
+		{
+			"@id":"Dimensions('Calendar')/Hierarchies('Calendar')/Elements('Data Directory')"
+		},
+		{
+			"@id":"Dimensions('Calendar')/Hierarchies('Calendar')/Elements('SPSS Directory')"
+		},
+		{
+			"@id":"Dimensions('Calendar')/Hierarchies('Calendar')/Elements('Directory Separator')"
+		},
+		{
+			"@id":"Dimensions('Calendar')/Hierarchies('Calendar')/Elements('Log Directory')"
+		},
+		{
+			"@id":"Dimensions('Calendar')/Hierarchies('Calendar')/Elements('SPSS Modeler Install Directory')"
+		}
+	]
+}

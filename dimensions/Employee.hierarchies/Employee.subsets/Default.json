@@ -1,0 +1,52 @@
+{
+	"@type":"Subset",
+	"Name":"Default",
+	"Elements":
+	[
+		{
+			"@id":"Dimensions('Employee')/Hierarchies('Employee')/Elements('Name/Desc')"
+		},
+		{
+			"@id":"Dimensions('Employee')/Hierarchies('Employee')/Elements('Job Type')"
+		},
+		{
+			"@id":"Dimensions('Employee')/Hierarchies('Employee')/Elements('Job Code')"
+		},
+		{
+			"@id":"Dimensions('Employee')/Hierarchies('Employee')/Elements('FTE')"
+		},
+		{
+			"@id":"Dimensions('Employee')/Hierarchies('Employee')/Elements('50P Salary')"
+		},
+		{
+			"@id":"Dimensions('Employee')/Hierarchies('Employee')/Elements('Current Salary')"
+		},
+		{
+			"@id":"Dimensions('Employee')/Hierarchies('Employee')/Elements('Merit Pd')"
+		},
+		{
+			"@id":"Dimensions('Employee')/Hierarchies('Employee')/Elements('Merit %')"
+		},
+		{
+			"@id":"Dimensions('Employee')/Hierarchies('Employee')/Elements('Merit Adj %')"
+		},
+		{
+			"@id":"Dimensions('Employee')/Hierarchies('Employee')/Elements('New Salary')"
+		},
+		{
+			"@id":"Dimensions('Employee')/Hierarchies('Employee')/Elements('Salary')"
+		},
+		{
+			"@id":"Dimensions('Employee')/Hierarchies('Employee')/Elements('Start Pd')"
+		},
+		{
+			"@id":"Dimensions('Employee')/Hierarchies('Employee')/Elements('Term/xfer Pd')"
+		},
+		{
+			"@id":"Dimensions('Employee')/Hierarchies('Employee')/Elements('Total Cost')"
+		},
+		{
+			"@id":"Dimensions('Employee')/Hierarchies('Employee')/Elements('Comment')"
+		}
+	]
+}

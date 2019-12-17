@@ -1,0 +1,36 @@
+{
+	"@type":"Hierarchy",
+	"Name":"Version Copy Measures",
+	"Elements":
+	[
+		{
+			"Name":"CubeName",
+			"Type":"String"
+		},
+		{
+			"Name":"NumberDims",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"VersionDimLoc",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"StringDimName",
+			"Type":"String"
+		},
+		{
+			"Name":"StringDimLoc",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"CopyWhenNoDrivers",
+			"Type":"String"
+		},
+		{
+			"Name":"AcquireReservation",
+			"Type":"String"
+		}
+	],
+	"Subsets@Code.links":[]
+}

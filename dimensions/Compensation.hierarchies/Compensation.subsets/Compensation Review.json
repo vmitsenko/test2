@@ -1,0 +1,5 @@
+{
+	"@type":"Subset",
+	"Name":"Compensation Review",
+	"Expression":"{[Compensation].[Compensation].[6005],[Compensation].[Compensation].[Medical Exp],[Compensation].[Compensation].[Other Benefits Exp],[Compensation].[Compensation].[6000]}"
+}

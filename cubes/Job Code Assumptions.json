@@ -1,0 +1,29 @@
+{
+	"@type":"Cube",
+	"Name":"Job Code Assumptions",
+	"Rules@Code.link":"Job Code Assumptions.rules",
+	"Dimensions":
+	[
+		{
+			"@id":"Dimensions('jobcode')"
+		},
+		{
+			"@id":"Dimensions('JobCodeAsmpt')"
+		},
+		{
+			"@id":"Dimensions('Year')"
+		},
+		{
+			"@id":"Dimensions('Version')"
+		}
+	],
+	"Views@Code.links":
+	[
+		"Job Code Assumptions.views/All.json",
+		"Job Code Assumptions.views/By Department.json",
+		"Job Code Assumptions.views/Default.json",
+		"Job Code Assumptions.views/Drill.json",
+		"Job Code Assumptions.views/Job Code Assumptions.json",
+		"Job Code Assumptions.views/zCopyFrom.json"
+	]
+}

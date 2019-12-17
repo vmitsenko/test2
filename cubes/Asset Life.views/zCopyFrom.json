@@ -1,0 +1,38 @@
+{
+	"@type":"NativeView",
+	"Name":"zCopyFrom",
+	"Columns":[],
+	"Rows":
+	[
+		{
+			"Subset":
+			{
+				"Hierarchy":
+				{
+					"@id":"Dimensions('Asset Types')/Hierarchies('Asset Types')"
+				},
+				"Expression":"TM1SubsetAll([Asset Types])"
+			}
+		},
+		{
+			"Subset":
+			{
+				"@id":"Dimensions('Version')/Hierarchies('Version')/Subsets('zCopyFrom')"
+			}
+		},
+		{
+			"Subset":
+			{
+				"Hierarchy":
+				{
+					"@id":"Dimensions('Asset Life')/Hierarchies('Asset Life')"
+				},
+				"Expression":"TM1SubsetAll([Asset Life])"
+			}
+		}
+	],
+	"Titles":[],
+	"SuppressEmptyColumns":false,
+	"SuppressEmptyRows":false,
+	"FormatString":"0.00"
+}

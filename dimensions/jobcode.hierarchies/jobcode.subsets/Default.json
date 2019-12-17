@@ -1,0 +1,46 @@
+{
+	"@type":"Subset",
+	"Name":"Default",
+	"Elements":
+	[
+		{
+			"@id":"Dimensions('jobcode')/Hierarchies('jobcode')/Elements('Job Code Total')"
+		},
+		{
+			"@id":"Dimensions('jobcode')/Hierarchies('jobcode')/Elements('A')"
+		},
+		{
+			"@id":"Dimensions('jobcode')/Hierarchies('jobcode')/Elements('B')"
+		},
+		{
+			"@id":"Dimensions('jobcode')/Hierarchies('jobcode')/Elements('C')"
+		},
+		{
+			"@id":"Dimensions('jobcode')/Hierarchies('jobcode')/Elements('E')"
+		},
+		{
+			"@id":"Dimensions('jobcode')/Hierarchies('jobcode')/Elements('F')"
+		},
+		{
+			"@id":"Dimensions('jobcode')/Hierarchies('jobcode')/Elements('G')"
+		},
+		{
+			"@id":"Dimensions('jobcode')/Hierarchies('jobcode')/Elements('H')"
+		},
+		{
+			"@id":"Dimensions('jobcode')/Hierarchies('jobcode')/Elements('I')"
+		},
+		{
+			"@id":"Dimensions('jobcode')/Hierarchies('jobcode')/Elements('J')"
+		},
+		{
+			"@id":"Dimensions('jobcode')/Hierarchies('jobcode')/Elements('L')"
+		},
+		{
+			"@id":"Dimensions('jobcode')/Hierarchies('jobcode')/Elements('T')"
+		},
+		{
+			"@id":"Dimensions('jobcode')/Hierarchies('jobcode')/Elements('Z')"
+		}
+	]
+}

@@ -1,0 +1,10 @@
+{
+	"@type":"Subset",
+	"Name":"zCopyFrom",
+	"Elements":
+	[
+		{
+			"@id":"Dimensions('Channel')/Hierarchies('Channel')/Elements('10')"
+		}
+	]
+}

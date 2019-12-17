@@ -1,0 +1,37 @@
+{
+	"@type":"Cube",
+	"Name":"Line Item Detail",
+	"Rules@Code.link":"Line Item Detail.rules",
+	"Dimensions":
+	[
+		{
+			"@id":"Dimensions('organization')"
+		},
+		{
+			"@id":"Dimensions('Account')"
+		},
+		{
+			"@id":"Dimensions('LineItemList')"
+		},
+		{
+			"@id":"Dimensions('Year')"
+		},
+		{
+			"@id":"Dimensions('Version')"
+		},
+		{
+			"@id":"Dimensions('LineItemDetail')"
+		},
+		{
+			"@id":"Dimensions('Month')"
+		}
+	],
+	"Views@Code.links":
+	[
+		"Line Item Detail.views/All.json",
+		"Line Item Detail.views/Default.json",
+		"Line Item Detail.views/Drill_Line Item Detail.json",
+		"Line Item Detail.views/Line Item Detail.json",
+		"Line Item Detail.views/zCopyFrom.json"
+	]
+}

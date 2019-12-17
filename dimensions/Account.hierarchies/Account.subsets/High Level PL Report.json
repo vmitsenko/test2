@@ -1,0 +1,22 @@
+{
+	"@type":"Subset",
+	"Name":"High Level PL Report",
+	"Elements":
+	[
+		{
+			"@id":"Dimensions('Account')/Hierarchies('Account')/Elements('4999')"
+		},
+		{
+			"@id":"Dimensions('Account')/Hierarchies('Account')/Elements('5999')"
+		},
+		{
+			"@id":"Dimensions('Account')/Hierarchies('Account')/Elements('GM')"
+		},
+		{
+			"@id":"Dimensions('Account')/Hierarchies('Account')/Elements('TE')"
+		},
+		{
+			"@id":"Dimensions('Account')/Hierarchies('Account')/Elements('NP')"
+		}
+	]
+}

@@ -1,0 +1,10 @@
+{
+	"@type":"Subset",
+	"Name":"Item",
+	"Elements":
+	[
+		{
+			"@id":"Dimensions('LineItemDetail')/Hierarchies('LineItemDetail')/Elements('Factor A')"
+		}
+	]
+}

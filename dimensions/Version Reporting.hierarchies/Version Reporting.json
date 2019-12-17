@@ -1,0 +1,12 @@
+{
+	"@type":"Hierarchy",
+	"Name":"Version Reporting",
+	"Elements":
+	[
+		{
+			"Name":"Version 1",
+			"Type":"Numeric"
+		}
+	],
+	"Subsets@Code.links":[]
+}

@@ -1,0 +1,13 @@
+{
+	"@type":"Dimension",
+	"Name":"SM Reviews",
+	"AllLeavesHierarchyName":"",
+	"DefaultHierarchy":
+	{
+		"@id":"Dimensions('SM Reviews')/Hierarchies('SM Reviews')"
+	},
+	"Hierarchies@Code.links":
+	[
+		"SM Reviews.hierarchies/SM Reviews.json"
+	]
+}

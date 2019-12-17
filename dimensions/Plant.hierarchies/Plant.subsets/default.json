@@ -1,0 +1,5 @@
+{
+	"@type":"Subset",
+	"Name":"default",
+	"Expression":"TM1SubsetAll([Plant])"
+}

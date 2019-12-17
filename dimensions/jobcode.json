@@ -1,0 +1,13 @@
+{
+	"@type":"Dimension",
+	"Name":"jobcode",
+	"AllLeavesHierarchyName":"",
+	"DefaultHierarchy":
+	{
+		"@id":"Dimensions('jobcode')/Hierarchies('jobcode')"
+	},
+	"Hierarchies@Code.links":
+	[
+		"jobcode.hierarchies/jobcode.json"
+	]
+}

@@ -1,0 +1,68 @@
+{
+	"@type":"NativeView",
+	"Name":"High Level PL Report",
+	"Columns":
+	[
+		{
+			"Subset":
+			{
+				"@id":"Dimensions('Month')/Hierarchies('Month')/Subsets('YQ')"
+			}
+		}
+	],
+	"Rows":
+	[
+		{
+			"Subset":
+			{
+				"@id":"Dimensions('Account')/Hierarchies('Account')/Subsets('High Level PL Report')"
+			}
+		}
+	],
+	"Titles":
+	[
+		{
+			"Subset":
+			{
+				"@id":"Dimensions('organization')/Hierarchies('organization')/Subsets('Workflow')"
+			},
+			"Selected":
+			{
+				"@id":"Dimensions('organization')/Hierarchies('organization')/Elements('Total Company')"
+			}
+		},
+		{
+			"Subset":
+			{
+				"@id":"Dimensions('Currency Calc')/Hierarchies('Currency Calc')/Subsets('Default')"
+			},
+			"Selected":
+			{
+				"@id":"Dimensions('Currency Calc')/Hierarchies('Currency Calc')/Elements('Local')"
+			}
+		},
+		{
+			"Subset":
+			{
+				"@id":"Dimensions('Year')/Hierarchies('Year')/Subsets('Default')"
+			},
+			"Selected":
+			{
+				"@id":"Dimensions('Year')/Hierarchies('Year')/Elements('Y2')"
+			}
+		},
+		{
+			"Subset":
+			{
+				"@id":"Dimensions('Version')/Hierarchies('Version')/Subsets('Current')"
+			},
+			"Selected":
+			{
+				"@id":"Dimensions('Version')/Hierarchies('Version')/Elements('Version 1')"
+			}
+		}
+	],
+	"SuppressEmptyColumns":true,
+	"SuppressEmptyRows":true,
+	"FormatString":"0.00"
+}

@@ -1,0 +1,35 @@
+{
+	"@type":"NativeView",
+	"Name":"Update Forecast Month",
+	"Columns":
+	[
+		{
+			"Subset":
+			{
+				"@id":"Dimensions('String')/Hierarchies('String')/Subsets('Default')"
+			}
+		}
+	],
+	"Rows":
+	[
+		{
+			"Subset":
+			{
+				"Hierarchy":
+				{
+					"@id":"Dimensions('Calendar')/Hierarchies('Calendar')"
+				},
+				"Elements":
+				[
+					{
+						"@id":"Dimensions('Calendar')/Hierarchies('Calendar')/Elements('Fcst Month')"
+					}
+				]
+			}
+		}
+	],
+	"Titles":[],
+	"SuppressEmptyColumns":false,
+	"SuppressEmptyRows":false,
+	"FormatString":"0.#########"
+}

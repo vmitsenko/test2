@@ -1,0 +1,50 @@
+{
+	"@type":"Hierarchy",
+	"Name":"Channel",
+	"Elements":
+	[
+		{
+			"Name":"Channel Total",
+			"Type":"Consolidated"
+		},
+		{
+			"Name":"10",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"20",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"30",
+			"Type":"Numeric"
+		}
+	],
+	"Edges":
+	[
+		{
+			"ParentName":"Channel Total",
+			"ComponentName":"10",
+			"Weight":1
+		},
+		{
+			"ParentName":"Channel Total",
+			"ComponentName":"20",
+			"Weight":1
+		},
+		{
+			"ParentName":"Channel Total",
+			"ComponentName":"30",
+			"Weight":1
+		}
+	],
+	"Subsets@Code.links":
+	[
+		"Channel.subsets/All Members.json",
+		"Channel.subsets/Channels.json",
+		"Channel.subsets/Default.json",
+		"Channel.subsets/L0 Channel.json",
+		"Channel.subsets/test.json",
+		"Channel.subsets/zCopyFrom.json"
+	]
+}

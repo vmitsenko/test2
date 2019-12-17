@@ -1,0 +1,13 @@
+{
+	"@type":"Dimension",
+	"Name":"OpExSubset_Picklist",
+	"AllLeavesHierarchyName":"",
+	"DefaultHierarchy":
+	{
+		"@id":"Dimensions('OpExSubset_Picklist')/Hierarchies('OpExSubset_Picklist')"
+	},
+	"Hierarchies@Code.links":
+	[
+		"OpExSubset_Picklist.hierarchies/OpExSubset_Picklist.json"
+	]
+}

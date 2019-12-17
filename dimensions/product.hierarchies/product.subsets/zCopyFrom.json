@@ -1,0 +1,10 @@
+{
+	"@type":"Subset",
+	"Name":"zCopyFrom",
+	"Elements":
+	[
+		{
+			"@id":"Dimensions('product')/Hierarchies('product')/Elements('22001')"
+		}
+	]
+}

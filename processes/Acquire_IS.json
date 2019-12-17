@@ -1,0 +1,11 @@
+{
+	"@type":"Process",
+	"Name":"Acquire_IS",
+	"Code@Code.link":"Acquire_IS.ti",
+	"DataSource":
+	{
+		"Type":"None"
+	},
+	"Parameters":[],
+	"Variables":[]
+}

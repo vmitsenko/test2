@@ -1,0 +1,13 @@
+{
+	"@type":"Dimension",
+	"Name":"Calendar",
+	"AllLeavesHierarchyName":"",
+	"DefaultHierarchy":
+	{
+		"@id":"Dimensions('Calendar')/Hierarchies('Calendar')"
+	},
+	"Hierarchies@Code.links":
+	[
+		"Calendar.hierarchies/Calendar.json"
+	]
+}

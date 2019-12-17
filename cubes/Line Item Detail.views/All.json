@@ -1,0 +1,78 @@
+{
+	"@type":"NativeView",
+	"Name":"All",
+	"Columns":
+	[
+		{
+			"Subset":
+			{
+				"@id":"Dimensions('Month')/Hierarchies('Month')/Subsets('All Members')"
+			}
+		}
+	],
+	"Rows":
+	[
+		{
+			"Subset":
+			{
+				"@id":"Dimensions('Account')/Hierarchies('Account')/Subsets('All Members')"
+			}
+		}
+	],
+	"Titles":
+	[
+		{
+			"Subset":
+			{
+				"@id":"Dimensions('LineItemDetail')/Hierarchies('LineItemDetail')/Subsets('All Members')"
+			},
+			"Selected":
+			{
+				"@id":"Dimensions('LineItemDetail')/Hierarchies('LineItemDetail')/Elements('Factor A')"
+			}
+		},
+		{
+			"Subset":
+			{
+				"@id":"Dimensions('LineItemList')/Hierarchies('LineItemList')/Subsets('All Members')"
+			},
+			"Selected":
+			{
+				"@id":"Dimensions('LineItemList')/Hierarchies('LineItemList')/Elements('Total')"
+			}
+		},
+		{
+			"Subset":
+			{
+				"@id":"Dimensions('organization')/Hierarchies('organization')/Subsets('All Members')"
+			},
+			"Selected":
+			{
+				"@id":"Dimensions('organization')/Hierarchies('organization')/Elements('Total Company')"
+			}
+		},
+		{
+			"Subset":
+			{
+				"@id":"Dimensions('Year')/Hierarchies('Year')/Subsets('All Members')"
+			},
+			"Selected":
+			{
+				"@id":"Dimensions('Year')/Hierarchies('Year')/Elements('Y1')"
+			}
+		},
+		{
+			"Subset":
+			{
+				"@id":"Dimensions('Version')/Hierarchies('Version')/Subsets('All Members')"
+			},
+			"Selected":
+			{
+				"@id":"Dimensions('Version')/Hierarchies('Version')/Elements('Version 1')"
+			}
+		}
+	],
+	"SuppressEmptyColumns":false,
+	"SuppressEmptyRows":false,
+	"FormatString":"0.00"
+}

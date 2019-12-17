@@ -1,0 +1,19 @@
+{
+	"@type":"Subset",
+	"Name":"External Factors",
+	"Elements":
+	[
+		{
+			"@id":"Dimensions('ExternalFactors')/Hierarchies('ExternalFactors')/Elements('A')"
+		},
+		{
+			"@id":"Dimensions('ExternalFactors')/Hierarchies('ExternalFactors')/Elements('B')"
+		},
+		{
+			"@id":"Dimensions('ExternalFactors')/Hierarchies('ExternalFactors')/Elements('C')"
+		},
+		{
+			"@id":"Dimensions('ExternalFactors')/Hierarchies('ExternalFactors')/Elements('D')"
+		}
+	]
+}

@@ -1,0 +1,13 @@
+{
+	"@type":"Dimension",
+	"Name":"PhasedCosts",
+	"AllLeavesHierarchyName":"",
+	"DefaultHierarchy":
+	{
+		"@id":"Dimensions('PhasedCosts')/Hierarchies('PhasedCosts')"
+	},
+	"Hierarchies@Code.links":
+	[
+		"PhasedCosts.hierarchies/PhasedCosts.json"
+	]
+}

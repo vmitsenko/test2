@@ -1,0 +1,38 @@
+{
+	"@type":"NativeView",
+	"Name":"All",
+	"Columns":
+	[
+		{
+			"Subset":
+			{
+				"@id":"Dimensions('Task Workflow Measure')/Hierarchies('Task Workflow Measure')/Subsets('All Members')"
+			}
+		}
+	],
+	"Rows":
+	[
+		{
+			"Subset":
+			{
+				"@id":"Dimensions('Task')/Hierarchies('Task')/Subsets('All Members')"
+			}
+		}
+	],
+	"Titles":
+	[
+		{
+			"Subset":
+			{
+				"@id":"Dimensions('organization')/Hierarchies('organization')/Subsets('All Members')"
+			},
+			"Selected":
+			{
+				"@id":"Dimensions('organization')/Hierarchies('organization')/Elements('101')"
+			}
+		}
+	],
+	"SuppressEmptyColumns":false,
+	"SuppressEmptyRows":false,
+	"FormatString":"0.00"
+}

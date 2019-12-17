@@ -1,0 +1,134 @@
+#region Prolog
+
+#****Begin: Generated Statements***
+#****End: Generated Statements****
+
+
+ProcessName = GetProcessName();
+
+
+#~~~~~~~~~~~~~~~~~
+# Initialise
+#~~~~~~~~~~~~~~~~~
+
+
+CubeName = 'Task Workflow';
+
+
+ViewName = 'z_TI_' | ProcessName;
+SubName = 'z_TI_' | ProcessName;
+CubeSetLogChanges(CubeName,0);
+
+
+# If the view exist, destroy then create the view and subsets
+# otherwise, create the view and subsets
+IF(ViewExists(CubeName, ViewName) = 1);
+    ViewDestroy(CubeName, ViewName);
+ENDIF;
+
+
+   ViewCreate(Cubename,ViewName);
+
+# View settings
+ViewSetSkipCalcs(Cubename, Viewname, 1);
+ViewSetSkipRuleValues(cubename, Viewname,1);
+ViewSetSkipZeroes(Cubename, Viewname, 1);
+
+#~~~~~~~~~~~~~~~~~
+# Trans type
+#~~~~~~~~~~~~~~~~~
+DimName =  'Task Workflow Measure';
+IF(SubsetExists(DimName, SubName)=1, SubsetDeleteAllElements(DimName, SubName), SubsetCreate(DimName, SubName));
+# Assigns the subset to the dimension
+ViewSubsetAssign(CubeName, Viewname, DimName, SubName);
+SubsetElementInsert(DimName, SubName, 'Active', SubsetGetSize(DimName, SubName) + 1);
+SubsetElementInsert(DimName, SubName, 'Status', SubsetGetSize(DimName, SubName) + 1);
+SubsetElementInsert(DimName, SubName, 'Due Date', SubsetGetSize(DimName, SubName) + 1);
+SubsetElementInsert(DimName, SubName, 'Date Completed', SubsetGetSize(DimName, SubName) + 1);
+
+
+
+
+IF( pClearCube @= 'Y' );
+ViewZeroOut(CubeName,ViewName);
+ENDIF;
+
+
+
+# View settings
+ViewSetSkipCalcs(Cubename, Viewname, 0);
+ViewSetSkipRuleValues(cubename, Viewname,1);
+ViewSetSkipZeroes(Cubename, Viewname, 0);
+
+
+#~~~~~~~~~~~~~~~~~
+# Measure
+#~~~~~~~~~~~~~~~~~
+DimName =  'Task Workflow Measure';
+IF(SubsetExists(DimName, SubName)=1, SubsetDeleteAllElements(DimName, SubName), SubsetCreate(DimName, SubName));
+# Assigns the subset to the dimension
+ViewSubsetAssign(CubeName, Viewname, DimName, SubName);
+SubsetElementInsert(DimName, SubName, 'Active', SubsetGetSize(DimName, SubName) + 1);
+
+
+#~~~~~~~~~~~~~~~~~
+# Task
+#~~~~~~~~~~~~~~~~~
+DimName =  'Task';
+IF(SubsetExists(DimName, SubName)=1, SubsetDeleteAllElements(DimName, SubName), SubsetCreate(DimName, SubName));
+# Assigns the subset to the dimension
+ViewSubsetAssign(CubeName, Viewname, DimName, SubName);
+nMax = DIMSIZ( DimName );
+nCount = 1;
+WHILE( nCount <= nMax );
+element = DIMNM( DimName, nCount);
+IF( ELLEV( DimName, element) = 0);
+SubsetElementInsert(DimName, SubName, element, SubsetGetSize(DimName, SubName) + 1);
+ENDIF;
+nCount = nCount + 1;
+END;
+
+
+#~~~~~~~~~~~~~~~~~
+# ORg
+#~~~~~~~~~~~~~~~~~
+DimName =  'Organization';
+IF(SubsetExists(DimName, SubName)=1, SubsetDeleteAllElements(DimName, SubName), SubsetCreate(DimName, SubName));
+# Assigns the subset to the dimension
+ViewSubsetAssign(CubeName, Viewname, DimName, SubName);
+nMax = DIMSIZ( DimName );
+nCount = 1;
+WHILE( nCount <= nMax );
+element = DIMNM( DimName, nCount);
+IF( ELLEV( DimName, element) = 0);
+SubsetElementInsert(DimName, SubName, element, SubsetGetSize(DimName, SubName) + 1);
+ENDIF;
+nCount = nCount + 1;
+END;
+
+DataSourceName = ViewName;
+
+#endregion
+#region Metadata
+
+#****Begin: Generated Statements***
+#****End: Generated Statements****
+#endregion
+#region Data
+
+#****Begin: Generated Statements***
+#****End: Generated Statements****
+
+CellPutN( 1, CubeName, vTask, vOrg, 'Active');
+
+CellPutS( 'Not Started', CubeName, vTask, vOrg, 'Status');
+
+CellPutS( pDueDate, CubeName, vTask, vOrg, 'Due Date');
+#endregion
+#region Epilog
+
+#****Begin: Generated Statements***
+#****End: Generated Statements****
+
+CubeSetLogChanges(CubeName,1);
+#endregion

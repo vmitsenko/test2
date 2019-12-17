@@ -1,0 +1,31 @@
+{
+	"@type":"Hierarchy",
+	"Name":"ProductSubset_PickList",
+	"Elements":
+	[
+		{
+			"Name":"Default",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"Product All",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"Phones",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"Gaming",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"Tablets",
+			"Type":"Numeric"
+		}
+	],
+	"Subsets@Code.links":
+	[
+		"ProductSubset_PickList.subsets/Default.json"
+	]
+}

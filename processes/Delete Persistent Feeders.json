@@ -1,0 +1,11 @@
+{
+	"@type":"Process",
+	"Name":"Delete Persistent Feeders",
+	"Code@Code.link":"Delete Persistent Feeders.ti",
+	"DataSource":
+	{
+		"Type":"None"
+	},
+	"Parameters":[],
+	"Variables":[]
+}

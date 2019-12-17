@@ -1,0 +1,16 @@
+{
+	"@type":"Subset",
+	"Name":"Product Profitability Chart",
+	"Elements":
+	[
+		{
+			"@id":"Dimensions('Revenue')/Hierarchies('Revenue')/Elements('Gross Revenue')"
+		},
+		{
+			"@id":"Dimensions('Revenue')/Hierarchies('Revenue')/Elements('Gross Margin')"
+		},
+		{
+			"@id":"Dimensions('Revenue')/Hierarchies('Revenue')/Elements('Gross Margin %')"
+		}
+	]
+}

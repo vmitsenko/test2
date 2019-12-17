@@ -1,0 +1,68 @@
+{
+	"@type":"NativeView",
+	"Name":"Default",
+	"Columns":
+	[
+		{
+			"Subset":
+			{
+				"@id":"Dimensions('product')/Hierarchies('product')/Subsets('Phones')"
+			}
+		}
+	],
+	"Rows":
+	[
+		{
+			"Subset":
+			{
+				"@id":"Dimensions('Rate Measure')/Hierarchies('Rate Measure')/Subsets('Default')"
+			}
+		}
+	],
+	"Titles":
+	[
+		{
+			"Subset":
+			{
+				"@id":"Dimensions('Version')/Hierarchies('Version')/Subsets('Default')"
+			},
+			"Selected":
+			{
+				"@id":"Dimensions('Version')/Hierarchies('Version')/Elements('Version 1')"
+			}
+		},
+		{
+			"Subset":
+			{
+				"@id":"Dimensions('Year')/Hierarchies('Year')/Subsets('Default')"
+			},
+			"Selected":
+			{
+				"@id":"Dimensions('Year')/Hierarchies('Year')/Elements('Y2')"
+			}
+		},
+		{
+			"Subset":
+			{
+				"@id":"Dimensions('Plant')/Hierarchies('Plant')/Subsets('default')"
+			},
+			"Selected":
+			{
+				"@id":"Dimensions('Plant')/Hierarchies('Plant')/Elements('Total Plants')"
+			}
+		},
+		{
+			"Subset":
+			{
+				"@id":"Dimensions('Month')/Hierarchies('Month')/Subsets('All Members')"
+			},
+			"Selected":
+			{
+				"@id":"Dimensions('Month')/Hierarchies('Month')/Elements('Year')"
+			}
+		}
+	],
+	"SuppressEmptyColumns":false,
+	"SuppressEmptyRows":false,
+	"FormatString":"0.00"
+}

@@ -1,0 +1,19 @@
+{
+	"@type":"Process",
+	"Name":"reset_demo",
+	"Code@Code.link":"reset_demo.ti",
+	"DataSource":
+	{
+		"Type":"None"
+	},
+	"Parameters":
+	[
+		{
+			"Name":"pZeroTarget",
+			"Prompt":"",
+			"Value":"",
+			"Type":"String"
+		}
+	],
+	"Variables":[]
+}

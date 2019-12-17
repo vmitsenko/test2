@@ -1,0 +1,5 @@
+{
+	"@type":"Subset",
+	"Name":"Job Type",
+	"Expression":"{TM1SubsetToSet([jobcode].[jobcode], \"Job Type\")}"
+}

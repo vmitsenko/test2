@@ -1,0 +1,34 @@
+{
+	"@type":"Cube",
+	"Name":"Allocation Calculation",
+	"Rules@Code.link":"Allocation Calculation.rules",
+	"Dimensions":
+	[
+		{
+			"@id":"Dimensions('organization')"
+		},
+		{
+			"@id":"Dimensions('Allocation List')"
+		},
+		{
+			"@id":"Dimensions('Year')"
+		},
+		{
+			"@id":"Dimensions('Month')"
+		},
+		{
+			"@id":"Dimensions('Version')"
+		},
+		{
+			"@id":"Dimensions('Allocation Calculation')"
+		}
+	],
+	"Views@Code.links":
+	[
+		"Allocation Calculation.views/All.json",
+		"Allocation Calculation.views/Allocation Calculation.json",
+		"Allocation Calculation.views/Allocation Summary.json",
+		"Allocation Calculation.views/Default.json",
+		"Allocation Calculation.views/Drill_Allocation Receivers.json"
+	]
+}

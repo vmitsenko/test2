@@ -1,0 +1,22 @@
+{
+	"@type":"Cube",
+	"Name":"Social Media",
+	"Rules@Code.link":"Social Media.rules",
+	"Dimensions":
+	[
+		{
+			"@id":"Dimensions('product')"
+		},
+		{
+			"@id":"Dimensions('SM Entries')"
+		},
+		{
+			"@id":"Dimensions('SM Reviews')"
+		}
+	],
+	"Views@Code.links":
+	[
+		"Social Media.views/All.json",
+		"Social Media.views/Reviews.json"
+	]
+}

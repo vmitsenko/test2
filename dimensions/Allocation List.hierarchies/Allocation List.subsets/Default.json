@@ -1,0 +1,40 @@
+{
+	"@type":"Subset",
+	"Name":"Default",
+	"Elements":
+	[
+		{
+			"@id":"Dimensions('Allocation List')/Hierarchies('Allocation List')/Elements('All Allocations')"
+		},
+		{
+			"@id":"Dimensions('Allocation List')/Hierarchies('Allocation List')/Elements('Allocation 1')"
+		},
+		{
+			"@id":"Dimensions('Allocation List')/Hierarchies('Allocation List')/Elements('Allocation 2')"
+		},
+		{
+			"@id":"Dimensions('Allocation List')/Hierarchies('Allocation List')/Elements('Allocation 3')"
+		},
+		{
+			"@id":"Dimensions('Allocation List')/Hierarchies('Allocation List')/Elements('Allocation 4')"
+		},
+		{
+			"@id":"Dimensions('Allocation List')/Hierarchies('Allocation List')/Elements('Allocation 5')"
+		},
+		{
+			"@id":"Dimensions('Allocation List')/Hierarchies('Allocation List')/Elements('Allocation 6')"
+		},
+		{
+			"@id":"Dimensions('Allocation List')/Hierarchies('Allocation List')/Elements('Allocation 7')"
+		},
+		{
+			"@id":"Dimensions('Allocation List')/Hierarchies('Allocation List')/Elements('Allocation 8')"
+		},
+		{
+			"@id":"Dimensions('Allocation List')/Hierarchies('Allocation List')/Elements('Allocation 9')"
+		},
+		{
+			"@id":"Dimensions('Allocation List')/Hierarchies('Allocation List')/Elements('Allocation 10')"
+		}
+	]
+}

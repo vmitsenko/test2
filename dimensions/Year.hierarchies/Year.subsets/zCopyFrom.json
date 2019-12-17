@@ -1,0 +1,10 @@
+{
+	"@type":"Subset",
+	"Name":"zCopyFrom",
+	"Elements":
+	[
+		{
+			"@id":"Dimensions('Year')/Hierarchies('Year')/Elements('Y2')"
+		}
+	]
+}

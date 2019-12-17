@@ -1,0 +1,37 @@
+{
+	"@type":"NativeView",
+	"Name":"zVersionCopy",
+	"Columns":[],
+	"Rows":
+	[
+		{
+			"Subset":
+			{
+				"Hierarchy":
+				{
+					"@id":"Dimensions('LineItemList')/Hierarchies('LineItemList')"
+				},
+				"Expression":"TM1SubsetAll([LineItemList])"
+			}
+		},
+		{
+			"Subset":
+			{
+				"Hierarchy":
+				{
+					"@id":"Dimensions('Version Copy Measures')/Hierarchies('Version Copy Measures')"
+				},
+				"Elements":
+				[
+					{
+						"@id":"Dimensions('Version Copy Measures')/Hierarchies('Version Copy Measures')/Elements('CubeName')"
+					}
+				]
+			}
+		}
+	],
+	"Titles":[],
+	"SuppressEmptyColumns":false,
+	"SuppressEmptyRows":false,
+	"FormatString":"0.00"
+}

@@ -1,0 +1,22 @@
+{
+	"@type":"Subset",
+	"Name":"Prod Mgmt",
+	"Elements":
+	[
+		{
+			"@id":"Dimensions('jobcode')/Hierarchies('jobcode')/Elements('C004')"
+		},
+		{
+			"@id":"Dimensions('jobcode')/Hierarchies('jobcode')/Elements('C005')"
+		},
+		{
+			"@id":"Dimensions('jobcode')/Hierarchies('jobcode')/Elements('C006')"
+		},
+		{
+			"@id":"Dimensions('jobcode')/Hierarchies('jobcode')/Elements('C008')"
+		},
+		{
+			"@id":"Dimensions('jobcode')/Hierarchies('jobcode')/Elements('C009')"
+		}
+	]
+}

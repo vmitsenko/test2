@@ -1,0 +1,24 @@
+{
+	"@type":"Cube",
+	"Name":"Benefit Assumptions",
+	"Rules@Code.link":"Benefit Assumptions.rules",
+	"Dimensions":
+	[
+		{
+			"@id":"Dimensions('Year')"
+		},
+		{
+			"@id":"Dimensions('Version')"
+		},
+		{
+			"@id":"Dimensions('Benefit')"
+		}
+	],
+	"Views@Code.links":
+	[
+		"Benefit Assumptions.views/All.json",
+		"Benefit Assumptions.views/Benefit Assumptions.json",
+		"Benefit Assumptions.views/Default.json",
+		"Benefit Assumptions.views/zCopyFrom.json"
+	]
+}

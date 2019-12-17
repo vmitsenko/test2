@@ -1,0 +1,16 @@
+{
+	"@type":"Subset",
+	"Name":"Depreciation",
+	"Elements":
+	[
+		{
+			"@id":"Dimensions('Account')/Hierarchies('Account')/Elements('6599')"
+		},
+		{
+			"@id":"Dimensions('Account')/Hierarchies('Account')/Elements('6520')"
+		},
+		{
+			"@id":"Dimensions('Account')/Hierarchies('Account')/Elements('6510')"
+		}
+	]
+}

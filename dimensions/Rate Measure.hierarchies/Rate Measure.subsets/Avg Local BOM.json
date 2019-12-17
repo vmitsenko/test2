@@ -1,0 +1,10 @@
+{
+	"@type":"Subset",
+	"Name":"Avg Local BOM",
+	"Elements":
+	[
+		{
+			"@id":"Dimensions('Rate Measure')/Hierarchies('Rate Measure')/Elements('Average Local BOM')"
+		}
+	]
+}

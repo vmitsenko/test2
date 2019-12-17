@@ -1,0 +1,31 @@
+{
+	"@type":"Subset",
+	"Name":"Default",
+	"Elements":
+	[
+		{
+			"@id":"Dimensions('OpExSubset_Picklist')/Hierarchies('OpExSubset_Picklist')/Elements('OpEx')"
+		},
+		{
+			"@id":"Dimensions('OpExSubset_Picklist')/Hierarchies('OpExSubset_Picklist')/Elements('OpEx All')"
+		},
+		{
+			"@id":"Dimensions('OpExSubset_Picklist')/Hierarchies('OpExSubset_Picklist')/Elements('Payroll')"
+		},
+		{
+			"@id":"Dimensions('OpExSubset_Picklist')/Hierarchies('OpExSubset_Picklist')/Elements('Office Expense')"
+		},
+		{
+			"@id":"Dimensions('OpExSubset_Picklist')/Hierarchies('OpExSubset_Picklist')/Elements('Travel')"
+		},
+		{
+			"@id":"Dimensions('OpExSubset_Picklist')/Hierarchies('OpExSubset_Picklist')/Elements('Occupancy')"
+		},
+		{
+			"@id":"Dimensions('OpExSubset_Picklist')/Hierarchies('OpExSubset_Picklist')/Elements('Marketing')"
+		},
+		{
+			"@id":"Dimensions('OpExSubset_Picklist')/Hierarchies('OpExSubset_Picklist')/Elements('Depreciation')"
+		}
+	]
+}

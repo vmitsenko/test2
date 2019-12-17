@@ -1,0 +1,37 @@
+{
+	"@type":"Subset",
+	"Name":"organization level 0",
+	"Elements":
+	[
+		{
+			"@id":"Dimensions('organization')/Hierarchies('organization')/Elements('101')"
+		},
+		{
+			"@id":"Dimensions('organization')/Hierarchies('organization')/Elements('102')"
+		},
+		{
+			"@id":"Dimensions('organization')/Hierarchies('organization')/Elements('103')"
+		},
+		{
+			"@id":"Dimensions('organization')/Hierarchies('organization')/Elements('201')"
+		},
+		{
+			"@id":"Dimensions('organization')/Hierarchies('organization')/Elements('202')"
+		},
+		{
+			"@id":"Dimensions('organization')/Hierarchies('organization')/Elements('301')"
+		},
+		{
+			"@id":"Dimensions('organization')/Hierarchies('organization')/Elements('302')"
+		},
+		{
+			"@id":"Dimensions('organization')/Hierarchies('organization')/Elements('401')"
+		},
+		{
+			"@id":"Dimensions('organization')/Hierarchies('organization')/Elements('402')"
+		},
+		{
+			"@id":"Dimensions('organization')/Hierarchies('organization')/Elements('403')"
+		}
+	]
+}

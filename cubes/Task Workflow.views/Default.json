@@ -1,0 +1,59 @@
+{
+	"@type":"NativeView",
+	"Name":"Default",
+	"Columns":
+	[
+		{
+			"Subset":
+			{
+				"Hierarchy":
+				{
+					"@id":"Dimensions('Task Workflow Measure')/Hierarchies('Task Workflow Measure')"
+				},
+				"Elements":
+				[
+					{
+						"@id":"Dimensions('Task Workflow Measure')/Hierarchies('Task Workflow Measure')/Elements('Status')"
+					},
+					{
+						"@id":"Dimensions('Task Workflow Measure')/Hierarchies('Task Workflow Measure')/Elements('Due Date')"
+					},
+					{
+						"@id":"Dimensions('Task Workflow Measure')/Hierarchies('Task Workflow Measure')/Elements('Date Completed')"
+					},
+					{
+						"@id":"Dimensions('Task Workflow Measure')/Hierarchies('Task Workflow Measure')/Elements('Complete')"
+					},
+					{
+						"@id":"Dimensions('Task Workflow Measure')/Hierarchies('Task Workflow Measure')/Elements('Commentary')"
+					}
+				]
+			}
+		}
+	],
+	"Rows":
+	[
+		{
+			"Subset":
+			{
+				"@id":"Dimensions('Task')/Hierarchies('Task')/Subsets('All Members')"
+			}
+		}
+	],
+	"Titles":
+	[
+		{
+			"Subset":
+			{
+				"@id":"Dimensions('organization')/Hierarchies('organization')/Subsets('Default')"
+			},
+			"Selected":
+			{
+				"@id":"Dimensions('organization')/Hierarchies('organization')/Elements('101')"
+			}
+		}
+	],
+	"SuppressEmptyColumns":false,
+	"SuppressEmptyRows":false,
+	"FormatString":"0.#########"
+}

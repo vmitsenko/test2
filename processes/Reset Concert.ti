@@ -1,0 +1,49 @@
+#region Prolog
+
+#****Begin: Generated Statements***
+#****End: Generated Statements****
+
+
+vDate='';
+vMessageSQL1 = '';
+vMessageSQL2 = '';
+vMessageSQL3 = '';
+vMessageSQL4 = '';
+vMessageSQL5 = '';
+
+vDate=cellgetS('Calendar','Concert Reset Date','String');
+vMessageSQL1 = 'delete MessageLikes where MessageID in (select ID from Message where CreationDate > '''|vDate|''')';
+vMessageSQL2 = 'delete MessageMentions where MessageID in (select ID from Message where CreationDate > '''|vDate|''')';
+vMessageSQL3 = 'delete PollResult where ID in (select ID from Message where CreationDate > '''|vDate|''')';
+vMessageSQL4 = 'delete Poll where ID in (select ID from Message where CreationDate > '''|vDate|''')';
+vMessageSQL5 =  'delete Message where CreationDate > '''|vDate|'''';
+
+ODBCOpen('Concert', 'sa', 'IBMDem0s');
+ODBCOutput('Concert', vMessageSQL1);
+ODBCOutput('Concert', vMessageSQL2);
+ODBCOutput('Concert', vMessageSQL3);
+ODBCOutput('Concert', vMessageSQL4);
+ODBCOutput('Concert', vMessageSQL5);
+ODBCClose('Concert');
+
+# For testing purposes
+#asciioutput('c:\guy.txt',vMessageSQL1,vMessageSQL2,vMessageSQL3);
+
+
+
+#endregion
+#region Metadata
+
+#****Begin: Generated Statements***
+#****End: Generated Statements****
+#endregion
+#region Data
+
+#****Begin: Generated Statements***
+#****End: Generated Statements****
+#endregion
+#region Epilog
+
+#****Begin: Generated Statements***
+#****End: Generated Statements****
+#endregion

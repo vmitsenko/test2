@@ -1,0 +1,306 @@
+{
+	"@type":"Hierarchy",
+	"Name":"Rate Measure",
+	"Elements":
+	[
+		{
+			"Name":"List Price",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"Discount Rate",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"National Average BOM",
+			"Type":"Consolidated"
+		},
+		{
+			"Name":"BOM Averaging Factor",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"Total Local BOM",
+			"Type":"Consolidated"
+		},
+		{
+			"Name":"Raw Material",
+			"Type":"Consolidated"
+		},
+		{
+			"Name":"RM 1",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"RM 2",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"RM 3",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"RM 8",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"Packaging Material",
+			"Type":"Consolidated"
+		},
+		{
+			"Name":"PM 6",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"PM 7",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"PM 8",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"Direct labor",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"Commodities",
+			"Type":"Consolidated"
+		},
+		{
+			"Name":"Commodity 1",
+			"Type":"Consolidated"
+		},
+		{
+			"Name":"PM 1",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"PM 2",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"PM 3",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"Commodity 2",
+			"Type":"Consolidated"
+		},
+		{
+			"Name":"PM 4",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"PM 5",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"Commodity 3",
+			"Type":"Consolidated"
+		},
+		{
+			"Name":"RM 6",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"RM 4",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"RM 5",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"RM 7",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"Transportation rate",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"Average Local BOM",
+			"Type":"Numeric"
+		}
+	],
+	"Edges":
+	[
+		{
+			"ParentName":"National Average BOM",
+			"ComponentName":"BOM Averaging Factor",
+			"Weight":1
+		},
+		{
+			"ParentName":"National Average BOM",
+			"ComponentName":"Total Local BOM",
+			"Weight":1
+		},
+		{
+			"ParentName":"Total Local BOM",
+			"ComponentName":"Raw Material",
+			"Weight":1
+		},
+		{
+			"ParentName":"Total Local BOM",
+			"ComponentName":"Packaging Material",
+			"Weight":1
+		},
+		{
+			"ParentName":"Total Local BOM",
+			"ComponentName":"Direct labor",
+			"Weight":1
+		},
+		{
+			"ParentName":"Raw Material",
+			"ComponentName":"RM 1",
+			"Weight":1
+		},
+		{
+			"ParentName":"Raw Material",
+			"ComponentName":"RM 2",
+			"Weight":1
+		},
+		{
+			"ParentName":"Raw Material",
+			"ComponentName":"RM 3",
+			"Weight":1
+		},
+		{
+			"ParentName":"Raw Material",
+			"ComponentName":"RM 4",
+			"Weight":1
+		},
+		{
+			"ParentName":"Raw Material",
+			"ComponentName":"RM 5",
+			"Weight":1
+		},
+		{
+			"ParentName":"Raw Material",
+			"ComponentName":"RM 6",
+			"Weight":1
+		},
+		{
+			"ParentName":"Raw Material",
+			"ComponentName":"RM 7",
+			"Weight":1
+		},
+		{
+			"ParentName":"Raw Material",
+			"ComponentName":"RM 8",
+			"Weight":1
+		},
+		{
+			"ParentName":"Packaging Material",
+			"ComponentName":"PM 1",
+			"Weight":1
+		},
+		{
+			"ParentName":"Packaging Material",
+			"ComponentName":"PM 2",
+			"Weight":1
+		},
+		{
+			"ParentName":"Packaging Material",
+			"ComponentName":"PM 3",
+			"Weight":1
+		},
+		{
+			"ParentName":"Packaging Material",
+			"ComponentName":"PM 4",
+			"Weight":1
+		},
+		{
+			"ParentName":"Packaging Material",
+			"ComponentName":"PM 5",
+			"Weight":1
+		},
+		{
+			"ParentName":"Packaging Material",
+			"ComponentName":"PM 6",
+			"Weight":1
+		},
+		{
+			"ParentName":"Packaging Material",
+			"ComponentName":"PM 7",
+			"Weight":1
+		},
+		{
+			"ParentName":"Packaging Material",
+			"ComponentName":"PM 8",
+			"Weight":1
+		},
+		{
+			"ParentName":"Commodities",
+			"ComponentName":"Commodity 1",
+			"Weight":1
+		},
+		{
+			"ParentName":"Commodities",
+			"ComponentName":"Commodity 2",
+			"Weight":1
+		},
+		{
+			"ParentName":"Commodities",
+			"ComponentName":"Commodity 3",
+			"Weight":1
+		},
+		{
+			"ParentName":"Commodity 1",
+			"ComponentName":"PM 1",
+			"Weight":1
+		},
+		{
+			"ParentName":"Commodity 1",
+			"ComponentName":"PM 2",
+			"Weight":1
+		},
+		{
+			"ParentName":"Commodity 1",
+			"ComponentName":"PM 3",
+			"Weight":1
+		},
+		{
+			"ParentName":"Commodity 2",
+			"ComponentName":"PM 4",
+			"Weight":1
+		},
+		{
+			"ParentName":"Commodity 2",
+			"ComponentName":"PM 5",
+			"Weight":1
+		},
+		{
+			"ParentName":"Commodity 3",
+			"ComponentName":"RM 6",
+			"Weight":1
+		},
+		{
+			"ParentName":"Commodity 3",
+			"ComponentName":"RM 4",
+			"Weight":1
+		},
+		{
+			"ParentName":"Commodity 3",
+			"ComponentName":"RM 5",
+			"Weight":1
+		},
+		{
+			"ParentName":"Commodity 3",
+			"ComponentName":"RM 7",
+			"Weight":1
+		}
+	],
+	"Subsets@Code.links":
+	[
+		"Rate Measure.subsets/All Members.json",
+		"Rate Measure.subsets/Avg Local BOM.json",
+		"Rate Measure.subsets/BOM.json",
+		"Rate Measure.subsets/Commodities.json",
+		"Rate Measure.subsets/Default.json",
+		"Rate Measure.subsets/L0.json",
+		"Rate Measure.subsets/Rates.json",
+		"Rate Measure.subsets/Transportation.json"
+	]
+}

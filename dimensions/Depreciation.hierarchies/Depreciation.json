@@ -1,0 +1,82 @@
+{
+	"@type":"Hierarchy",
+	"Name":"Depreciation",
+	"Elements":
+	[
+		{
+			"Name":"--COST--",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"Cost Beg Bal",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"Additions",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"YTD Additions",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"In Service",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"YTD In Service",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"Adjustments",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"Cost End Bal",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"--DEPRECIATION--",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"Depr Beg Bal",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"6510",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"6520",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"Total Depreciation",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"Depr End Bal",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"--BALANCE SHEET--",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"Asset Beg Bal",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"Asset End Bal",
+			"Type":"Numeric"
+		}
+	],
+	"Subsets@Code.links":
+	[
+		"Depreciation.subsets/All Members.json",
+		"Depreciation.subsets/Capital Review.json",
+		"Depreciation.subsets/Default.json",
+		"Depreciation.subsets/Total Depreciation.json"
+	]
+}

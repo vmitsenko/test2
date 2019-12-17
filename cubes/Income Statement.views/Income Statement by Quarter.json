@@ -1,0 +1,68 @@
+{
+	"@type":"NativeView",
+	"Name":"Income Statement by Quarter",
+	"Columns":
+	[
+		{
+			"Subset":
+			{
+				"@id":"Dimensions('Month')/Hierarchies('Month')/Subsets('YQ')"
+			}
+		}
+	],
+	"Rows":
+	[
+		{
+			"Subset":
+			{
+				"@id":"Dimensions('Account')/Hierarchies('Account')/Subsets('Default')"
+			}
+		}
+	],
+	"Titles":
+	[
+		{
+			"Subset":
+			{
+				"@id":"Dimensions('organization')/Hierarchies('organization')/Subsets('Workflow')"
+			},
+			"Selected":
+			{
+				"@id":"Dimensions('organization')/Hierarchies('organization')/Elements('101')"
+			}
+		},
+		{
+			"Subset":
+			{
+				"@id":"Dimensions('Currency Calc')/Hierarchies('Currency Calc')/Subsets('Default')"
+			},
+			"Selected":
+			{
+				"@id":"Dimensions('Currency Calc')/Hierarchies('Currency Calc')/Elements('Base')"
+			}
+		},
+		{
+			"Subset":
+			{
+				"@id":"Dimensions('Year')/Hierarchies('Year')/Subsets('Default')"
+			},
+			"Selected":
+			{
+				"@id":"Dimensions('Year')/Hierarchies('Year')/Elements('Y2')"
+			}
+		},
+		{
+			"Subset":
+			{
+				"@id":"Dimensions('Version')/Hierarchies('Version')/Subsets('Current')"
+			},
+			"Selected":
+			{
+				"@id":"Dimensions('Version')/Hierarchies('Version')/Elements('Version 1')"
+			}
+		}
+	],
+	"SuppressEmptyColumns":false,
+	"SuppressEmptyRows":false,
+	"FormatString":"0.00"
+}

@@ -1,0 +1,13 @@
+{
+	"@type":"Dimension",
+	"Name":"Organization Reporting",
+	"AllLeavesHierarchyName":"",
+	"DefaultHierarchy":
+	{
+		"@id":"Dimensions('Organization Reporting')/Hierarchies('Organization Reporting')"
+	},
+	"Hierarchies@Code.links":
+	[
+		"Organization Reporting.hierarchies/Organization Reporting.json"
+	]
+}

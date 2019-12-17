@@ -1,0 +1,20 @@
+{
+	"@type":"Hierarchy",
+	"Name":"Currency Calc",
+	"Elements":
+	[
+		{
+			"Name":"Local",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"Base",
+			"Type":"Numeric"
+		}
+	],
+	"Subsets@Code.links":
+	[
+		"Currency Calc.subsets/All Members.json",
+		"Currency Calc.subsets/Default.json"
+	]
+}

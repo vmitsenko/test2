@@ -1,0 +1,68 @@
+{
+	"@type":"NativeView",
+	"Name":"Default",
+	"Columns":
+	[
+		{
+			"Subset":
+			{
+				"@id":"Dimensions('Month')/Hierarchies('Month')/Subsets('M')"
+			}
+		}
+	],
+	"Rows":
+	[
+		{
+			"Subset":
+			{
+				"@id":"Dimensions('Account')/Hierarchies('Account')/Subsets('Default')"
+			}
+		}
+	],
+	"Titles":
+	[
+		{
+			"Subset":
+			{
+				"@id":"Dimensions('Year')/Hierarchies('Year')/Subsets('Default')"
+			},
+			"Selected":
+			{
+				"@id":"Dimensions('Year')/Hierarchies('Year')/Elements('Y2')"
+			}
+		},
+		{
+			"Subset":
+			{
+				"@id":"Dimensions('Currency Calc')/Hierarchies('Currency Calc')/Subsets('All Members')"
+			},
+			"Selected":
+			{
+				"@id":"Dimensions('Currency Calc')/Hierarchies('Currency Calc')/Elements('Local')"
+			}
+		},
+		{
+			"Subset":
+			{
+				"@id":"Dimensions('Organization Reporting')/Hierarchies('Organization Reporting')/Subsets('Default')"
+			},
+			"Selected":
+			{
+				"@id":"Dimensions('Organization Reporting')/Hierarchies('Organization Reporting')/Elements('Total Company')"
+			}
+		},
+		{
+			"Subset":
+			{
+				"@id":"Dimensions('Version')/Hierarchies('Version')/Subsets('Current')"
+			},
+			"Selected":
+			{
+				"@id":"Dimensions('Version')/Hierarchies('Version')/Elements('Version 1')"
+			}
+		}
+	],
+	"SuppressEmptyColumns":false,
+	"SuppressEmptyRows":false,
+	"FormatString":"0.00"
+}

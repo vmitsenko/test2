@@ -1,0 +1,5 @@
+{
+	"@type":"Subset",
+	"Name":"Capital List",
+	"Expression":"{[CapitalList].[CapitalList].[Total],[CapitalList].[CapitalList].[1],[CapitalList].[CapitalList].[2],[CapitalList].[CapitalList].[3],[CapitalList].[CapitalList].[4],[CapitalList].[CapitalList].[5],[CapitalList].[CapitalList].[6],[CapitalList].[CapitalList].[7],[CapitalList].[CapitalList].[8],[CapitalList].[CapitalList].[9],[CapitalList].[CapitalList].[10]}"
+}

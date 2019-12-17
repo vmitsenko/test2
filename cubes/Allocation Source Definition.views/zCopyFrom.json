@@ -1,0 +1,48 @@
+{
+	"@type":"NativeView",
+	"Name":"zCopyFrom",
+	"Columns":[],
+	"Rows":
+	[
+		{
+			"Subset":
+			{
+				"Hierarchy":
+				{
+					"@id":"Dimensions('Allocation List')/Hierarchies('Allocation List')"
+				},
+				"Expression":"TM1SubsetAll([Allocation List])"
+			}
+		},
+		{
+			"Subset":
+			{
+				"Hierarchy":
+				{
+					"@id":"Dimensions('Year')/Hierarchies('Year')"
+				},
+				"Expression":"TM1SubsetAll([Year])"
+			}
+		},
+		{
+			"Subset":
+			{
+				"@id":"Dimensions('Version')/Hierarchies('Version')/Subsets('zCopyFrom')"
+			}
+		},
+		{
+			"Subset":
+			{
+				"Hierarchy":
+				{
+					"@id":"Dimensions('Allocation Source Definition')/Hierarchies('Allocation Source Definition')"
+				},
+				"Expression":"TM1SubsetAll([Allocation Source Definition])"
+			}
+		}
+	],
+	"Titles":[],
+	"SuppressEmptyColumns":false,
+	"SuppressEmptyRows":false,
+	"FormatString":"0.00"
+}

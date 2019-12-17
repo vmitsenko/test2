@@ -1,0 +1,22 @@
+{
+	"@type":"Subset",
+	"Name":"Corp Com",
+	"Elements":
+	[
+		{
+			"@id":"Dimensions('jobcode')/Hierarchies('jobcode')/Elements('E003')"
+		},
+		{
+			"@id":"Dimensions('jobcode')/Hierarchies('jobcode')/Elements('E004')"
+		},
+		{
+			"@id":"Dimensions('jobcode')/Hierarchies('jobcode')/Elements('E005')"
+		},
+		{
+			"@id":"Dimensions('jobcode')/Hierarchies('jobcode')/Elements('E006')"
+		},
+		{
+			"@id":"Dimensions('jobcode')/Hierarchies('jobcode')/Elements('E007')"
+		}
+	]
+}

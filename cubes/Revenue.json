@@ -1,0 +1,69 @@
+{
+	"@type":"Cube",
+	"Name":"Revenue",
+	"Rules@Code.link":"Revenue.rules",
+	"DrillthroughRules@Code.link":"Revenue.drillthrough.rules",
+	"Dimensions":
+	[
+		{
+			"@id":"Dimensions('organization')"
+		},
+		{
+			"@id":"Dimensions('Channel')"
+		},
+		{
+			"@id":"Dimensions('product')"
+		},
+		{
+			"@id":"Dimensions('Month')"
+		},
+		{
+			"@id":"Dimensions('Year')"
+		},
+		{
+			"@id":"Dimensions('Version')"
+		},
+		{
+			"@id":"Dimensions('Revenue')"
+		}
+	],
+	"Views@Code.links":
+	[
+		"Revenue.views/All.json",
+		"Revenue.views/Channel Detail by Product.json",
+		"Revenue.views/Compare.json",
+		"Revenue.views/Default.json",
+		"Revenue.views/Drill.json",
+		"Revenue.views/Drill_Revenue.json",
+		"Revenue.views/GM by Channel.json",
+		"Revenue.views/GM Report by Organization_SKU.json",
+		"Revenue.views/Input.json",
+		"Revenue.views/New Product.json",
+		"Revenue.views/Predictive Review.json",
+		"Revenue.views/Product Profitability by Channel.json",
+		"Revenue.views/Product Profitability by Quarter.json",
+		"Revenue.views/Product Profitability Chart.json",
+		"Revenue.views/Product Profitability Chart by Quarter.json",
+		"Revenue.views/Product Unit Forecast.json",
+		"Revenue.views/Revenue.json",
+		"Revenue.views/Revenue Analysis.json",
+		"Revenue.views/Revenue Analysis by Quarter.json",
+		"Revenue.views/Revenue Analysis Chart.json",
+		"Revenue.views/Revenue Budget vs Target.json",
+		"Revenue.views/Revenue Chart Test.json",
+		"Revenue.views/Test Data Loads.json",
+		"Revenue.views/Total Product Margin by Channel.json",
+		"Revenue.views/Total Units Sold by Channel.json",
+		"Revenue.views/Units Sold.json",
+		"Revenue.views/Units Sold by Channel.json",
+		"Revenue.views/Units Sold by Product.json",
+		"Revenue.views/Volume of Units by YQ.json",
+		"Revenue.views/zCopyFrom.json",
+		"Revenue.views/zCopyProduct.json",
+		"Revenue.views/zExportData.json",
+		"Revenue.views/zExportUnitsSoldSPSS.json",
+		"Revenue.views/zMD_Revenue.json",
+		"Revenue.views/zUpdateIS.json",
+		"Revenue.views/zZeroPredictiveVersion.json"
+	]
+}

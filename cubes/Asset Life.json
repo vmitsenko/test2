@@ -1,0 +1,25 @@
+{
+	"@type":"Cube",
+	"Name":"Asset Life",
+	"Rules@Code.link":"Asset Life.rules",
+	"Dimensions":
+	[
+		{
+			"@id":"Dimensions('Asset Types')"
+		},
+		{
+			"@id":"Dimensions('Version')"
+		},
+		{
+			"@id":"Dimensions('Asset Life')"
+		}
+	],
+	"Views@Code.links":
+	[
+		"Asset Life.views/All.json",
+		"Asset Life.views/Asset Life.json",
+		"Asset Life.views/Default.json",
+		"Asset Life.views/Drill_Asset Life.json",
+		"Asset Life.views/zCopyFrom.json"
+	]
+}

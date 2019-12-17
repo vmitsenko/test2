@@ -1,0 +1,25 @@
+{
+	"@type":"Subset",
+	"Name":"Payroll",
+	"Elements":
+	[
+		{
+			"@id":"Dimensions('Account')/Hierarchies('Account')/Elements('6099')"
+		},
+		{
+			"@id":"Dimensions('Account')/Hierarchies('Account')/Elements('6000')"
+		},
+		{
+			"@id":"Dimensions('Account')/Hierarchies('Account')/Elements('6005')"
+		},
+		{
+			"@id":"Dimensions('Account')/Hierarchies('Account')/Elements('6010')"
+		},
+		{
+			"@id":"Dimensions('Account')/Hierarchies('Account')/Elements('6015')"
+		},
+		{
+			"@id":"Dimensions('Account')/Hierarchies('Account')/Elements('6020')"
+		}
+	]
+}

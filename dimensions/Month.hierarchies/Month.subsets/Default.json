@@ -1,0 +1,22 @@
+{
+	"@type":"Subset",
+	"Name":"Default",
+	"Elements":
+	[
+		{
+			"@id":"Dimensions('Month')/Hierarchies('Month')/Elements('Year')"
+		},
+		{
+			"@id":"Dimensions('Month')/Hierarchies('Month')/Elements('Q1')"
+		},
+		{
+			"@id":"Dimensions('Month')/Hierarchies('Month')/Elements('Q2')"
+		},
+		{
+			"@id":"Dimensions('Month')/Hierarchies('Month')/Elements('Q3')"
+		},
+		{
+			"@id":"Dimensions('Month')/Hierarchies('Month')/Elements('Q4')"
+		}
+	]
+}

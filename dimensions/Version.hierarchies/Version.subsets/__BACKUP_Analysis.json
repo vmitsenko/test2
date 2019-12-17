@@ -1,0 +1,37 @@
+{
+	"@type":"Subset",
+	"Name":"__BACKUP_Analysis",
+	"Elements":
+	[
+		{
+			"@id":"Dimensions('Version')/Hierarchies('Version')/Elements('Version 1')"
+		},
+		{
+			"@id":"Dimensions('Version')/Hierarchies('Version')/Elements('Actual')"
+		},
+		{
+			"@id":"Dimensions('Version')/Hierarchies('Version')/Elements('Prior Year Actual')"
+		},
+		{
+			"@id":"Dimensions('Version')/Hierarchies('Version')/Elements('Variance')"
+		},
+		{
+			"@id":"Dimensions('Version')/Hierarchies('Version')/Elements('Variance%')"
+		},
+		{
+			"@id":"Dimensions('Version')/Hierarchies('Version')/Elements('Forecast')"
+		},
+		{
+			"@id":"Dimensions('Version')/Hierarchies('Version')/Elements('Target')"
+		},
+		{
+			"@id":"Dimensions('Version')/Hierarchies('Version')/Elements('Target vs Prior Year Actual')"
+		},
+		{
+			"@id":"Dimensions('Version')/Hierarchies('Version')/Elements('Target vs Prior Year Actual %')"
+		},
+		{
+			"@id":"Dimensions('Version')/Hierarchies('Version')/Elements('Dashboard')"
+		}
+	]
+}

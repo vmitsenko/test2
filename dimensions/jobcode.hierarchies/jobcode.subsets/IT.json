@@ -1,0 +1,34 @@
+{
+	"@type":"Subset",
+	"Name":"IT",
+	"Elements":
+	[
+		{
+			"@id":"Dimensions('jobcode')/Hierarchies('jobcode')/Elements('I001')"
+		},
+		{
+			"@id":"Dimensions('jobcode')/Hierarchies('jobcode')/Elements('I003')"
+		},
+		{
+			"@id":"Dimensions('jobcode')/Hierarchies('jobcode')/Elements('I004')"
+		},
+		{
+			"@id":"Dimensions('jobcode')/Hierarchies('jobcode')/Elements('I005')"
+		},
+		{
+			"@id":"Dimensions('jobcode')/Hierarchies('jobcode')/Elements('I007')"
+		},
+		{
+			"@id":"Dimensions('jobcode')/Hierarchies('jobcode')/Elements('I008')"
+		},
+		{
+			"@id":"Dimensions('jobcode')/Hierarchies('jobcode')/Elements('I011')"
+		},
+		{
+			"@id":"Dimensions('jobcode')/Hierarchies('jobcode')/Elements('I013')"
+		},
+		{
+			"@id":"Dimensions('jobcode')/Hierarchies('jobcode')/Elements('I015')"
+		}
+	]
+}

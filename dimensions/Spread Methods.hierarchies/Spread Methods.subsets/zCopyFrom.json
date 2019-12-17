@@ -1,0 +1,10 @@
+{
+	"@type":"Subset",
+	"Name":"zCopyFrom",
+	"Elements":
+	[
+		{
+			"@id":"Dimensions('Spread Methods')/Hierarchies('Spread Methods')/Elements('Jan Start')"
+		}
+	]
+}

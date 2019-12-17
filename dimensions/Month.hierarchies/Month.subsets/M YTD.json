@@ -1,0 +1,43 @@
+{
+	"@type":"Subset",
+	"Name":"M YTD",
+	"Elements":
+	[
+		{
+			"@id":"Dimensions('Month')/Hierarchies('Month')/Elements('Jan YTD')"
+		},
+		{
+			"@id":"Dimensions('Month')/Hierarchies('Month')/Elements('Feb YTD')"
+		},
+		{
+			"@id":"Dimensions('Month')/Hierarchies('Month')/Elements('Mar YTD')"
+		},
+		{
+			"@id":"Dimensions('Month')/Hierarchies('Month')/Elements('Apr YTD')"
+		},
+		{
+			"@id":"Dimensions('Month')/Hierarchies('Month')/Elements('May YTD')"
+		},
+		{
+			"@id":"Dimensions('Month')/Hierarchies('Month')/Elements('Jun YTD')"
+		},
+		{
+			"@id":"Dimensions('Month')/Hierarchies('Month')/Elements('Jul YTD')"
+		},
+		{
+			"@id":"Dimensions('Month')/Hierarchies('Month')/Elements('Aug YTD')"
+		},
+		{
+			"@id":"Dimensions('Month')/Hierarchies('Month')/Elements('Sep YTD')"
+		},
+		{
+			"@id":"Dimensions('Month')/Hierarchies('Month')/Elements('Oct YTD')"
+		},
+		{
+			"@id":"Dimensions('Month')/Hierarchies('Month')/Elements('Nov YTD')"
+		},
+		{
+			"@id":"Dimensions('Month')/Hierarchies('Month')/Elements('Dec YTD')"
+		}
+	]
+}

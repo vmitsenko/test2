@@ -1,0 +1,5 @@
+{
+	"@type":"Subset",
+	"Name":"All Members No Alias",
+	"Expression":"{TM1SUBSETALL( [Version] )}"
+}

@@ -1,0 +1,37 @@
+{
+	"@type":"Subset",
+	"Name":"Ops",
+	"Elements":
+	[
+		{
+			"@id":"Dimensions('jobcode')/Hierarchies('jobcode')/Elements('L001')"
+		},
+		{
+			"@id":"Dimensions('jobcode')/Hierarchies('jobcode')/Elements('L002')"
+		},
+		{
+			"@id":"Dimensions('jobcode')/Hierarchies('jobcode')/Elements('L003')"
+		},
+		{
+			"@id":"Dimensions('jobcode')/Hierarchies('jobcode')/Elements('L005')"
+		},
+		{
+			"@id":"Dimensions('jobcode')/Hierarchies('jobcode')/Elements('L007')"
+		},
+		{
+			"@id":"Dimensions('jobcode')/Hierarchies('jobcode')/Elements('L008')"
+		},
+		{
+			"@id":"Dimensions('jobcode')/Hierarchies('jobcode')/Elements('L009')"
+		},
+		{
+			"@id":"Dimensions('jobcode')/Hierarchies('jobcode')/Elements('L010')"
+		},
+		{
+			"@id":"Dimensions('jobcode')/Hierarchies('jobcode')/Elements('L011')"
+		},
+		{
+			"@id":"Dimensions('jobcode')/Hierarchies('jobcode')/Elements('L012')"
+		}
+	]
+}

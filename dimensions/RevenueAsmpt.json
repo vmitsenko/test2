@@ -1,0 +1,13 @@
+{
+	"@type":"Dimension",
+	"Name":"RevenueAsmpt",
+	"AllLeavesHierarchyName":"",
+	"DefaultHierarchy":
+	{
+		"@id":"Dimensions('RevenueAsmpt')/Hierarchies('RevenueAsmpt')"
+	},
+	"Hierarchies@Code.links":
+	[
+		"RevenueAsmpt.hierarchies/RevenueAsmpt.json"
+	]
+}

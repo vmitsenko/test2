@@ -1,0 +1,10 @@
+{
+	"@type":"Subset",
+	"Name":"Drill",
+	"Elements":
+	[
+		{
+			"@id":"Dimensions('JobType')/Hierarchies('JobType')/Elements('B')"
+		}
+	]
+}

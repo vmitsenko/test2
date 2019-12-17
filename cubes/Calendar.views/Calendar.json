@@ -1,0 +1,26 @@
+{
+	"@type":"NativeView",
+	"Name":"Calendar",
+	"Columns":
+	[
+		{
+			"Subset":
+			{
+				"@id":"Dimensions('String')/Hierarchies('String')/Subsets('All Members')"
+			}
+		}
+	],
+	"Rows":
+	[
+		{
+			"Subset":
+			{
+				"@id":"Dimensions('Calendar')/Hierarchies('Calendar')/Subsets('All Members')"
+			}
+		}
+	],
+	"Titles":[],
+	"SuppressEmptyColumns":false,
+	"SuppressEmptyRows":false,
+	"FormatString":"0.00"
+}

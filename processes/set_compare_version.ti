@@ -1,0 +1,38 @@
+#region Prolog
+
+#****Begin: Generated Statements***
+#****End: Generated Statements****
+
+vCompareVersionAlias='';
+
+IF(DIMIX('Version', pCompareVersion) <=0);
+ ProcessError;
+ENDIF;
+
+CellPutS(pCompareVersion, 'Calendar','Compare Against','String');
+
+vCompareVersionAlias=ATTRS('Version', pCompareVersion, 'Caption_Default');
+IF(vCompareVersionAlias @='');
+    vCompareVersionAlias = pCompareVersion;
+ENDIF;
+AttrPutS(vCompareVersionAlias|'.', 'Version', 'DashboardCA', 'Caption_Default');
+
+ExecuteProcess('create_default_subset', 'pSubsetName','Current');
+ExecuteProcess('create_default_subset', 'pSubsetName','Analysis');
+
+#endregion
+#region Metadata
+
+#****Begin: Generated Statements***
+#****End: Generated Statements****
+#endregion
+#region Data
+
+#****Begin: Generated Statements***
+#****End: Generated Statements****
+#endregion
+#region Epilog
+
+#****Begin: Generated Statements***
+#****End: Generated Statements****
+#endregion

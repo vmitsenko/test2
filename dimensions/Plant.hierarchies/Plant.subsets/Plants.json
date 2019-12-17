@@ -1,0 +1,16 @@
+{
+	"@type":"Subset",
+	"Name":"Plants",
+	"Elements":
+	[
+		{
+			"@id":"Dimensions('Plant')/Hierarchies('Plant')/Elements('Plant A')"
+		},
+		{
+			"@id":"Dimensions('Plant')/Hierarchies('Plant')/Elements('Plant D')"
+		},
+		{
+			"@id":"Dimensions('Plant')/Hierarchies('Plant')/Elements('Province 1')"
+		}
+	]
+}

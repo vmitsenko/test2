@@ -1,0 +1,64 @@
+#region Prolog
+
+#****Begin: Generated Statements***
+#****End: Generated Statements****
+
+OldCubeLogChanges = CUBEGETLOGCHANGES('Revenue');
+CUBESETLOGCHANGES('Revenue', 0);
+#endregion
+#region Metadata
+
+#****Begin: Generated Statements***
+vOrg=pOrg;
+vChannel=pChannel;
+vProduct=pCurrentProduct;
+vRevenue='Units Sold';
+vYear=pYear;
+#****End: Generated Statements****
+
+vOrg=pOrg;
+vChannel=pChannel;
+vProduct=pCurrentProduct;
+vRevenue='Units Sold';
+vYear=pYear;
+#endregion
+#region Data
+
+#****Begin: Generated Statements***
+vOrg=pOrg;
+vChannel=pChannel;
+vProduct=pCurrentProduct;
+vRevenue='Units Sold';
+vYear=pYear;
+#****End: Generated Statements****
+
+SetUseActiveSandboxProperty(1);
+
+vOrg=pOrg;
+vChannel=pChannel;
+vProduct=pCurrentProduct;
+vRevenue='Units Sold';
+vYear=pYear;
+##OLD##if (VALUE_IS_STRING=1, CellPutS(SVALUE,'Revenue',vOrg,vChannel,vProduct,vMonth,vYear,Version,vRevenue), CellPutN(NVALUE, 'Revenue', vOrg,vChannel,vProduct,vMonth,vYear,Version,vRevenue));
+
+IF(ELLEV('Channel',pChannel)=1);
+Members=ELCOMPN('Channel',pChannel);
+m=1;
+While(m<=Members);
+Member=ELCOMP('Channel',pChannel,m);
+if (VALUE_IS_STRING=1, CellPutS(SVALUE,'Revenue',vOrg,Member,vProduct,vMonth,vYear,Version,vRevenue), CellPutN(NVALUE, 'Revenue', vOrg,Member,vProduct,vMonth,vYear,Version,vRevenue));
+m=m+1;
+END;
+ELSE;
+if (VALUE_IS_STRING=1, CellPutS(SVALUE,'Revenue',vOrg,pChannel,vProduct,vMonth,vYear,Version,vRevenue), CellPutN(NVALUE, 'Revenue', vOrg,pChannel,vProduct,vMonth,vYear,Version,vRevenue));
+ENDIF;
+#endregion
+#region Epilog
+
+#****Begin: Generated Statements***
+#****End: Generated Statements****
+
+CUBESETLOGCHANGES('Revenue', OldCubeLogChanges);
+
+CellPutProportionalSpread( pUnitFcst, 'Revenue',pOrg,pChannel,pCurrentProduct,'Year',pYear,Version,vRevenue);
+#endregion

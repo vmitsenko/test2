@@ -1,0 +1,38 @@
+#region Prolog
+
+#****Begin: Generated Statements***
+OldCubeLogChanges = CUBEGETLOGCHANGES('Workflow Reporting');
+CUBESETLOGCHANGES('Workflow Reporting', 0);
+#****End: Generated Statements****
+
+vApplicationGuid=DIMNM('}tp_applications', 1);
+vCubeName='}tp_application_state}'|vApplicationGuid;
+
+DatasourceNameForServer=vCubeName;
+DatasourceCubeview='All';
+
+
+
+
+
+
+#endregion
+#region Metadata
+
+#****Begin: Generated Statements***
+V4='1';
+#****End: Generated Statements****
+#endregion
+#region Data
+
+#****Begin: Generated Statements***
+V4='1';
+if (VALUE_IS_STRING=1, CellPutS(SVALUE,'Workflow Reporting',V4,organization,V2), CellPutN(NVALUE, 'Workflow Reporting', V4,organization,V2));
+#****End: Generated Statements****
+#endregion
+#region Epilog
+
+#****Begin: Generated Statements***
+CUBESETLOGCHANGES('Workflow Reporting', OldCubeLogChanges);
+#****End: Generated Statements****
+#endregion

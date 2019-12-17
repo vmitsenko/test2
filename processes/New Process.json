@@ -1,0 +1,22 @@
+{
+	"@type":"Process",
+	"Name":"New Process",
+	"Code@Code.link":"New Process.ti",
+	"DataSource":
+	{
+		"Type":"TM1DimensionSubset",
+		"dataSourceNameForClient":"Account",
+		"dataSourceNameForServer":"Account",
+		"subset":"Default"
+	},
+	"Parameters":
+	[
+		{
+			"Name":"P",
+			"Prompt":"prompt question",
+			"Value":"n",
+			"Type":"String"
+		}
+	],
+	"Variables":[]
+}

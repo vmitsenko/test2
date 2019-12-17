@@ -1,0 +1,13 @@
+{
+	"@type":"Dimension",
+	"Name":"Asset Types",
+	"AllLeavesHierarchyName":"",
+	"DefaultHierarchy":
+	{
+		"@id":"Dimensions('Asset Types')/Hierarchies('Asset Types')"
+	},
+	"Hierarchies@Code.links":
+	[
+		"Asset Types.hierarchies/Asset Types.json"
+	]
+}

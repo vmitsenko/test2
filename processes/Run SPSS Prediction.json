@@ -1,0 +1,25 @@
+{
+	"@type":"Process",
+	"Name":"Run SPSS Prediction",
+	"Code@Code.link":"Run SPSS Prediction.ti",
+	"DataSource":
+	{
+		"Type":"None"
+	},
+	"Parameters":
+	[
+		{
+			"Name":"pVersion",
+			"Prompt":"Version",
+			"Value":"Predictive",
+			"Type":"String"
+		},
+		{
+			"Name":"pMonth",
+			"Prompt":"Forecast Month",
+			"Value":"Apr",
+			"Type":"String"
+		}
+	],
+	"Variables":[]
+}

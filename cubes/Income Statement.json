@@ -1,0 +1,61 @@
+{
+	"@type":"Cube",
+	"Name":"Income Statement",
+	"Rules@Code.link":"Income Statement.rules",
+	"DrillthroughRules@Code.link":"Income Statement.drillthrough.rules",
+	"Dimensions":
+	[
+		{
+			"@id":"Dimensions('Currency Calc')"
+		},
+		{
+			"@id":"Dimensions('organization')"
+		},
+		{
+			"@id":"Dimensions('Year')"
+		},
+		{
+			"@id":"Dimensions('Month')"
+		},
+		{
+			"@id":"Dimensions('Account')"
+		},
+		{
+			"@id":"Dimensions('Version')"
+		}
+	],
+	"Views@Code.links":
+	[
+		"Income Statement.views/All.json",
+		"Income Statement.views/Analysis.json",
+		"Income Statement.views/BudgetFrom.json",
+		"Income Statement.views/Budget Variance.json",
+		"Income Statement.views/Compensation by Quarter.json",
+		"Income Statement.views/Currency.json",
+		"Income Statement.views/Currency Change.json",
+		"Income Statement.views/Default.json",
+		"Income Statement.views/Deprecation Budget vs Actual.json",
+		"Income Statement.views/Deprecation Budget vs Target.json",
+		"Income Statement.views/Expenses.json",
+		"Income Statement.views/Forecast by Month.json",
+		"Income Statement.views/FTE by Month IS.json",
+		"Income Statement.views/Gross Margin Budget vs Target.json",
+		"Income Statement.views/High Level PL Report.json",
+		"Income Statement.views/Income Statement.json",
+		"Income Statement.views/Income Statement by Quarter.json",
+		"Income Statement.views/Income Statement Currency.json",
+		"Income Statement.views/OpEx.json",
+		"Income Statement.views/OPEX Budget vs Target.json",
+		"Income Statement.views/OpExView.json",
+		"Income Statement.views/Opex Year Over Year.json",
+		"Income Statement.views/Payroll Budget vs Target.json",
+		"Income Statement.views/Phased Costs.json",
+		"Income Statement.views/Summary.json",
+		"Income Statement.views/Target.json",
+		"Income Statement.views/zActualForTrx.json",
+		"Income Statement.views/zCacheView.json",
+		"Income Statement.views/zClearComments.json",
+		"Income Statement.views/zCopyFrom.json",
+		"Income Statement.views/zMD_IncomeStatement.json"
+	]
+}

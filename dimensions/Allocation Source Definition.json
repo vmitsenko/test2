@@ -1,0 +1,13 @@
+{
+	"@type":"Dimension",
+	"Name":"Allocation Source Definition",
+	"AllLeavesHierarchyName":"",
+	"DefaultHierarchy":
+	{
+		"@id":"Dimensions('Allocation Source Definition')/Hierarchies('Allocation Source Definition')"
+	},
+	"Hierarchies@Code.links":
+	[
+		"Allocation Source Definition.hierarchies/Allocation Source Definition.json"
+	]
+}

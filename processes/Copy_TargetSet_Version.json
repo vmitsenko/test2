@@ -1,0 +1,25 @@
+{
+	"@type":"Process",
+	"Name":"Copy_TargetSet_Version",
+	"Code@Code.link":"Copy_TargetSet_Version.ti",
+	"DataSource":
+	{
+		"Type":"None"
+	},
+	"Parameters":
+	[
+		{
+			"Name":"pFromVersion",
+			"Prompt":"From Version",
+			"Value":"Version 1",
+			"Type":"String"
+		},
+		{
+			"Name":"pToVersion",
+			"Prompt":"To Version",
+			"Value":"Version 2",
+			"Type":"String"
+		}
+	],
+	"Variables":[]
+}

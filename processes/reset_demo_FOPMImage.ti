@@ -1,0 +1,63 @@
+#region Prolog
+
+#****Begin: Generated Statements***
+#****End: Generated Statements****
+
+#
+# Delete all products that do not have the system version set
+#;
+vSubsetSize=0;
+vSubsetSize=SubsetGetSize('product', 'All Members');
+vElementName='';
+I=1;
+WHILE(I <= vSubsetSize);
+  vElementName=SubsetGetElementName('product', 'All Members', I);
+  IF (ATTRS('product', vElementName, 'System Version')@= 'Y');
+    I=I+1;
+  ELSE;
+    DimensionElementDelete('product',vElementName);
+    I=I+1;   
+  ENDIF;
+  vSubsetSize=SubsetGetSize('product', 'All Members');
+END;
+
+#
+# Add in a random product so that the "New" Subset in the "product" dimension is always populated
+#
+SubsetDeleteAllElements('product', 'New');
+SubsetElementInsert('product', 'New', '22001', 1);
+AttrPutS('Y','Product','22001','NewProduct');
+#
+# Add in a random product so that the "Compare" Subset in the "product" dimension is always populated
+#
+SubsetDeleteAllElements('product', 'Compare');
+SubsetElementInsert('product', 'Compare', '21001', 1);
+
+#
+# Make sure that the Income Statement correctly reflects what is in the revenue cube
+#
+ExecuteProcess('UpdateISFromRevenue');
+
+#
+# Recreate the default Subsets
+#
+ExecuteProcess('create_default_subset', 'pSubsetName','Current');
+ExecuteProcess('create_default_subset', 'pSubsetName','Analysis');
+#endregion
+#region Metadata
+
+#****Begin: Generated Statements***
+#****End: Generated Statements****
+#endregion
+#region Data
+
+#****Begin: Generated Statements***
+#****End: Generated Statements****
+#endregion
+#region Epilog
+
+#****Begin: Generated Statements***
+#****End: Generated Statements****
+
+SaveDataAll;
+#endregion

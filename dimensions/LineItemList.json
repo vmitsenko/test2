@@ -1,0 +1,13 @@
+{
+	"@type":"Dimension",
+	"Name":"LineItemList",
+	"AllLeavesHierarchyName":"",
+	"DefaultHierarchy":
+	{
+		"@id":"Dimensions('LineItemList')/Hierarchies('LineItemList')"
+	},
+	"Hierarchies@Code.links":
+	[
+		"LineItemList.hierarchies/LineItemList.json"
+	]
+}

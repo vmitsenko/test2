@@ -1,0 +1,11 @@
+{
+	"@type":"Process",
+	"Name":"caption_LineItemDetail_localization",
+	"Code@Code.link":"caption_LineItemDetail_localization.ti",
+	"DataSource":
+	{
+		"Type":"None"
+	},
+	"Parameters":[],
+	"Variables":[]
+}

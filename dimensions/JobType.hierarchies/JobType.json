@@ -1,0 +1,129 @@
+{
+	"@type":"Hierarchy",
+	"Name":"JobType",
+	"Elements":
+	[
+		{
+			"Name":"A",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"B",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"C",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"E",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"F",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"G",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"H",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"I",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"J",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"L",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"T",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"Z",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"Total of JobType",
+			"Type":"Consolidated"
+		}
+	],
+	"Edges":
+	[
+		{
+			"ParentName":"Total of JobType",
+			"ComponentName":"A",
+			"Weight":1
+		},
+		{
+			"ParentName":"Total of JobType",
+			"ComponentName":"B",
+			"Weight":1
+		},
+		{
+			"ParentName":"Total of JobType",
+			"ComponentName":"C",
+			"Weight":1
+		},
+		{
+			"ParentName":"Total of JobType",
+			"ComponentName":"E",
+			"Weight":1
+		},
+		{
+			"ParentName":"Total of JobType",
+			"ComponentName":"F",
+			"Weight":1
+		},
+		{
+			"ParentName":"Total of JobType",
+			"ComponentName":"G",
+			"Weight":1
+		},
+		{
+			"ParentName":"Total of JobType",
+			"ComponentName":"H",
+			"Weight":1
+		},
+		{
+			"ParentName":"Total of JobType",
+			"ComponentName":"I",
+			"Weight":1
+		},
+		{
+			"ParentName":"Total of JobType",
+			"ComponentName":"J",
+			"Weight":1
+		},
+		{
+			"ParentName":"Total of JobType",
+			"ComponentName":"L",
+			"Weight":1
+		},
+		{
+			"ParentName":"Total of JobType",
+			"ComponentName":"T",
+			"Weight":1
+		},
+		{
+			"ParentName":"Total of JobType",
+			"ComponentName":"Z",
+			"Weight":1
+		}
+	],
+	"Subsets@Code.links":
+	[
+		"JobType.subsets/All Members.json",
+		"JobType.subsets/Default.json",
+		"JobType.subsets/Drill.json",
+		"JobType.subsets/PickList.json"
+	]
+}

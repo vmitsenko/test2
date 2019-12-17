@@ -1,0 +1,116 @@
+#region Prolog
+
+#****Begin: Generated Statements***
+#****End: Generated Statements****
+
+#
+# Set Global Variables
+#
+ExecuteProcess('SetGlobalVariables');
+
+#
+# Reset Default and Compare Against Versions
+#
+ExecuteProcess('set_default_version','pDefaultVersion','Version1');
+ExecuteProcess('set_compare_version','pCompareVersion','Actual');
+#
+# Recreate the default Subsets
+#
+ExecuteProcess('create_default_subset', 'pSubsetName','Current');
+ExecuteProcess('create_default_subset', 'pSubsetName','Analysis');
+#
+# Reset the Aliases
+#
+ExecuteProcess('reset_alias', 'pDimensionName','Organization','pSubsetName','All Members');
+ExecuteProcess('reset_alias', 'pDimensionName','Account','pSubsetName','All Members');
+ExecuteProcess('reset_alias', 'pDimensionName','Product','pSubsetName','All Members');
+
+#
+# Delete all versions that do not have the system version set
+#;
+vSubsetSize=0;
+vSubsetSize=SubsetGetSize('Version', 'All Members');
+vElementName='';
+I=1;
+WHILE(I <= vSubsetSize);
+  vElementName=SubsetGetElementName('Version', 'All Members', I);
+  IF (ATTRS('Version', vElementName, 'System Version')@= 'Y');
+    I=I+1;
+  ELSE;
+    DimensionElementDelete('Version',vElementName);
+    I=I+1;   
+  ENDIF;
+  vSubsetSize=SubsetGetSize('Version', 'All Members');
+END;
+
+
+#
+# Delete all products that do not have the system version set
+#;
+vSubsetSize=0;
+vSubsetSize=SubsetGetSize('product', 'All Members');
+vElementName='';
+I=1;
+WHILE(I <= vSubsetSize);
+  vElementName=SubsetGetElementName('product', 'All Members', I);
+  IF (ATTRS('product', vElementName, 'System Version')@= 'Y');
+    I=I+1;
+  ELSE;
+    DimensionElementDelete('product',vElementName);
+    I=I+1;   
+  ENDIF;
+  vSubsetSize=SubsetGetSize('product', 'All Members');
+END;
+
+#
+# Add in a random product so that the "New" Subset in the "product" dimension is always populated
+#
+SubsetDeleteAllElements('product', 'New');
+SubsetElementInsert('product', 'New', '22001', 1);
+#
+# Add in a random product so that the "Cpmpare" Subset in the "product" dimension is always populated
+#
+SubsetDeleteAllElements('product', 'Compare');
+SubsetElementInsert('product', 'Compare', '21001', 1);
+
+# 
+# Reload Revenue Data from flat file to set back to base data set
+#
+ExecuteProcess('ResetRevenueData');
+#
+# Make sure that the Income Statement correctly reflects what is in the revenue cube
+#
+ExecuteProcess('UpdateISFromRevenue');
+
+
+
+
+
+
+#endregion
+#region Metadata
+
+#****Begin: Generated Statements***
+#****End: Generated Statements****
+#endregion
+#region Data
+
+#****Begin: Generated Statements***
+#****End: Generated Statements****
+#endregion
+#region Epilog
+
+#****Begin: Generated Statements***
+#****End: Generated Statements****
+
+
+###Zero Target###
+IF(pZeroTarget@='Y');
+ExecuteProcess('Copy_TargetSet_Version','pFromVersion','Zero','pToVersion','Target');
+ViewZeroOut('Income Statement','zClearComments');
+EndIF;
+
+
+###Release IS reservation if being held###
+CubeDataReservationRelease('Income Statement', TM1User(), '|||||') ;
+#endregion

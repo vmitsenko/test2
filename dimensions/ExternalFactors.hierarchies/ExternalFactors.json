@@ -1,0 +1,32 @@
+{
+	"@type":"Hierarchy",
+	"Name":"ExternalFactors",
+	"Elements":
+	[
+		{
+			"Name":"A",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"B",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"C",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"D",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"ActFor",
+			"Type":"String"
+		}
+	],
+	"Subsets@Code.links":
+	[
+		"ExternalFactors.subsets/All Members.json",
+		"ExternalFactors.subsets/External Factors.json"
+	]
+}

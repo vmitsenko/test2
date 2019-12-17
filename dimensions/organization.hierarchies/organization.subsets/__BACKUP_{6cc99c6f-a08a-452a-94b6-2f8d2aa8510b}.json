@@ -1,0 +1,22 @@
+{
+	"@type":"Subset",
+	"Name":"__BACKUP_{6cc99c6f-a08a-452a-94b6-2f8d2aa8510b}",
+	"Elements":
+	[
+		{
+			"@id":"Dimensions('organization')/Hierarchies('organization')/Elements('Total Company')"
+		},
+		{
+			"@id":"Dimensions('organization')/Hierarchies('organization')/Elements('100')"
+		},
+		{
+			"@id":"Dimensions('organization')/Hierarchies('organization')/Elements('101')"
+		},
+		{
+			"@id":"Dimensions('organization')/Hierarchies('organization')/Elements('102')"
+		},
+		{
+			"@id":"Dimensions('organization')/Hierarchies('organization')/Elements('103')"
+		}
+	]
+}

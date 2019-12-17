@@ -1,0 +1,82 @@
+{
+	"@type":"NativeView",
+	"Name":"Supply Chain",
+	"Columns":
+	[
+		{
+			"Subset":
+			{
+				"@id":"Dimensions('organization')/Hierarchies('organization')/Subsets('All Members')"
+			}
+		}
+	],
+	"Rows":
+	[
+		{
+			"Subset":
+			{
+				"Hierarchy":
+				{
+					"@id":"Dimensions('Supply Chain Measures')/Hierarchies('Supply Chain Measures')"
+				},
+				"Expression":"[Supply Chain Measures].MEMBERS"
+			}
+		}
+	],
+	"Titles":
+	[
+		{
+			"Subset":
+			{
+				"@id":"Dimensions('product')/Hierarchies('product')/Subsets('All Members')"
+			},
+			"Selected":
+			{
+				"@id":"Dimensions('product')/Hierarchies('product')/Elements('21003')"
+			}
+		},
+		{
+			"Subset":
+			{
+				"@id":"Dimensions('Month')/Hierarchies('Month')/Subsets('All Members')"
+			},
+			"Selected":
+			{
+				"@id":"Dimensions('Month')/Hierarchies('Month')/Elements('Jan')"
+			}
+		},
+		{
+			"Subset":
+			{
+				"@id":"Dimensions('Year')/Hierarchies('Year')/Subsets('All Members')"
+			},
+			"Selected":
+			{
+				"@id":"Dimensions('Year')/Hierarchies('Year')/Elements('Y3')"
+			}
+		},
+		{
+			"Subset":
+			{
+				"@id":"Dimensions('Version')/Hierarchies('Version')/Subsets('All Members')"
+			},
+			"Selected":
+			{
+				"@id":"Dimensions('Version')/Hierarchies('Version')/Elements('Version 1')"
+			}
+		},
+		{
+			"Subset":
+			{
+				"@id":"Dimensions('Channel')/Hierarchies('Channel')/Subsets('All Members')"
+			},
+			"Selected":
+			{
+				"@id":"Dimensions('Channel')/Hierarchies('Channel')/Elements('Channel Total')"
+			}
+		}
+	],
+	"SuppressEmptyColumns":false,
+	"SuppressEmptyRows":false,
+	"FormatString":"0.00"
+}

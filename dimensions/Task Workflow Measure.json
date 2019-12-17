@@ -1,0 +1,13 @@
+{
+	"@type":"Dimension",
+	"Name":"Task Workflow Measure",
+	"AllLeavesHierarchyName":"",
+	"DefaultHierarchy":
+	{
+		"@id":"Dimensions('Task Workflow Measure')/Hierarchies('Task Workflow Measure')"
+	},
+	"Hierarchies@Code.links":
+	[
+		"Task Workflow Measure.hierarchies/Task Workflow Measure.json"
+	]
+}

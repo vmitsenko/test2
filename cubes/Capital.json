@@ -1,0 +1,36 @@
+{
+	"@type":"Cube",
+	"Name":"Capital",
+	"Rules@Code.link":"Capital.rules",
+	"DrillthroughRules@Code.link":"Capital.drillthrough.rules",
+	"Dimensions":
+	[
+		{
+			"@id":"Dimensions('organization')"
+		},
+		{
+			"@id":"Dimensions('CapitalList')"
+		},
+		{
+			"@id":"Dimensions('Asset Types')"
+		},
+		{
+			"@id":"Dimensions('Year')"
+		},
+		{
+			"@id":"Dimensions('Version')"
+		},
+		{
+			"@id":"Dimensions('Capital')"
+		}
+	],
+	"Views@Code.links":
+	[
+		"Capital.views/All.json",
+		"Capital.views/Capital.json",
+		"Capital.views/Default.json",
+		"Capital.views/Drill_Capital.json",
+		"Capital.views/Input.json",
+		"Capital.views/zCopyFrom.json"
+	]
+}

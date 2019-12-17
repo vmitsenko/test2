@@ -1,0 +1,25 @@
+{
+	"@type":"Cube",
+	"Name":"Task Workflow",
+	"Rules@Code.link":"Task Workflow.rules",
+	"Dimensions":
+	[
+		{
+			"@id":"Dimensions('Task')"
+		},
+		{
+			"@id":"Dimensions('organization')"
+		},
+		{
+			"@id":"Dimensions('Task Workflow Measure')"
+		}
+	],
+	"Views@Code.links":
+	[
+		"Task Workflow.views/All.json",
+		"Task Workflow.views/Default.json",
+		"Task Workflow.views/Task Workflow.json",
+		"Task Workflow.views/z_TI_cube Task Workflow reset Status.json",
+		"Task Workflow.views/zTaskWorkflowClear.json"
+	]
+}

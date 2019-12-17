@@ -1,0 +1,13 @@
+{
+	"@type":"Dimension",
+	"Name":"Compensation",
+	"AllLeavesHierarchyName":"",
+	"DefaultHierarchy":
+	{
+		"@id":"Dimensions('Compensation')/Hierarchies('Compensation')"
+	},
+	"Hierarchies@Code.links":
+	[
+		"Compensation.hierarchies/Compensation.json"
+	]
+}

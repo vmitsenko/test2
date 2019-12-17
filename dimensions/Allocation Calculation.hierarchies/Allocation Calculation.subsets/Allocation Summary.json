@@ -1,0 +1,25 @@
+{
+	"@type":"Subset",
+	"Name":"Allocation Summary",
+	"Elements":
+	[
+		{
+			"@id":"Dimensions('Allocation Calculation')/Hierarchies('Allocation Calculation')/Elements('Source Entity')"
+		},
+		{
+			"@id":"Dimensions('Allocation Calculation')/Hierarchies('Allocation Calculation')/Elements('Source Account')"
+		},
+		{
+			"@id":"Dimensions('Allocation Calculation')/Hierarchies('Allocation Calculation')/Elements('Allocation Driver')"
+		},
+		{
+			"@id":"Dimensions('Allocation Calculation')/Hierarchies('Allocation Calculation')/Elements('Allocated Amount')"
+		},
+		{
+			"@id":"Dimensions('Allocation Calculation')/Hierarchies('Allocation Calculation')/Elements('Ratio')"
+		},
+		{
+			"@id":"Dimensions('Allocation Calculation')/Hierarchies('Allocation Calculation')/Elements('Credit Amount')"
+		}
+	]
+}

@@ -1,0 +1,15 @@
+{
+	"@type":"Hierarchy",
+	"Name":"Version Subset Measures",
+	"Elements":
+	[
+		{
+			"Name":"Version",
+			"Type":"String"
+		}
+	],
+	"Subsets@Code.links":
+	[
+		"Version Subset Measures.subsets/All Members.json"
+	]
+}

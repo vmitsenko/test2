@@ -1,0 +1,13 @@
+{
+	"@type":"Dimension",
+	"Name":"Version Subsets",
+	"AllLeavesHierarchyName":"",
+	"DefaultHierarchy":
+	{
+		"@id":"Dimensions('Version Subsets')/Hierarchies('Version Subsets')"
+	},
+	"Hierarchies@Code.links":
+	[
+		"Version Subsets.hierarchies/Version Subsets.json"
+	]
+}

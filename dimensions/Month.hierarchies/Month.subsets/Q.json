@@ -1,0 +1,5 @@
+{
+	"@type":"Subset",
+	"Name":"Q",
+	"Expression":"{[Month].[Month].[Q1],[Month].[Month].[Q2],[Month].[Month].[Q3],[Month].[Month].[Q4]}"
+}

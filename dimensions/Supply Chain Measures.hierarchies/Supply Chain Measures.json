@@ -1,0 +1,104 @@
+{
+	"@type":"Hierarchy",
+	"Name":"Supply Chain Measures",
+	"Elements":
+	[
+		{
+			"Name":"Units Sold",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"Total Cost of Goods Sold - Regional",
+			"Type":"Consolidated"
+		},
+		{
+			"Name":"Direct Costs",
+			"Type":"Consolidated"
+		},
+		{
+			"Name":"Direct Material",
+			"Type":"Consolidated"
+		},
+		{
+			"Name":"Raw Material",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"Packaging Material",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"Pallets",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"Direct Labor",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"Indirect Costs",
+			"Type":"Consolidated"
+		},
+		{
+			"Name":"Overhead",
+			"Type":"Consolidated"
+		},
+		{
+			"Name":"Indirect Labor",
+			"Type":"Numeric"
+		}
+	],
+	"Edges":
+	[
+		{
+			"ParentName":"Total Cost of Goods Sold - Regional",
+			"ComponentName":"Direct Costs",
+			"Weight":1
+		},
+		{
+			"ParentName":"Total Cost of Goods Sold - Regional",
+			"ComponentName":"Indirect Costs",
+			"Weight":1
+		},
+		{
+			"ParentName":"Direct Costs",
+			"ComponentName":"Direct Material",
+			"Weight":1
+		},
+		{
+			"ParentName":"Direct Costs",
+			"ComponentName":"Direct Labor",
+			"Weight":1
+		},
+		{
+			"ParentName":"Direct Material",
+			"ComponentName":"Raw Material",
+			"Weight":1
+		},
+		{
+			"ParentName":"Direct Material",
+			"ComponentName":"Packaging Material",
+			"Weight":1
+		},
+		{
+			"ParentName":"Direct Material",
+			"ComponentName":"Pallets",
+			"Weight":1
+		},
+		{
+			"ParentName":"Indirect Costs",
+			"ComponentName":"Overhead",
+			"Weight":1
+		},
+		{
+			"ParentName":"Overhead",
+			"ComponentName":"Indirect Labor",
+			"Weight":1
+		}
+	],
+	"Subsets@Code.links":
+	[
+		"Supply Chain Measures.subsets/All Members.json",
+		"Supply Chain Measures.subsets/Default.json"
+	]
+}

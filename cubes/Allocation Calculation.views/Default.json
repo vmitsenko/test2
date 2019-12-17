@@ -1,0 +1,104 @@
+{
+	"@type":"NativeView",
+	"Name":"Default",
+	"Columns":
+	[
+		{
+			"Subset":
+			{
+				"@id":"Dimensions('Month')/Hierarchies('Month')/Subsets('Default')"
+			}
+		}
+	],
+	"Rows":
+	[
+		{
+			"Subset":
+			{
+				"@id":"Dimensions('Allocation List')/Hierarchies('Allocation List')/Subsets('Default')"
+			}
+		}
+	],
+	"Titles":
+	[
+		{
+			"Subset":
+			{
+				"@id":"Dimensions('organization')/Hierarchies('organization')/Subsets('Default')"
+			},
+			"Selected":
+			{
+				"@id":"Dimensions('organization')/Hierarchies('organization')/Elements('100')"
+			}
+		},
+		{
+			"Subset":
+			{
+				"Hierarchy":
+				{
+					"@id":"Dimensions('Allocation Calculation')/Hierarchies('Allocation Calculation')"
+				},
+				"Elements":
+				[
+					{
+						"@id":"Dimensions('Allocation Calculation')/Hierarchies('Allocation Calculation')/Elements('Allocation Amount')"
+					},
+					{
+						"@id":"Dimensions('Allocation Calculation')/Hierarchies('Allocation Calculation')/Elements('Exclude Entity')"
+					},
+					{
+						"@id":"Dimensions('Allocation Calculation')/Hierarchies('Allocation Calculation')/Elements('Driver')"
+					},
+					{
+						"@id":"Dimensions('Allocation Calculation')/Hierarchies('Allocation Calculation')/Elements('Total Driver')"
+					},
+					{
+						"@id":"Dimensions('Allocation Calculation')/Hierarchies('Allocation Calculation')/Elements('Ratio')"
+					},
+					{
+						"@id":"Dimensions('Allocation Calculation')/Hierarchies('Allocation Calculation')/Elements('Allocated Amount')"
+					},
+					{
+						"@id":"Dimensions('Allocation Calculation')/Hierarchies('Allocation Calculation')/Elements('Credit Amount')"
+					},
+					{
+						"@id":"Dimensions('Allocation Calculation')/Hierarchies('Allocation Calculation')/Elements('Source Entity')"
+					},
+					{
+						"@id":"Dimensions('Allocation Calculation')/Hierarchies('Allocation Calculation')/Elements('Source Account')"
+					},
+					{
+						"@id":"Dimensions('Allocation Calculation')/Hierarchies('Allocation Calculation')/Elements('Allocation Driver')"
+					}
+				]
+			},
+			"Selected":
+			{
+				"@id":"Dimensions('Allocation Calculation')/Hierarchies('Allocation Calculation')/Elements('Allocation Amount')"
+			}
+		},
+		{
+			"Subset":
+			{
+				"@id":"Dimensions('Year')/Hierarchies('Year')/Subsets('Default')"
+			},
+			"Selected":
+			{
+				"@id":"Dimensions('Year')/Hierarchies('Year')/Elements('Y2')"
+			}
+		},
+		{
+			"Subset":
+			{
+				"@id":"Dimensions('Version')/Hierarchies('Version')/Subsets('Current')"
+			},
+			"Selected":
+			{
+				"@id":"Dimensions('Version')/Hierarchies('Version')/Elements('Version 1')"
+			}
+		}
+	],
+	"SuppressEmptyColumns":false,
+	"SuppressEmptyRows":false,
+	"FormatString":"0.#########"
+}

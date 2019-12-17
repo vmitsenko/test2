@@ -1,0 +1,25 @@
+#region Prolog
+
+#****Begin: Generated Statements***
+#****End: Generated Statements****
+
+#endregion
+#region Metadata
+
+#****Begin: Generated Statements***
+#****End: Generated Statements****
+#endregion
+#region Data
+
+#****Begin: Generated Statements***
+#****End: Generated Statements****
+
+#asciioutput('c:\guy.txt',vorganization,vchannel,pCopyTo,vMonth,vYear,vAccount,vVersion,NumberToString(vValue));
+CellPutN(vValue, 'Supply Chain', vorganization,vchannel,pCopyTo,vMonth,vYear,vAccount,vVersion);
+
+#endregion
+#region Epilog
+
+#****Begin: Generated Statements***
+#****End: Generated Statements****
+#endregion

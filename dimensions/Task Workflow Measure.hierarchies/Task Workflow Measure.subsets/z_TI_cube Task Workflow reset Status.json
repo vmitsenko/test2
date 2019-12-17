@@ -1,0 +1,10 @@
+{
+	"@type":"Subset",
+	"Name":"z_TI_cube Task Workflow reset Status",
+	"Elements":
+	[
+		{
+			"@id":"Dimensions('Task Workflow Measure')/Hierarchies('Task Workflow Measure')/Elements('Active')"
+		}
+	]
+}

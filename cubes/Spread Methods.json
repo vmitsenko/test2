@@ -1,0 +1,25 @@
+{
+	"@type":"Cube",
+	"Name":"Spread Methods",
+	"Rules@Code.link":"Spread Methods.rules",
+	"Dimensions":
+	[
+		{
+			"@id":"Dimensions('Spread Methods')"
+		},
+		{
+			"@id":"Dimensions('Month')"
+		},
+		{
+			"@id":"Dimensions('Version')"
+		}
+	],
+	"Views@Code.links":
+	[
+		"Spread Methods.views/All.json",
+		"Spread Methods.views/Default.json",
+		"Spread Methods.views/Spread Methods.json",
+		"Spread Methods.views/zCopyFrom.json",
+		"Spread Methods.views/zCopyProduct.json"
+	]
+}

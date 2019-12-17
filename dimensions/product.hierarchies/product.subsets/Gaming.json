@@ -1,0 +1,19 @@
+{
+	"@type":"Subset",
+	"Name":"Gaming",
+	"Elements":
+	[
+		{
+			"@id":"Dimensions('product')/Hierarchies('product')/Elements('33000')"
+		},
+		{
+			"@id":"Dimensions('product')/Hierarchies('product')/Elements('33001')"
+		},
+		{
+			"@id":"Dimensions('product')/Hierarchies('product')/Elements('33002')"
+		},
+		{
+			"@id":"Dimensions('product')/Hierarchies('product')/Elements('33003')"
+		}
+	]
+}

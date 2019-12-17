@@ -1,0 +1,26 @@
+{
+	"@type":"Hierarchy",
+	"Name":"LineItemDetail",
+	"Elements":
+	[
+		{
+			"Name":"Factor A",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"Factor B",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"Total",
+			"Type":"Numeric"
+		}
+	],
+	"Subsets@Code.links":
+	[
+		"LineItemDetail.subsets/All Members.json",
+		"LineItemDetail.subsets/Default.json",
+		"LineItemDetail.subsets/Driver.json",
+		"LineItemDetail.subsets/Item.json"
+	]
+}

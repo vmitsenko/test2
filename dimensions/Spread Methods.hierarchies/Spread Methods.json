@@ -1,0 +1,102 @@
+{
+	"@type":"Hierarchy",
+	"Name":"Spread Methods",
+	"Elements":
+	[
+		{
+			"Name":"Flat",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"445",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"Christmas Peak",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"Business Cycle",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"Even on Qtr End",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"Even on Qtr Start",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"Even on Q1",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"Even on Q2",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"Even on Q3",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"Even on Q4",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"Jan Start",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"Feb Start",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"Mar Start",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"Apr Start",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"May Start",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"Jun Start",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"Jul Start",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"Aug Start",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"Sep Start",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"Oct Start",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"Nov Start",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"Dec Start",
+			"Type":"Numeric"
+		}
+	],
+	"Subsets@Code.links":
+	[
+		"Spread Methods.subsets/Default.json",
+		"Spread Methods.subsets/PickList.json",
+		"Spread Methods.subsets/StartDate.json",
+		"Spread Methods.subsets/zCopyFrom.json"
+	]
+}

@@ -1,0 +1,18 @@
+{
+	"@type":"Chore",
+	"Name":"Reset_Demo_FOPMImage",
+	"StartTime":"2015-11-18T23:29:15Z",
+	"ExecutionMode":"SingleCommit",
+	"Frequency":"P1DT00H00M00S",
+	"Tasks":
+	[
+		{
+			"Step":0,
+			"Parameters":[],
+			"Process":
+			{
+				"@id":"Processes('reset_demo_FOPMImage')"
+			}
+		}
+	]
+}

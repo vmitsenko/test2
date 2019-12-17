@@ -1,0 +1,35 @@
+{
+	"@type":"Cube",
+	"Name":"Depreciation",
+	"Rules@Code.link":"Depreciation.rules",
+	"Dimensions":
+	[
+		{
+			"@id":"Dimensions('organization')"
+		},
+		{
+			"@id":"Dimensions('Asset Types')"
+		},
+		{
+			"@id":"Dimensions('Month')"
+		},
+		{
+			"@id":"Dimensions('Year')"
+		},
+		{
+			"@id":"Dimensions('Version')"
+		},
+		{
+			"@id":"Dimensions('Depreciation')"
+		}
+	],
+	"Views@Code.links":
+	[
+		"Depreciation.views/All.json",
+		"Depreciation.views/Capital Depreciation Review.json",
+		"Depreciation.views/Default.json",
+		"Depreciation.views/Depreciation.json",
+		"Depreciation.views/Depreciation by Month.json",
+		"Depreciation.views/Drill_Depreciation.json"
+	]
+}

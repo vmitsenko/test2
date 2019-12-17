@@ -1,0 +1,45 @@
+#region Prolog
+
+#****Begin: Generated Statements***
+#****End: Generated Statements****
+
+vSubsetSize=SubsetGetSize('Version', pSubsetName);
+I=1;
+WHILE(I <= vSubsetSize);
+  SubsetElementDelete('Version', pSubsetName, 1);
+  I=I+1;
+END;
+
+I=1;
+J=1;
+WHILE(I < 20);
+  vVersion=CELLGETS('Version Subset Control', pSubsetName,NumberToString(I),'Version');
+  IF (vVersion @= '@Default');
+    vVersion=CELLGETS('Calendar','Current Version','String'); 
+  ENDIF;
+  IF (vVersion @= '@Compare');
+    vVersion=CELLGETS('Calendar','Compare Against','String'); 
+  ENDIF;
+  IF (DIMIX('Version', vVersion)> 0);
+    SubsetElementInsert('Version', pSubsetName, vVersion, J);
+    J=J+1;
+  ENDIF;
+  I=I+1;
+END;
+
+#endregion
+#region Metadata
+
+#****Begin: Generated Statements***
+#****End: Generated Statements****
+#endregion
+#region Data
+
+#****Begin: Generated Statements***
+#****End: Generated Statements****
+#endregion
+#region Epilog
+
+#****Begin: Generated Statements***
+#****End: Generated Statements****
+#endregion

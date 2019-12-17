@@ -1,0 +1,10 @@
+{
+	"@type":"Subset",
+	"Name":"EmptyJobType",
+	"Elements":
+	[
+		{
+			"@id":"Dimensions('jobcode')/Hierarchies('jobcode')/Elements('Enter a Job Type')"
+		}
+	]
+}

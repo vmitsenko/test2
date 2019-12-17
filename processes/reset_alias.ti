@@ -1,0 +1,30 @@
+#region Prolog
+
+#****Begin: Generated Statements***
+#****End: Generated Statements****
+
+vSubsetSize=SubsetGetSize(pDimensionName, pSubsetName);
+I=1;
+WHILE(I <= vSubsetSize);
+  vElementName=SubsetGetElementName(pDimensionName, pSubsetName, I);
+  vElementAlias=ATTRS(pDimensionName, vElementName, 'Caption_Base');
+  AttrPutS(vElementAlias, pDimensionName, vElementName, 'Caption_default'); 
+  I=I+1;
+END;
+
+#endregion
+#region Metadata
+
+#****Begin: Generated Statements***
+#****End: Generated Statements****
+#endregion
+#region Data
+
+#****Begin: Generated Statements***
+#****End: Generated Statements****
+#endregion
+#region Epilog
+
+#****Begin: Generated Statements***
+#****End: Generated Statements****
+#endregion

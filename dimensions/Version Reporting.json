@@ -1,0 +1,13 @@
+{
+	"@type":"Dimension",
+	"Name":"Version Reporting",
+	"AllLeavesHierarchyName":"",
+	"DefaultHierarchy":
+	{
+		"@id":"Dimensions('Version Reporting')/Hierarchies('Version Reporting')"
+	},
+	"Hierarchies@Code.links":
+	[
+		"Version Reporting.hierarchies/Version Reporting.json"
+	]
+}

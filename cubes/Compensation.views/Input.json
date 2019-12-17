@@ -1,0 +1,98 @@
+{
+	"@type":"NativeView",
+	"Name":"Input",
+	"Columns":
+	[
+		{
+			"Subset":
+			{
+				"@id":"Dimensions('Month')/Hierarchies('Month')/Subsets('MY')"
+			}
+		}
+	],
+	"Rows":
+	[
+		{
+			"Subset":
+			{
+				"@id":"Dimensions('organization')/Hierarchies('organization')/Subsets('Default')"
+			}
+		}
+	],
+	"Titles":
+	[
+		{
+			"Subset":
+			{
+				"@id":"Dimensions('Version')/Hierarchies('Version')/Subsets('Default')"
+			},
+			"Selected":
+			{
+				"@id":"Dimensions('Version')/Hierarchies('Version')/Elements('Version 1')"
+			}
+		},
+		{
+			"Subset":
+			{
+				"Hierarchy":
+				{
+					"@id":"Dimensions('Compensation')/Hierarchies('Compensation')"
+				},
+				"Elements":
+				[
+					{
+						"@id":"Dimensions('Compensation')/Hierarchies('Compensation')/Elements('FTE')"
+					},
+					{
+						"@id":"Dimensions('Compensation')/Hierarchies('Compensation')/Elements('YTD Salary & Bonus')"
+					},
+					{
+						"@id":"Dimensions('Compensation')/Hierarchies('Compensation')/Elements('6000')"
+					},
+					{
+						"@id":"Dimensions('Compensation')/Hierarchies('Compensation')/Elements('6005')"
+					},
+					{
+						"@id":"Dimensions('Compensation')/Hierarchies('Compensation')/Elements('Medical Exp')"
+					},
+					{
+						"@id":"Dimensions('Compensation')/Hierarchies('Compensation')/Elements('Other Benefits Exp')"
+					},
+					{
+						"@id":"Dimensions('Compensation')/Hierarchies('Compensation')/Elements('FICA Exp')"
+					},
+					{
+						"@id":"Dimensions('Compensation')/Hierarchies('Compensation')/Elements('Medicare Exp')"
+					}
+				]
+			},
+			"Selected":
+			{
+				"@id":"Dimensions('Compensation')/Hierarchies('Compensation')/Elements('FTE')"
+			}
+		},
+		{
+			"Subset":
+			{
+				"@id":"Dimensions('EmployeeList')/Hierarchies('EmployeeList')/Subsets('Default')"
+			},
+			"Selected":
+			{
+				"@id":"Dimensions('EmployeeList')/Hierarchies('EmployeeList')/Elements('Total')"
+			}
+		},
+		{
+			"Subset":
+			{
+				"@id":"Dimensions('Year')/Hierarchies('Year')/Subsets('All Members')"
+			},
+			"Selected":
+			{
+				"@id":"Dimensions('Year')/Hierarchies('Year')/Elements('Y1')"
+			}
+		}
+	],
+	"SuppressEmptyColumns":false,
+	"SuppressEmptyRows":false,
+	"FormatString":"0.00"
+}

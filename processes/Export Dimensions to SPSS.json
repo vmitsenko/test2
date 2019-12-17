@@ -1,0 +1,25 @@
+{
+	"@type":"Process",
+	"Name":"Export Dimensions to SPSS",
+	"Code@Code.link":"Export Dimensions to SPSS.ti",
+	"DataSource":
+	{
+		"Type":"None"
+	},
+	"Parameters":
+	[
+		{
+			"Name":"pDimension",
+			"Prompt":"Enter the Dimension Name",
+			"Value":"product",
+			"Type":"String"
+		},
+		{
+			"Name":"pIncludeParent",
+			"Prompt":"Include Parent?",
+			"Value":"Y",
+			"Type":"String"
+		}
+	],
+	"Variables":[]
+}

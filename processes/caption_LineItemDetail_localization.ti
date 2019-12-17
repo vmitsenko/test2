@@ -1,0 +1,26 @@
+#region Prolog
+
+#****Begin: Generated Statements***
+#****End: Generated Statements****
+
+#SubsetAttrPutS( 'Anne', 'Version', 'Caption', 'fr' );
+#SubsetAttrPutS( 'Anne', 'Version', 'Analysis', 'Caption', 'fr' );
+
+SubsetAttrInsert('Employee Name', '', 'Caption', 'A');
+SubsetAttrPutS( '1総営業経費', 'Employee Name', 'Employee List', 'Caption', 'ja' );
+#endregion
+#region Metadata
+
+#****Begin: Generated Statements***
+#****End: Generated Statements****
+#endregion
+#region Data
+
+#****Begin: Generated Statements***
+#****End: Generated Statements****
+#endregion
+#region Epilog
+
+#****Begin: Generated Statements***
+#****End: Generated Statements****
+#endregion

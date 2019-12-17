@@ -1,0 +1,53 @@
+{
+	"@type":"Hierarchy",
+	"Name":"Allocation Calculation",
+	"Elements":
+	[
+		{
+			"Name":"Allocation Amount",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"Exclude Entity",
+			"Type":"String"
+		},
+		{
+			"Name":"Driver",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"Total Driver",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"Ratio",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"Allocated Amount",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"Credit Amount",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"Source Entity",
+			"Type":"String"
+		},
+		{
+			"Name":"Source Account",
+			"Type":"String"
+		},
+		{
+			"Name":"Allocation Driver",
+			"Type":"String"
+		}
+	],
+	"Subsets@Code.links":
+	[
+		"Allocation Calculation.subsets/All Members.json",
+		"Allocation Calculation.subsets/Allocation Summary.json",
+		"Allocation Calculation.subsets/Default.json"
+	]
+}

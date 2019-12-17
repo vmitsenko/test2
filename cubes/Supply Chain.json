@@ -1,0 +1,39 @@
+{
+	"@type":"Cube",
+	"Name":"Supply Chain",
+	"Rules@Code.link":"Supply Chain.rules",
+	"Dimensions":
+	[
+		{
+			"@id":"Dimensions('organization')"
+		},
+		{
+			"@id":"Dimensions('Channel')"
+		},
+		{
+			"@id":"Dimensions('product')"
+		},
+		{
+			"@id":"Dimensions('Month')"
+		},
+		{
+			"@id":"Dimensions('Year')"
+		},
+		{
+			"@id":"Dimensions('Supply Chain Measures')"
+		},
+		{
+			"@id":"Dimensions('Version')"
+		}
+	],
+	"Views@Code.links":
+	[
+		"Supply Chain.views/All.json",
+		"Supply Chain.views/Default.json",
+		"Supply Chain.views/DetailCOGSdrillView.json",
+		"Supply Chain.views/New SKU.json",
+		"Supply Chain.views/Supply Chain.json",
+		"Supply Chain.views/zCopyFrom.json",
+		"Supply Chain.views/zCopyProduct.json"
+	]
+}

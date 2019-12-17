@@ -1,0 +1,37 @@
+#region Prolog
+
+#****Begin: Generated Statements***
+#****End: Generated Statements****
+
+DataSourceType='CHARACTERDELIMITED';
+DatasourceASCIIDelimiter=',';
+DatasourceASCIIQuoteCharacter='"';
+DatasourceASCIIDecimalSeparator='.';
+DatasourceASCIIThousandSeparator=',';
+DatasourceNameForServer=CellGetS( 'Calendar', 'Base Directory','String')|'Files'|CellGetS( 'Calendar', 'Directory Separator','String')|'RevenueDataToResetDemo.cma';
+DatasourceNameForClient=DatasourceNameForServer;
+
+#endregion
+#region Metadata
+
+#****Begin: Generated Statements***
+#****End: Generated Statements****
+#endregion
+#region Data
+
+#****Begin: Generated Statements***
+#****End: Generated Statements****
+
+
+IF (DIMIX('product', vProduct)> 0);
+     vNumber = ROUNDP(StringToNumber(vValue), 2);
+     CellPutN(vNumber,'Revenue',vOrganization,vChannel,vProduct,vMonth,vYear,vVersion,vMeasures);
+ENDIF;
+
+
+#endregion
+#region Epilog
+
+#****Begin: Generated Statements***
+#****End: Generated Statements****
+#endregion

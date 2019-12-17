@@ -1,0 +1,49 @@
+{
+	"@type":"Subset",
+	"Name":"Operating Expense",
+	"Elements":
+	[
+		{
+			"@id":"Dimensions('Account')/Hierarchies('Account')/Elements('6099')"
+		},
+		{
+			"@id":"Dimensions('Account')/Hierarchies('Account')/Elements('6199')"
+		},
+		{
+			"@id":"Dimensions('Account')/Hierarchies('Account')/Elements('6200')"
+		},
+		{
+			"@id":"Dimensions('Account')/Hierarchies('Account')/Elements('6210')"
+		},
+		{
+			"@id":"Dimensions('Account')/Hierarchies('Account')/Elements('6220')"
+		},
+		{
+			"@id":"Dimensions('Account')/Hierarchies('Account')/Elements('6230')"
+		},
+		{
+			"@id":"Dimensions('Account')/Hierarchies('Account')/Elements('6299')"
+		},
+		{
+			"@id":"Dimensions('Account')/Hierarchies('Account')/Elements('6399')"
+		},
+		{
+			"@id":"Dimensions('Account')/Hierarchies('Account')/Elements('6499')"
+		},
+		{
+			"@id":"Dimensions('Account')/Hierarchies('Account')/Elements('6599')"
+		},
+		{
+			"@id":"Dimensions('Account')/Hierarchies('Account')/Elements('TE')"
+		},
+		{
+			"@id":"Dimensions('Account')/Hierarchies('Account')/Elements('Statistics')"
+		},
+		{
+			"@id":"Dimensions('Account')/Hierarchies('Account')/Elements('FTE')"
+		},
+		{
+			"@id":"Dimensions('Account')/Hierarchies('Account')/Elements('Cost per FTE')"
+		}
+	]
+}

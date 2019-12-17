@@ -1,0 +1,220 @@
+{
+	"@type":"Hierarchy",
+	"Name":"Employee",
+	"Elements":
+	[
+		{
+			"Name":"Name/Desc",
+			"Type":"String"
+		},
+		{
+			"Name":"Job Type",
+			"Type":"String"
+		},
+		{
+			"Name":"Job Code",
+			"Type":"String"
+		},
+		{
+			"Name":"FTE",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"50P Salary",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"Current Salary",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"Merit Pd",
+			"Type":"String"
+		},
+		{
+			"Name":"Merit %",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"Merit Adj %",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"Merit % Final",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"New Salary",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"Salary",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"Start Pd",
+			"Type":"String"
+		},
+		{
+			"Name":"Term/xfer Pd",
+			"Type":"String"
+		},
+		{
+			"Name":"Comment",
+			"Type":"String"
+		},
+		{
+			"Name":"EmpID",
+			"Type":"String"
+		},
+		{
+			"Name":"Total Cost",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"Calc Salary",
+			"Type":"Consolidated"
+		},
+		{
+			"Name":"Jan",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"Feb",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"Mar",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"Apr",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"May",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"Jun",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"Jul",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"Aug",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"Sep",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"Oct",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"Nov",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"Dec",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"Validation",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"ValidationFlag",
+			"Type":"String"
+		},
+		{
+			"Name":"MeritValidation",
+			"Type":"String"
+		},
+		{
+			"Name":"FTEValidation",
+			"Type":"String"
+		},
+		{
+			"Name":"RowFormat",
+			"Type":"String"
+		}
+	],
+	"Edges":
+	[
+		{
+			"ParentName":"Calc Salary",
+			"ComponentName":"Jan",
+			"Weight":1
+		},
+		{
+			"ParentName":"Calc Salary",
+			"ComponentName":"Feb",
+			"Weight":1
+		},
+		{
+			"ParentName":"Calc Salary",
+			"ComponentName":"Mar",
+			"Weight":1
+		},
+		{
+			"ParentName":"Calc Salary",
+			"ComponentName":"Apr",
+			"Weight":1
+		},
+		{
+			"ParentName":"Calc Salary",
+			"ComponentName":"May",
+			"Weight":1
+		},
+		{
+			"ParentName":"Calc Salary",
+			"ComponentName":"Jun",
+			"Weight":1
+		},
+		{
+			"ParentName":"Calc Salary",
+			"ComponentName":"Jul",
+			"Weight":1
+		},
+		{
+			"ParentName":"Calc Salary",
+			"ComponentName":"Aug",
+			"Weight":1
+		},
+		{
+			"ParentName":"Calc Salary",
+			"ComponentName":"Sep",
+			"Weight":1
+		},
+		{
+			"ParentName":"Calc Salary",
+			"ComponentName":"Oct",
+			"Weight":1
+		},
+		{
+			"ParentName":"Calc Salary",
+			"ComponentName":"Nov",
+			"Weight":1
+		},
+		{
+			"ParentName":"Calc Salary",
+			"ComponentName":"Dec",
+			"Weight":1
+		}
+	],
+	"Subsets@Code.links":
+	[
+		"Employee.subsets/All Members.json",
+		"Employee.subsets/Default.json",
+		"Employee.subsets/Employee Details.json",
+		"Employee.subsets/Employee Input.json",
+		"Employee.subsets/Employee Name.json",
+		"Employee.subsets/Employee Name and ID.json",
+		"Employee.subsets/FTE.json"
+	]
+}

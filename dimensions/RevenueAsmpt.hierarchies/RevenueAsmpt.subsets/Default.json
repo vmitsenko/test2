@@ -1,0 +1,19 @@
+{
+	"@type":"Subset",
+	"Name":"Default",
+	"Elements":
+	[
+		{
+			"@id":"Dimensions('RevenueAsmpt')/Hierarchies('RevenueAsmpt')/Elements('Initiative Discount')"
+		},
+		{
+			"@id":"Dimensions('RevenueAsmpt')/Hierarchies('RevenueAsmpt')/Elements('Average Unit Price')"
+		},
+		{
+			"@id":"Dimensions('RevenueAsmpt')/Hierarchies('RevenueAsmpt')/Elements('Unit Price')"
+		},
+		{
+			"@id":"Dimensions('RevenueAsmpt')/Hierarchies('RevenueAsmpt')/Elements('Unit Cost')"
+		}
+	]
+}

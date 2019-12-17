@@ -1,0 +1,48 @@
+{
+	"@type":"Hierarchy",
+	"Name":"OpExSubset_Picklist",
+	"Elements":
+	[
+		{
+			"Name":"Summary",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"OpEx",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"OpEx All",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"Payroll",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"Office Expense",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"Travel",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"Occupancy",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"Marketing",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"Depreciation",
+			"Type":"Numeric"
+		}
+	],
+	"Subsets@Code.links":
+	[
+		"OpExSubset_Picklist.subsets/Default.json",
+		"OpExSubset_Picklist.subsets/PL.json"
+	]
+}

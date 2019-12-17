@@ -1,0 +1,10 @@
+{
+	"@type":"Subset",
+	"Name":"Forecast Status",
+	"Elements":
+	[
+		{
+			"@id":"Dimensions('Metrics Indicators')/Hierarchies('Metrics Indicators')/Elements('Forecast Status')"
+		}
+	]
+}

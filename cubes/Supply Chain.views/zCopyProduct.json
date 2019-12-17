@@ -1,0 +1,63 @@
+{
+	"@type":"NativeView",
+	"Name":"zCopyProduct",
+	"Columns":[],
+	"Rows":
+	[
+		{
+			"Subset":
+			{
+				"@id":"Dimensions('organization')/Hierarchies('organization')/Subsets('L0 Organization')"
+			}
+		},
+		{
+			"Subset":
+			{
+				"@id":"Dimensions('Channel')/Hierarchies('Channel')/Subsets('L0 Channel')"
+			}
+		},
+		{
+			"Subset":
+			{
+				"@id":"Dimensions('product')/Hierarchies('product')/Subsets('Compare')"
+			}
+		},
+		{
+			"Subset":
+			{
+				"@id":"Dimensions('Month')/Hierarchies('Month')/Subsets('M')"
+			}
+		},
+		{
+			"Subset":
+			{
+				"@id":"Dimensions('Year')/Hierarchies('Year')/Subsets('Year')"
+			}
+		},
+		{
+			"Subset":
+			{
+				"Hierarchy":
+				{
+					"@id":"Dimensions('Supply Chain Measures')/Hierarchies('Supply Chain Measures')"
+				},
+				"Elements":
+				[
+					{
+						"@id":"Dimensions('Supply Chain Measures')/Hierarchies('Supply Chain Measures')/Elements('Indirect Labor')"
+					}
+				]
+			}
+		},
+		{
+			"Subset":
+			{
+				"@id":"Dimensions('Version')/Hierarchies('Version')/Subsets('zCopyFrom')"
+			}
+		}
+	],
+	"Titles":[],
+	"SuppressEmptyColumns":false,
+	"SuppressEmptyRows":false,
+	"FormatString":"0.00"
+}

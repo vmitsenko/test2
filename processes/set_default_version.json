@@ -1,0 +1,19 @@
+{
+	"@type":"Process",
+	"Name":"set_default_version",
+	"Code@Code.link":"set_default_version.ti",
+	"DataSource":
+	{
+		"Type":"None"
+	},
+	"Parameters":
+	[
+		{
+			"Name":"pDefaultVersion",
+			"Prompt":"Default Version",
+			"Value":"",
+			"Type":"String"
+		}
+	],
+	"Variables":[]
+}

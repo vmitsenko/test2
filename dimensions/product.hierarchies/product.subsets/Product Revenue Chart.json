@@ -1,0 +1,16 @@
+{
+	"@type":"Subset",
+	"Name":"Product Revenue Chart",
+	"Elements":
+	[
+		{
+			"@id":"Dimensions('product')/Hierarchies('product')/Elements('20000')"
+		},
+		{
+			"@id":"Dimensions('product')/Hierarchies('product')/Elements('30000')"
+		},
+		{
+			"@id":"Dimensions('product')/Hierarchies('product')/Elements('40000')"
+		}
+	]
+}

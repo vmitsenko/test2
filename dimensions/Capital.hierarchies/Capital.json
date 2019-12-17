@@ -1,0 +1,44 @@
+{
+	"@type":"Hierarchy",
+	"Name":"Capital",
+	"Elements":
+	[
+		{
+			"Name":"Description",
+			"Type":"String"
+		},
+		{
+			"Name":"Purchase Cost",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"Purchase Period",
+			"Type":"String"
+		},
+		{
+			"Name":"In-Service Period",
+			"Type":"String"
+		},
+		{
+			"Name":"Project Code",
+			"Type":"String"
+		},
+		{
+			"Name":"Life",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"Monthly Expense",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"Justification",
+			"Type":"String"
+		}
+	],
+	"Subsets@Code.links":
+	[
+		"Capital.subsets/All Members.json",
+		"Capital.subsets/Default.json"
+	]
+}

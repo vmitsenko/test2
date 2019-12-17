@@ -1,0 +1,59 @@
+#region Prolog
+
+#****Begin: Generated Statements***
+#****End: Generated Statements****
+
+vItem = 1;
+vCode = '';
+vAlias = '';
+vParentCode = '';
+vParentAlias = '';
+vDimWithServer = pDimension;
+vFileName = CellGetS( 'Calendar', 'SPSS Directory','String')|pDimension|'SPSS.csv';
+vDimSize = DIMSIZ(vDimWithServer);
+
+WHILE (vItem <= vDimSize);
+  IF(vItem=1);
+    IF(pIncludeParent @= 'Y');
+       ASCIIOUTPUT(vFileName,'Code','Alias','ParentCode','ParentAlias');
+    ELSE;  
+       ASCIIOUTPUT(vFileName,'Code','Alias');
+    ENDIF;
+  ENDIF;
+
+  vCode = DIMNM(vDimWithServer, vItem);
+  vCode = DimensionElementPrincipalName( pDimension, vCode);
+  IF (ELLEV(pDimension,vCode) = 0);
+    vAlias=ATTRS(pDimension,vCode,'Caption_Default');
+    IF(pIncludeParent @= 'Y');
+       vParentCode = DimensionElementPrincipalName( pDimension, ELPAR(pDimension, vCode, 1));
+       vParentAlias = ATTRS(pDimension,vParentCode,'Caption_Default');
+    ENDIF;
+    IF(pIncludeParent @= 'Y');
+       ASCIIOUTPUT(vFileName,vCode,vAlias,vParentCode,vParentAlias);
+    ELSE;  
+       ASCIIOUTPUT(vFileName,vCode,vAlias);
+    ENDIF;
+  ENDIF;
+  vItem = vItem + 1;
+END;
+
+
+
+
+#endregion
+#region Metadata
+
+#****Begin: Generated Statements***
+#****End: Generated Statements****
+#endregion
+#region Data
+
+#****Begin: Generated Statements***
+#****End: Generated Statements****
+#endregion
+#region Epilog
+
+#****Begin: Generated Statements***
+#****End: Generated Statements****
+#endregion

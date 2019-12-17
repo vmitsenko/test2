@@ -1,0 +1,19 @@
+{
+	"@type":"Hierarchy",
+	"Name":"LineItem_PickList",
+	"Elements":
+	[
+		{
+			"Name":"Item",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"Driver",
+			"Type":"Numeric"
+		}
+	],
+	"Subsets@Code.links":
+	[
+		"LineItem_PickList.subsets/Default.json"
+	]
+}

@@ -1,0 +1,46 @@
+#region Prolog
+
+#****Begin: Generated Statements***
+#****End: Generated Statements****
+
+IF(pNewVersion @='');
+  ProcessError;
+ENDIF;
+
+DimensionElementInsert('Version','',pNewVersion,'N');
+
+#endregion
+#region Metadata
+
+#****Begin: Generated Statements***
+#****End: Generated Statements****
+#endregion
+#region Data
+
+#****Begin: Generated Statements***
+#****End: Generated Statements****
+#endregion
+#region Epilog
+
+#****Begin: Generated Statements***
+#****End: Generated Statements****
+
+VersionType='';
+
+IF( pLinkToDrivers@='Y');
+  VersionType= 'B';
+  AttrPuts(VersionType, 'Version',pNewVersion, 'Version Type');
+  AttrPuts(pNewVersion, 'Version',pNewVersion, 'LinkVersion');
+#ASCIIOUTPUT('C:\guy.txt',pNewVersion);
+ENDIF;
+  AttrPutn(1, 'Version',pNewVersion, 'VarianceFactor');
+
+AttrPuts('b:#,##0;(#,##0)CO|0|Y', 'Version',pNewVersion, 'Format');
+
+
+ExecuteProcess('Set_Default_Version','pDefaultVersion',pNewVersion);
+
+ExecuteProcess('create_default_subset','pSubsetName','Current');
+
+
+#endregion

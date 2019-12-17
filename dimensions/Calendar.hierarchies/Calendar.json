@@ -1,0 +1,68 @@
+{
+	"@type":"Hierarchy",
+	"Name":"Calendar",
+	"Elements":
+	[
+		{
+			"Name":"Base Directory",
+			"Type":"String"
+		},
+		{
+			"Name":"Log Directory",
+			"Type":"String"
+		},
+		{
+			"Name":"Current Month",
+			"Type":"String"
+		},
+		{
+			"Name":"Current Quarter",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"Current Year",
+			"Type":"String"
+		},
+		{
+			"Name":"Current Version",
+			"Type":"String"
+		},
+		{
+			"Name":"Compare Against",
+			"Type":"String"
+		},
+		{
+			"Name":"Fcst Month",
+			"Type":"String"
+		},
+		{
+			"Name":"Model Version",
+			"Type":"String"
+		},
+		{
+			"Name":"Data Directory",
+			"Type":"String"
+		},
+		{
+			"Name":"SPSS Directory",
+			"Type":"String"
+		},
+		{
+			"Name":"Directory Separator",
+			"Type":"String"
+		},
+		{
+			"Name":"SPSS Modeler Install Directory",
+			"Type":"String"
+		},
+		{
+			"Name":"Concert Reset Date",
+			"Type":"String"
+		}
+	],
+	"Subsets@Code.links":
+	[
+		"Calendar.subsets/All Members.json",
+		"Calendar.subsets/Default.json"
+	]
+}

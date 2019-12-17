@@ -1,0 +1,74 @@
+{
+	"@type":"NativeView",
+	"Name":"Default",
+	"Columns":
+	[
+		{
+			"Subset":
+			{
+				"@id":"Dimensions('String')/Hierarchies('String')/Subsets('Default')"
+			}
+		}
+	],
+	"Rows":
+	[
+		{
+			"Subset":
+			{
+				"Hierarchy":
+				{
+					"@id":"Dimensions('Calendar')/Hierarchies('Calendar')"
+				},
+				"Elements":
+				[
+					{
+						"@id":"Dimensions('Calendar')/Hierarchies('Calendar')/Elements('Current Month')"
+					},
+					{
+						"@id":"Dimensions('Calendar')/Hierarchies('Calendar')/Elements('Current Quarter')"
+					},
+					{
+						"@id":"Dimensions('Calendar')/Hierarchies('Calendar')/Elements('Current Year')"
+					},
+					{
+						"@id":"Dimensions('Calendar')/Hierarchies('Calendar')/Elements('Current Version')"
+					},
+					{
+						"@id":"Dimensions('Calendar')/Hierarchies('Calendar')/Elements('Compare Against')"
+					},
+					{
+						"@id":"Dimensions('Calendar')/Hierarchies('Calendar')/Elements('Fcst Month')"
+					},
+					{
+						"@id":"Dimensions('Calendar')/Hierarchies('Calendar')/Elements('Model Version')"
+					},
+					{
+						"@id":"Dimensions('Calendar')/Hierarchies('Calendar')/Elements('Base Directory')"
+					},
+					{
+						"@id":"Dimensions('Calendar')/Hierarchies('Calendar')/Elements('Data Directory')"
+					},
+					{
+						"@id":"Dimensions('Calendar')/Hierarchies('Calendar')/Elements('SPSS Directory')"
+					},
+					{
+						"@id":"Dimensions('Calendar')/Hierarchies('Calendar')/Elements('Directory Separator')"
+					},
+					{
+						"@id":"Dimensions('Calendar')/Hierarchies('Calendar')/Elements('Log Directory')"
+					},
+					{
+						"@id":"Dimensions('Calendar')/Hierarchies('Calendar')/Elements('SPSS Modeler Install Directory')"
+					},
+					{
+						"@id":"Dimensions('Calendar')/Hierarchies('Calendar')/Elements('Concert Reset Date')"
+					}
+				]
+			}
+		}
+	],
+	"Titles":[],
+	"SuppressEmptyColumns":false,
+	"SuppressEmptyRows":false,
+	"FormatString":"0.#########"
+}

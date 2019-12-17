@@ -1,0 +1,19 @@
+{
+	"@type":"Subset",
+	"Name":"test",
+	"Elements":
+	[
+		{
+			"@id":"Dimensions('Channel')/Hierarchies('Channel')/Elements('Channel Total')"
+		},
+		{
+			"@id":"Dimensions('Channel')/Hierarchies('Channel')/Elements('10')"
+		},
+		{
+			"@id":"Dimensions('Channel')/Hierarchies('Channel')/Elements('20')"
+		},
+		{
+			"@id":"Dimensions('Channel')/Hierarchies('Channel')/Elements('30')"
+		}
+	]
+}

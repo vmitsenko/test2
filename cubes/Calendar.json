@@ -1,0 +1,21 @@
+{
+	"@type":"Cube",
+	"Name":"Calendar",
+	"Rules@Code.link":"Calendar.rules",
+	"Dimensions":
+	[
+		{
+			"@id":"Dimensions('Calendar')"
+		},
+		{
+			"@id":"Dimensions('String')"
+		}
+	],
+	"Views@Code.links":
+	[
+		"Calendar.views/All.json",
+		"Calendar.views/Calendar.json",
+		"Calendar.views/Default.json",
+		"Calendar.views/Update Forecast Month.json"
+	]
+}

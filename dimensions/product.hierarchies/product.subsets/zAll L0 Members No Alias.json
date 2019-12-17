@@ -1,0 +1,5 @@
+{
+	"@type":"Subset",
+	"Name":"zAll L0 Members No Alias",
+	"Expression":"{TM1FILTERBYLEVEL( {TM1SUBSETALL( [product] )}, 0)}"
+}

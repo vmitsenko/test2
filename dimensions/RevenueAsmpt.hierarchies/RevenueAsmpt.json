@@ -1,0 +1,28 @@
+{
+	"@type":"Hierarchy",
+	"Name":"RevenueAsmpt",
+	"Elements":
+	[
+		{
+			"Name":"Initiative Discount",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"Average Unit Price",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"Unit Price",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"Unit Cost",
+			"Type":"Numeric"
+		}
+	],
+	"Subsets@Code.links":
+	[
+		"RevenueAsmpt.subsets/All Members.json",
+		"RevenueAsmpt.subsets/Default.json"
+	]
+}

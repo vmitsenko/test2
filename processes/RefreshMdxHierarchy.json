@@ -1,0 +1,11 @@
+{
+	"@type":"Process",
+	"Name":"RefreshMdxHierarchy",
+	"Code@Code.link":"RefreshMdxHierarchy.ti",
+	"DataSource":
+	{
+		"Type":"None"
+	},
+	"Parameters":[],
+	"Variables":[]
+}

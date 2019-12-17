@@ -1,0 +1,22 @@
+{
+	"@type":"Subset",
+	"Name":"__BACKUP_QY",
+	"Elements":
+	[
+		{
+			"@id":"Dimensions('Month')/Hierarchies('Month')/Elements('Q1')"
+		},
+		{
+			"@id":"Dimensions('Month')/Hierarchies('Month')/Elements('Q2')"
+		},
+		{
+			"@id":"Dimensions('Month')/Hierarchies('Month')/Elements('Q3')"
+		},
+		{
+			"@id":"Dimensions('Month')/Hierarchies('Month')/Elements('Q4')"
+		},
+		{
+			"@id":"Dimensions('Month')/Hierarchies('Month')/Elements('Year')"
+		}
+	]
+}

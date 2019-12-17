@@ -1,0 +1,13 @@
+{
+	"@type":"Dimension",
+	"Name":"ProductSubset_PickList",
+	"AllLeavesHierarchyName":"",
+	"DefaultHierarchy":
+	{
+		"@id":"Dimensions('ProductSubset_PickList')/Hierarchies('ProductSubset_PickList')"
+	},
+	"Hierarchies@Code.links":
+	[
+		"ProductSubset_PickList.hierarchies/ProductSubset_PickList.json"
+	]
+}

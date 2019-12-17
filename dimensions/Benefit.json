@@ -1,0 +1,13 @@
+{
+	"@type":"Dimension",
+	"Name":"Benefit",
+	"AllLeavesHierarchyName":"",
+	"DefaultHierarchy":
+	{
+		"@id":"Dimensions('Benefit')/Hierarchies('Benefit')"
+	},
+	"Hierarchies@Code.links":
+	[
+		"Benefit.hierarchies/Benefit.json"
+	]
+}

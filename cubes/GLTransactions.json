@@ -1,0 +1,32 @@
+{
+	"@type":"Cube",
+	"Name":"GLTransactions",
+	"Rules@Code.link":"GLTransactions.rules",
+	"Dimensions":
+	[
+		{
+			"@id":"Dimensions('TrxID')"
+		},
+		{
+			"@id":"Dimensions('organization')"
+		},
+		{
+			"@id":"Dimensions('Year')"
+		},
+		{
+			"@id":"Dimensions('Month')"
+		},
+		{
+			"@id":"Dimensions('Account')"
+		},
+		{
+			"@id":"Dimensions('TrxMeasures')"
+		}
+	],
+	"Views@Code.links":
+	[
+		"GLTransactions.views/All.json",
+		"GLTransactions.views/GLTransactions.json",
+		"GLTransactions.views/zDelete.json"
+	]
+}

@@ -1,0 +1,43 @@
+{
+	"@type":"Subset",
+	"Name":"z_TI_cube Task Workflow reset Status",
+	"Elements":
+	[
+		{
+			"@id":"Dimensions('Task')/Hierarchies('Task')/Elements('2')"
+		},
+		{
+			"@id":"Dimensions('Task')/Hierarchies('Task')/Elements('3')"
+		},
+		{
+			"@id":"Dimensions('Task')/Hierarchies('Task')/Elements('7')"
+		},
+		{
+			"@id":"Dimensions('Task')/Hierarchies('Task')/Elements('8')"
+		},
+		{
+			"@id":"Dimensions('Task')/Hierarchies('Task')/Elements('10')"
+		},
+		{
+			"@id":"Dimensions('Task')/Hierarchies('Task')/Elements('11')"
+		},
+		{
+			"@id":"Dimensions('Task')/Hierarchies('Task')/Elements('13')"
+		},
+		{
+			"@id":"Dimensions('Task')/Hierarchies('Task')/Elements('14')"
+		},
+		{
+			"@id":"Dimensions('Task')/Hierarchies('Task')/Elements('16')"
+		},
+		{
+			"@id":"Dimensions('Task')/Hierarchies('Task')/Elements('17')"
+		},
+		{
+			"@id":"Dimensions('Task')/Hierarchies('Task')/Elements('18')"
+		},
+		{
+			"@id":"Dimensions('Task')/Hierarchies('Task')/Elements('19')"
+		}
+	]
+}

@@ -1,0 +1,84 @@
+{
+	"@type":"Hierarchy",
+	"Name":"Revenue",
+	"Elements":
+	[
+		{
+			"Name":"Unit Price",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"Units Sold",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"Unit Cost",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"Gross Margin %",
+			"Type":"Consolidated"
+		},
+		{
+			"Name":"Gross Margin",
+			"Type":"Consolidated"
+		},
+		{
+			"Name":"Gross Revenue",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"Cost of Sales",
+			"Type":"Consolidated"
+		},
+		{
+			"Name":"Direct COGS",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"Indirect COGS",
+			"Type":"Numeric"
+		}
+	],
+	"Edges":
+	[
+		{
+			"ParentName":"Gross Margin %",
+			"ComponentName":"Gross Margin",
+			"Weight":1
+		},
+		{
+			"ParentName":"Gross Margin %",
+			"ComponentName":"Gross Revenue",
+			"Weight":1
+		},
+		{
+			"ParentName":"Gross Margin",
+			"ComponentName":"Gross Revenue",
+			"Weight":1
+		},
+		{
+			"ParentName":"Gross Margin",
+			"ComponentName":"Cost of Sales",
+			"Weight":-1
+		},
+		{
+			"ParentName":"Cost of Sales",
+			"ComponentName":"Direct COGS",
+			"Weight":1
+		},
+		{
+			"ParentName":"Cost of Sales",
+			"ComponentName":"Indirect COGS",
+			"Weight":1
+		}
+	],
+	"Subsets@Code.links":
+	[
+		"Revenue.subsets/All Members.json",
+		"Revenue.subsets/Compare.json",
+		"Revenue.subsets/Default.json",
+		"Revenue.subsets/Product Profitability Chart.json",
+		"Revenue.subsets/Report.json"
+	]
+}

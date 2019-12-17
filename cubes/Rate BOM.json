@@ -1,0 +1,42 @@
+{
+	"@type":"Cube",
+	"Name":"Rate BOM",
+	"Rules@Code.link":"Rate BOM.rules",
+	"Dimensions":
+	[
+		{
+			"@id":"Dimensions('Month')"
+		},
+		{
+			"@id":"Dimensions('Plant')"
+		},
+		{
+			"@id":"Dimensions('product')"
+		},
+		{
+			"@id":"Dimensions('Rate Measure')"
+		},
+		{
+			"@id":"Dimensions('Year')"
+		},
+		{
+			"@id":"Dimensions('Version')"
+		}
+	],
+	"Views@Code.links":
+	[
+		"Rate BOM.views/3G 64Gb BOM.json",
+		"Rate BOM.views/All.json",
+		"Rate BOM.views/Average BOM by Product.json",
+		"Rate BOM.views/Bom By SKU_Plant.json",
+		"Rate BOM.views/Commodity Example.json",
+		"Rate BOM.views/Component.json",
+		"Rate BOM.views/Default.json",
+		"Rate BOM.views/New SKU Add example.json",
+		"Rate BOM.views/Rate BOM.json",
+		"Rate BOM.views/Rate BOM Input.json",
+		"Rate BOM.views/Smartco BOM.json",
+		"Rate BOM.views/zCopyFrom.json",
+		"Rate BOM.views/zCopySKU_BOM.json"
+	]
+}

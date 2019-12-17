@@ -1,0 +1,37 @@
+{
+	"@type":"Cube",
+	"Name":"Revenue Assumptions",
+	"Rules@Code.link":"Revenue Assumptions.rules",
+	"Dimensions":
+	[
+		{
+			"@id":"Dimensions('product')"
+		},
+		{
+			"@id":"Dimensions('Channel')"
+		},
+		{
+			"@id":"Dimensions('Month')"
+		},
+		{
+			"@id":"Dimensions('Year')"
+		},
+		{
+			"@id":"Dimensions('Version')"
+		},
+		{
+			"@id":"Dimensions('RevenueAsmpt')"
+		}
+	],
+	"Views@Code.links":
+	[
+		"Revenue Assumptions.views/All.json",
+		"Revenue Assumptions.views/Default.json",
+		"Revenue Assumptions.views/Detail.json",
+		"Revenue Assumptions.views/Input.json",
+		"Revenue Assumptions.views/Revenue Assumptions.json",
+		"Revenue Assumptions.views/Revenue Assumptions by Channel.json",
+		"Revenue Assumptions.views/zCopyAsmpt.json",
+		"Revenue Assumptions.views/zCopyFrom.json"
+	]
+}

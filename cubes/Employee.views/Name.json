@@ -1,0 +1,60 @@
+{
+	"@type":"NativeView",
+	"Name":"Name",
+	"Columns":[],
+	"Rows":
+	[
+		{
+			"Subset":
+			{
+				"@id":"Dimensions('organization')/Hierarchies('organization')/Subsets('organization level 0')"
+			}
+		},
+		{
+			"Subset":
+			{
+				"@id":"Dimensions('EmployeeList')/Hierarchies('EmployeeList')/Subsets('Employee Level 0')"
+			}
+		},
+		{
+			"Subset":
+			{
+				"Hierarchy":
+				{
+					"@id":"Dimensions('Year')/Hierarchies('Year')"
+				},
+				"Elements":
+				[
+					{
+						"@id":"Dimensions('Year')/Hierarchies('Year')/Elements('Y2')"
+					}
+				]
+			}
+		},
+		{
+			"Subset":
+			{
+				"Hierarchy":
+				{
+					"@id":"Dimensions('Version')/Hierarchies('Version')"
+				},
+				"Elements":
+				[
+					{
+						"@id":"Dimensions('Version')/Hierarchies('Version')/Elements('Version 1')"
+					}
+				]
+			}
+		},
+		{
+			"Subset":
+			{
+				"@id":"Dimensions('Employee')/Hierarchies('Employee')/Subsets('Employee Name and ID')"
+			}
+		}
+	],
+	"Titles":[],
+	"SuppressEmptyColumns":false,
+	"SuppressEmptyRows":false,
+	"FormatString":"0.00"
+}

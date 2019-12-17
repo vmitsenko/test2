@@ -1,0 +1,32 @@
+{
+	"@type":"Hierarchy",
+	"Name":"Benefit",
+	"Elements":
+	[
+		{
+			"Name":"Medicare",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"FICA",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"FICA Limit",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"Medical",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"Other Benefits Rate",
+			"Type":"Numeric"
+		}
+	],
+	"Subsets@Code.links":
+	[
+		"Benefit.subsets/All Members.json",
+		"Benefit.subsets/Default.json"
+	]
+}

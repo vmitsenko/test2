@@ -1,0 +1,24 @@
+{
+	"@type":"Hierarchy",
+	"Name":"PhasedCosts",
+	"Elements":
+	[
+		{
+			"Name":"Spread Method",
+			"Type":"String"
+		},
+		{
+			"Name":"Full Year Cost",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"Description",
+			"Type":"String"
+		}
+	],
+	"Subsets@Code.links":
+	[
+		"PhasedCosts.subsets/All Members.json",
+		"PhasedCosts.subsets/Default.json"
+	]
+}

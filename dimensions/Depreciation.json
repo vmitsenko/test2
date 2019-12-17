@@ -1,0 +1,13 @@
+{
+	"@type":"Dimension",
+	"Name":"Depreciation",
+	"AllLeavesHierarchyName":"",
+	"DefaultHierarchy":
+	{
+		"@id":"Dimensions('Depreciation')/Hierarchies('Depreciation')"
+	},
+	"Hierarchies@Code.links":
+	[
+		"Depreciation.hierarchies/Depreciation.json"
+	]
+}

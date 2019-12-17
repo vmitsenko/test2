@@ -1,0 +1,11 @@
+{
+	"@type":"Process",
+	"Name":"SetGlobalVariables",
+	"Code@Code.link":"SetGlobalVariables.ti",
+	"DataSource":
+	{
+		"Type":"None"
+	},
+	"Parameters":[],
+	"Variables":[]
+}

@@ -1,0 +1,28 @@
+{
+	"@type":"Cube",
+	"Name":"Job Type Assumption",
+	"Rules@Code.link":"Job Type Assumption.rules",
+	"Dimensions":
+	[
+		{
+			"@id":"Dimensions('JobType')"
+		},
+		{
+			"@id":"Dimensions('Year')"
+		},
+		{
+			"@id":"Dimensions('Version')"
+		},
+		{
+			"@id":"Dimensions('JobTypeAssumption')"
+		}
+	],
+	"Views@Code.links":
+	[
+		"Job Type Assumption.views/All.json",
+		"Job Type Assumption.views/Default.json",
+		"Job Type Assumption.views/Drill.json",
+		"Job Type Assumption.views/Job Type Assumption.json",
+		"Job Type Assumption.views/zCopyFrom.json"
+	]
+}

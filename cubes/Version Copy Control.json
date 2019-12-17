@@ -1,0 +1,21 @@
+{
+	"@type":"Cube",
+	"Name":"Version Copy Control",
+	"Rules@Code.link":"Version Copy Control.rules",
+	"Dimensions":
+	[
+		{
+			"@id":"Dimensions('LineItemList')"
+		},
+		{
+			"@id":"Dimensions('Version Copy Measures')"
+		}
+	],
+	"Views@Code.links":
+	[
+		"Version Copy Control.views/All.json",
+		"Version Copy Control.views/Default.json",
+		"Version Copy Control.views/View1.json",
+		"Version Copy Control.views/zVersionCopy.json"
+	]
+}

@@ -1,0 +1,124 @@
+{
+	"@type":"NativeView",
+	"Name":"Allocation Calculation",
+	"Columns":
+	[
+		{
+			"Subset":
+			{
+				"Hierarchy":
+				{
+					"@id":"Dimensions('Allocation Calculation')/Hierarchies('Allocation Calculation')"
+				},
+				"Elements":
+				[
+					{
+						"@id":"Dimensions('Allocation Calculation')/Hierarchies('Allocation Calculation')/Elements('Source Entity')"
+					},
+					{
+						"@id":"Dimensions('Allocation Calculation')/Hierarchies('Allocation Calculation')/Elements('Source Account')"
+					},
+					{
+						"@id":"Dimensions('Allocation Calculation')/Hierarchies('Allocation Calculation')/Elements('Allocation Amount')"
+					},
+					{
+						"@id":"Dimensions('Allocation Calculation')/Hierarchies('Allocation Calculation')/Elements('Exclude Entity')"
+					},
+					{
+						"@id":"Dimensions('Allocation Calculation')/Hierarchies('Allocation Calculation')/Elements('Allocation Driver')"
+					},
+					{
+						"@id":"Dimensions('Allocation Calculation')/Hierarchies('Allocation Calculation')/Elements('Driver')"
+					},
+					{
+						"@id":"Dimensions('Allocation Calculation')/Hierarchies('Allocation Calculation')/Elements('Total Driver')"
+					},
+					{
+						"@id":"Dimensions('Allocation Calculation')/Hierarchies('Allocation Calculation')/Elements('Ratio')"
+					},
+					{
+						"@id":"Dimensions('Allocation Calculation')/Hierarchies('Allocation Calculation')/Elements('Allocated Amount')"
+					},
+					{
+						"@id":"Dimensions('Allocation Calculation')/Hierarchies('Allocation Calculation')/Elements('Credit Amount')"
+					}
+				]
+			}
+		}
+	],
+	"Rows":
+	[
+		{
+			"Subset":
+			{
+				"Hierarchy":
+				{
+					"@id":"Dimensions('organization')/Hierarchies('organization')"
+				},
+				"Expression":"[organization].MEMBERS"
+			}
+		}
+	],
+	"Titles":
+	[
+		{
+			"Subset":
+			{
+				"Hierarchy":
+				{
+					"@id":"Dimensions('Year')/Hierarchies('Year')"
+				},
+				"Expression":"[Year].MEMBERS"
+			},
+			"Selected":
+			{
+				"@id":"Dimensions('Year')/Hierarchies('Year')/Elements('Y1')"
+			}
+		},
+		{
+			"Subset":
+			{
+				"Hierarchy":
+				{
+					"@id":"Dimensions('Month')/Hierarchies('Month')"
+				},
+				"Expression":"[Month].MEMBERS"
+			},
+			"Selected":
+			{
+				"@id":"Dimensions('Month')/Hierarchies('Month')/Elements('Jan')"
+			}
+		},
+		{
+			"Subset":
+			{
+				"Hierarchy":
+				{
+					"@id":"Dimensions('Version')/Hierarchies('Version')"
+				},
+				"Expression":"[Version].MEMBERS"
+			},
+			"Selected":
+			{
+				"@id":"Dimensions('Version')/Hierarchies('Version')/Elements('Version 1')"
+			}
+		},
+		{
+			"Subset":
+			{
+				"Hierarchy":
+				{
+					"@id":"Dimensions('Allocation List')/Hierarchies('Allocation List')"
+				},
+				"Expression":"[Allocation List].MEMBERS"
+			},
+			"Selected":
+			{
+				"@id":"Dimensions('Allocation List')/Hierarchies('Allocation List')/Elements('Allocation 1')"
+			}
+		}
+	],
+	"SuppressEmptyColumns":false,
+	"SuppressEmptyRows":false,
+	"FormatString":"0.00"
+}

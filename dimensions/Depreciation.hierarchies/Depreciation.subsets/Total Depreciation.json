@@ -1,0 +1,10 @@
+{
+	"@type":"Subset",
+	"Name":"Total Depreciation",
+	"Elements":
+	[
+		{
+			"@id":"Dimensions('Depreciation')/Hierarchies('Depreciation')/Elements('Total Depreciation')"
+		}
+	]
+}

@@ -1,0 +1,25 @@
+{
+	"@type":"Subset",
+	"Name":"__BACKUP_Operating Expense",
+	"Elements":
+	[
+		{
+			"@id":"Dimensions('Account')/Hierarchies('Account')/Elements('Statistics')"
+		},
+		{
+			"@id":"Dimensions('Account')/Hierarchies('Account')/Elements('NPAA')"
+		},
+		{
+			"@id":"Dimensions('Account')/Hierarchies('Account')/Elements('NP')"
+		},
+		{
+			"@id":"Dimensions('Account')/Hierarchies('Account')/Elements('6699')"
+		},
+		{
+			"@id":"Dimensions('Account')/Hierarchies('Account')/Elements('6600')"
+		},
+		{
+			"@id":"Dimensions('Account')/Hierarchies('Account')/Elements('6610')"
+		}
+	]
+}

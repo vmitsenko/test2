@@ -1,0 +1,13 @@
+{
+	"@type":"Dimension",
+	"Name":"Workflow Info",
+	"AllLeavesHierarchyName":"",
+	"DefaultHierarchy":
+	{
+		"@id":"Dimensions('Workflow Info')/Hierarchies('Workflow Info')"
+	},
+	"Hierarchies@Code.links":
+	[
+		"Workflow Info.hierarchies/Workflow Info.json"
+	]
+}

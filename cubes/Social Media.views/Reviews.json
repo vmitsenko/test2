@@ -1,0 +1,89 @@
+{
+	"@type":"NativeView",
+	"Name":"Reviews",
+	"Columns":
+	[
+		{
+			"Subset":
+			{
+				"Hierarchy":
+				{
+					"@id":"Dimensions('SM Reviews')/Hierarchies('SM Reviews')"
+				},
+				"Elements":
+				[
+					{
+						"@id":"Dimensions('SM Reviews')/Hierarchies('SM Reviews')/Elements('Date')"
+					},
+					{
+						"@id":"Dimensions('SM Reviews')/Hierarchies('SM Reviews')/Elements('Rating')"
+					},
+					{
+						"@id":"Dimensions('SM Reviews')/Hierarchies('SM Reviews')/Elements('Comments')"
+					}
+				]
+			}
+		}
+	],
+	"Rows":
+	[
+		{
+			"Subset":
+			{
+				"Hierarchy":
+				{
+					"@id":"Dimensions('SM Entries')/Hierarchies('SM Entries')"
+				},
+				"Elements":
+				[
+					{
+						"@id":"Dimensions('SM Entries')/Hierarchies('SM Entries')/Elements('1')"
+					},
+					{
+						"@id":"Dimensions('SM Entries')/Hierarchies('SM Entries')/Elements('2')"
+					},
+					{
+						"@id":"Dimensions('SM Entries')/Hierarchies('SM Entries')/Elements('3')"
+					},
+					{
+						"@id":"Dimensions('SM Entries')/Hierarchies('SM Entries')/Elements('4')"
+					},
+					{
+						"@id":"Dimensions('SM Entries')/Hierarchies('SM Entries')/Elements('5')"
+					},
+					{
+						"@id":"Dimensions('SM Entries')/Hierarchies('SM Entries')/Elements('6')"
+					},
+					{
+						"@id":"Dimensions('SM Entries')/Hierarchies('SM Entries')/Elements('7')"
+					},
+					{
+						"@id":"Dimensions('SM Entries')/Hierarchies('SM Entries')/Elements('8')"
+					},
+					{
+						"@id":"Dimensions('SM Entries')/Hierarchies('SM Entries')/Elements('9')"
+					},
+					{
+						"@id":"Dimensions('SM Entries')/Hierarchies('SM Entries')/Elements('10')"
+					}
+				]
+			}
+		}
+	],
+	"Titles":
+	[
+		{
+			"Subset":
+			{
+				"@id":"Dimensions('product')/Hierarchies('product')/Subsets('Item Level')"
+			},
+			"Selected":
+			{
+				"@id":"Dimensions('product')/Hierarchies('product')/Elements('21001')"
+			}
+		}
+	],
+	"SuppressEmptyColumns":false,
+	"SuppressEmptyRows":false,
+	"FormatString":"0.00"
+}

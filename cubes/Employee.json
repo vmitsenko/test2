@@ -1,0 +1,34 @@
+{
+	"@type":"Cube",
+	"Name":"Employee",
+	"Rules@Code.link":"Employee.rules",
+	"DrillthroughRules@Code.link":"Employee.drillthrough.rules",
+	"Dimensions":
+	[
+		{
+			"@id":"Dimensions('organization')"
+		},
+		{
+			"@id":"Dimensions('EmployeeList')"
+		},
+		{
+			"@id":"Dimensions('Year')"
+		},
+		{
+			"@id":"Dimensions('Version')"
+		},
+		{
+			"@id":"Dimensions('Employee')"
+		}
+	],
+	"Views@Code.links":
+	[
+		"Employee.views/All.json",
+		"Employee.views/Default.json",
+		"Employee.views/Drill_Employee.json",
+		"Employee.views/Employee.json",
+		"Employee.views/Input.json",
+		"Employee.views/Name.json",
+		"Employee.views/zCopyFrom.json"
+	]
+}

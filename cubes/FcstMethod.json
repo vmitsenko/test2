@@ -1,0 +1,18 @@
+{
+	"@type":"Cube",
+	"Name":"FcstMethod",
+	"Rules@Code.link":"FcstMethod.rules",
+	"Dimensions":
+	[
+		{
+			"@id":"Dimensions('Account')"
+		},
+		{
+			"@id":"Dimensions('FcstMethod')"
+		}
+	],
+	"Views@Code.links":
+	[
+		"FcstMethod.views/All.json"
+	]
+}

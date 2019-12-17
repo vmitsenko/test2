@@ -1,0 +1,51 @@
+{
+	"@type":"Process",
+	"Name":"copy_version_control",
+	"Code@Code.link":"copy_version_control.ti",
+	"DataSource":
+	{
+		"Type":"TM1CubeView",
+		"dataSourceNameForClient":"Version Copy Control",
+		"dataSourceNameForServer":"Version Copy Control",
+		"view":"zVersionCopy"
+	},
+	"Parameters":
+	[
+		{
+			"Name":"pFromVersion",
+			"Prompt":"From Version",
+			"Value":"Version 1",
+			"Type":"String"
+		},
+		{
+			"Name":"pToVersion",
+			"Prompt":"To Version",
+			"Value":"Version 2",
+			"Type":"String"
+		}
+	],
+	"Variables":
+	[
+		{
+			"Name":"LineItemList",
+			"Type":"String",
+			"Position":1,
+			"StartByte":0,
+			"EndByte":0
+		},
+		{
+			"Name":"VersionCopyMeasures",
+			"Type":"String",
+			"Position":2,
+			"StartByte":0,
+			"EndByte":0
+		},
+		{
+			"Name":"Value",
+			"Type":"String",
+			"Position":3,
+			"StartByte":0,
+			"EndByte":0
+		}
+	]
+}

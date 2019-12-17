@@ -1,0 +1,114 @@
+#region Prolog
+
+#****Begin: Generated Statements***
+#****End: Generated Statements****
+
+pProductDriver=DimensionElementPrincipalName('Product',pProductDriver);
+pChannel=DimensionElementPrincipalName('Channel',pChannel);
+pVersion=DimensionElementPrincipalName('Version',pVersion);
+pYear=DimensionElementPrincipalName('Year',pYear);
+
+###Check for Required Subsets###
+
+pCurrentProduct=SubsetGetElementName('Product', 'New', 1);
+
+
+IF(SubsetExists('Product', 'Compare')=0);
+SubsetCreate('Product', 'Compare');
+ENDIF;
+
+IF(SubsetExists('Organization', 'zCopyFrom')=0);
+SubsetCreate('Organization', 'zCopyFrom');
+ENDIF;
+
+IF(SubsetExists('Channel', 'zCopyFrom')=0);
+SubsetCreate('Channel', 'zCopyFrom');
+ENDIF;
+
+IF(SubsetExists('Year', 'zCopyFrom')=0);
+SubsetCreate('Year', 'zCopyFrom');
+ENDIF;
+
+IF(SubsetExists('Version', 'zCopyFrom')=0);
+SubsetCreate('Version', 'zCopyFrom');
+ENDIF;
+
+IF(SubsetExists('Spread Methods', 'zCopyFrom')=0);
+SubsetCreate('Spread Methods', 'zCopyFrom');
+ENDIF;
+
+
+
+
+#endregion
+#region Metadata
+
+#****Begin: Generated Statements***
+#****End: Generated Statements****
+#endregion
+#region Data
+
+#****Begin: Generated Statements***
+#****End: Generated Statements****
+#endregion
+#region Epilog
+
+#****Begin: Generated Statements***
+#****End: Generated Statements****
+
+IF(SubsetGetSize('Product','Compare')>0);
+SubsetDeleteAllElements('Product','Compare');
+ENDIF;
+SubsetElementInsert('Product','Compare',pProductDriver,1);
+
+
+IF(SubsetGetSize('Organization','zCopyFrom')>0);
+SubsetDeleteAllElements('Organization','zCopyFrom');
+ENDIF;
+SubsetElementInsert('Organization','zCopyFrom',pOrg,1);
+
+IF(SubsetGetSize('Year','zCopyFrom')>0);
+SubsetDeleteAllElements('Year','zCopyFrom');
+ENDIF;
+SubsetElementInsert('Year','zCopyFrom',pYear,1);
+
+IF(SubsetGetSize('Version','zCopyFrom')>0);
+SubsetDeleteAllElements('Version','zCopyFrom');
+ENDIF;
+SubsetElementInsert('Version','zCopyFrom',pVersion,1);
+
+IF(SubsetGetSize('Spread Methods','zCopyFrom')>0);
+SubsetDeleteAllElements('Spread Methods','zCopyFrom');
+ENDIF;
+SubsetElementInsert('Spread Methods','zCopyFrom',pSpread,1);
+
+IF(SubsetGetSize('Channel','zCopyFrom')>0);
+SubsetDeleteAllElements('Channel','zCopyFrom');
+ENDIF;
+IF(ELLEV('Channel',pChannel)=1);
+Members=ELCOMPN('Channel',pChannel);
+m=1;
+While(m<=Members);
+Member=ELCOMP('Channel',pChannel,m);
+SubsetElementInsert('Channel','zCopyFrom',Member,m);
+m=m+1;
+END;
+ELSE;
+SubsetElementInsert('Channel','zCopyFrom',pChannel,1);
+ENDIF;
+
+
+
+
+IF(pFcstMethod@='Specific Product');
+ExecuteProcess('Copy_Revenue_Compare_Units','pCurrentProduct',pCurrentProduct,'pUnitFcst',pUnitFcst,'pChannel',pChannel);
+#ExecuteProcess('Copy_Revenue_Compare_Units','pUnitFcst',pUnitFcst,'pChannel',pChannel);
+ENDIF;
+
+IF(pFcstMethod@='Generic Spread');
+ExecuteProcess('Copy_Revenue_Spread_Units','pOrg',pOrg,'pChannel',pChannel,'pYear',pYear,'pCurrentProduct',pCurrentProduct,'pUnitFcst',pUnitFcst);
+ENDIF;
+
+##Not Working##
+#ExecuteProcess('Update_RevenueAsmpts','pUnitPrice',pUnitprice,'pUnitCost',pUnitCost,'pChannel',pChannel);
+#endregion

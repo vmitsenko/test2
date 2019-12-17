@@ -1,0 +1,56 @@
+{
+	"@type":"Process",
+	"Name":"update_organization",
+	"Code@Code.link":"update_organization.ti",
+	"DataSource":
+	{
+		"Type":"ASCII",
+		"asciiDecimalSeparator":".",
+		"asciiDelimiterChar":",",
+		"asciiDelimiterType":"Character",
+		"asciiHeaderRecords":1,
+		"asciiQuoteCharacter":"\"",
+		"asciiThousandSeparator":",",
+		"dataSourceNameForClient":"C:\\Temp\\TILoad4969076987167133641.csv",
+		"dataSourceNameForServer":"C:\\Temp\\TILoad4969076987167133641.csv"
+	},
+	"Parameters":
+	[
+		{
+			"Name":"param_destroy",
+			"Prompt":"Destroy dimensions",
+			"Value":0,
+			"Type":"Numeric"
+		},
+		{
+			"Name":"param_createIfNotExist",
+			"Prompt":"Create dimensions if they do not exist",
+			"Value":1,
+			"Type":"Numeric"
+		}
+	],
+	"Variables":
+	[
+		{
+			"Name":"v_Number_0",
+			"Type":"String",
+			"Position":1,
+			"StartByte":0,
+			"EndByte":0
+		},
+		{
+			"Name":"v_Parent_1",
+			"Type":"String",
+			"Position":2,
+			"StartByte":0,
+			"EndByte":0
+		},
+		{
+			"Name":"v_Label_2",
+			"Type":"String",
+			"Position":3,
+			"StartByte":0,
+			"EndByte":0
+		}
+	]
+}

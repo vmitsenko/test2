@@ -1,0 +1,33 @@
+{
+	"@type":"Cube",
+	"Name":"Exchange Rates",
+	"Rules@Code.link":"Exchange Rates.rules",
+	"Dimensions":
+	[
+		{
+			"@id":"Dimensions('Currency')"
+		},
+		{
+			"@id":"Dimensions('Year')"
+		},
+		{
+			"@id":"Dimensions('Month')"
+		},
+		{
+			"@id":"Dimensions('Exchange Rate')"
+		},
+		{
+			"@id":"Dimensions('Exchange Rate Type')"
+		},
+		{
+			"@id":"Dimensions('Version')"
+		}
+	],
+	"Views@Code.links":
+	[
+		"Exchange Rates.views/All.json",
+		"Exchange Rates.views/Default.json",
+		"Exchange Rates.views/Exchange Rates.json",
+		"Exchange Rates.views/zCopyFrom.json"
+	]
+}

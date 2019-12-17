@@ -1,0 +1,45 @@
+{
+	"@type":"Hierarchy",
+	"Name":"Task Workflow Measure",
+	"Elements":
+	[
+		{
+			"Name":"Status",
+			"Type":"String"
+		},
+		{
+			"Name":"Due Date",
+			"Type":"String"
+		},
+		{
+			"Name":"Date Completed",
+			"Type":"String"
+		},
+		{
+			"Name":"Complete",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"Commentary",
+			"Type":"String"
+		},
+		{
+			"Name":"Active",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"Overdue",
+			"Type":"String"
+		},
+		{
+			"Name":"Days Left",
+			"Type":"Numeric"
+		}
+	],
+	"Subsets@Code.links":
+	[
+		"Task Workflow Measure.subsets/All Members.json",
+		"Task Workflow Measure.subsets/Task Overview.json",
+		"Task Workflow Measure.subsets/z_TI_cube Task Workflow reset Status.json"
+	]
+}

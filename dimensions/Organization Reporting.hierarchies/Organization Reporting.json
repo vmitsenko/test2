@@ -1,0 +1,227 @@
+{
+	"@type":"Hierarchy",
+	"Name":"Organization Reporting",
+	"Elements":
+	[
+		{
+			"Name":"Total Company",
+			"Type":"Consolidated"
+		},
+		{
+			"Name":"100",
+			"Type":"Consolidated"
+		},
+		{
+			"Name":"200",
+			"Type":"Consolidated"
+		},
+		{
+			"Name":"300",
+			"Type":"Consolidated"
+		},
+		{
+			"Name":"400",
+			"Type":"Consolidated"
+		},
+		{
+			"Name":"Total by VP",
+			"Type":"Consolidated"
+		},
+		{
+			"Name":"Vice President 1",
+			"Type":"Consolidated"
+		},
+		{
+			"Name":"102",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"103",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"201",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"Vice President 2",
+			"Type":"Consolidated"
+		},
+		{
+			"Name":"202",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"301",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"302",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"402",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"101",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"Vice President 3",
+			"Type":"Consolidated"
+		},
+		{
+			"Name":"401",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"403",
+			"Type":"Numeric"
+		}
+	],
+	"Edges":
+	[
+		{
+			"ParentName":"Total Company",
+			"ComponentName":"100",
+			"Weight":1
+		},
+		{
+			"ParentName":"Total Company",
+			"ComponentName":"200",
+			"Weight":1
+		},
+		{
+			"ParentName":"Total Company",
+			"ComponentName":"300",
+			"Weight":1
+		},
+		{
+			"ParentName":"Total Company",
+			"ComponentName":"400",
+			"Weight":1
+		},
+		{
+			"ParentName":"100",
+			"ComponentName":"101",
+			"Weight":1
+		},
+		{
+			"ParentName":"100",
+			"ComponentName":"102",
+			"Weight":1
+		},
+		{
+			"ParentName":"100",
+			"ComponentName":"103",
+			"Weight":1
+		},
+		{
+			"ParentName":"200",
+			"ComponentName":"201",
+			"Weight":1
+		},
+		{
+			"ParentName":"200",
+			"ComponentName":"202",
+			"Weight":1
+		},
+		{
+			"ParentName":"300",
+			"ComponentName":"301",
+			"Weight":1
+		},
+		{
+			"ParentName":"300",
+			"ComponentName":"302",
+			"Weight":1
+		},
+		{
+			"ParentName":"400",
+			"ComponentName":"401",
+			"Weight":1
+		},
+		{
+			"ParentName":"400",
+			"ComponentName":"402",
+			"Weight":1
+		},
+		{
+			"ParentName":"400",
+			"ComponentName":"403",
+			"Weight":1
+		},
+		{
+			"ParentName":"Total by VP",
+			"ComponentName":"Vice President 1",
+			"Weight":1
+		},
+		{
+			"ParentName":"Total by VP",
+			"ComponentName":"Vice President 2",
+			"Weight":1
+		},
+		{
+			"ParentName":"Total by VP",
+			"ComponentName":"Vice President 3",
+			"Weight":1
+		},
+		{
+			"ParentName":"Vice President 1",
+			"ComponentName":"102",
+			"Weight":1
+		},
+		{
+			"ParentName":"Vice President 1",
+			"ComponentName":"103",
+			"Weight":1
+		},
+		{
+			"ParentName":"Vice President 1",
+			"ComponentName":"201",
+			"Weight":1
+		},
+		{
+			"ParentName":"Vice President 2",
+			"ComponentName":"202",
+			"Weight":1
+		},
+		{
+			"ParentName":"Vice President 2",
+			"ComponentName":"301",
+			"Weight":1
+		},
+		{
+			"ParentName":"Vice President 2",
+			"ComponentName":"302",
+			"Weight":1
+		},
+		{
+			"ParentName":"Vice President 2",
+			"ComponentName":"402",
+			"Weight":1
+		},
+		{
+			"ParentName":"Vice President 2",
+			"ComponentName":"101",
+			"Weight":1
+		},
+		{
+			"ParentName":"Vice President 3",
+			"ComponentName":"403",
+			"Weight":1
+		},
+		{
+			"ParentName":"Vice President 3",
+			"ComponentName":"401",
+			"Weight":1
+		}
+	],
+	"Subsets@Code.links":
+	[
+		"Organization Reporting.subsets/__BACKUP_Default.json",
+		"Organization Reporting.subsets/All Members.json",
+		"Organization Reporting.subsets/Default.json"
+	]
+}

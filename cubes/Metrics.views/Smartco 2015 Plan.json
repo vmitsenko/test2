@@ -1,0 +1,238 @@
+{
+	"@type":"NativeView",
+	"Name":"Smartco 2015 Plan",
+	"Columns":
+	[
+		{
+			"Subset":
+			{
+				"Hierarchy":
+				{
+					"@id":"Dimensions('Metrics Indicators')/Hierarchies('Metrics Indicators')"
+				},
+				"Elements":
+				[
+					{
+						"@id":"Dimensions('Metrics Indicators')/Hierarchies('Metrics Indicators')/Elements('Status')"
+					},
+					{
+						"@id":"Dimensions('Metrics Indicators')/Hierarchies('Metrics Indicators')/Elements('Trend')"
+					},
+					{
+						"@id":"Dimensions('Metrics Indicators')/Hierarchies('Metrics Indicators')/Elements('Actual')"
+					},
+					{
+						"@id":"Dimensions('Metrics Indicators')/Hierarchies('Metrics Indicators')/Elements('Target')"
+					},
+					{
+						"@id":"Dimensions('Metrics Indicators')/Hierarchies('Metrics Indicators')/Elements('Tolerance')"
+					},
+					{
+						"@id":"Dimensions('Metrics Indicators')/Hierarchies('Metrics Indicators')/Elements('Variance')"
+					},
+					{
+						"@id":"Dimensions('Metrics Indicators')/Hierarchies('Metrics Indicators')/Elements('Variance Percent')"
+					},
+					{
+						"@id":"Dimensions('Metrics Indicators')/Hierarchies('Metrics Indicators')/Elements('Score')"
+					},
+					{
+						"@id":"Dimensions('Metrics Indicators')/Hierarchies('Metrics Indicators')/Elements('Score Change')"
+					},
+					{
+						"@id":"Dimensions('Metrics Indicators')/Hierarchies('Metrics Indicators')/Elements('Actual Change Percent')"
+					},
+					{
+						"@id":"Dimensions('Metrics Indicators')/Hierarchies('Metrics Indicators')/Elements('Status_1_Count')"
+					},
+					{
+						"@id":"Dimensions('Metrics Indicators')/Hierarchies('Metrics Indicators')/Elements('Status_0_Count')"
+					},
+					{
+						"@id":"Dimensions('Metrics Indicators')/Hierarchies('Metrics Indicators')/Elements('Status_-1_Count')"
+					},
+					{
+						"@id":"Dimensions('Metrics Indicators')/Hierarchies('Metrics Indicators')/Elements('Status_Incomplete_Count')"
+					},
+					{
+						"@id":"Dimensions('Metrics Indicators')/Hierarchies('Metrics Indicators')/Elements('Forecast Status')"
+					},
+					{
+						"@id":"Dimensions('Metrics Indicators')/Hierarchies('Metrics Indicators')/Elements('Forecast Trend')"
+					},
+					{
+						"@id":"Dimensions('Metrics Indicators')/Hierarchies('Metrics Indicators')/Elements('Forecast')"
+					},
+					{
+						"@id":"Dimensions('Metrics Indicators')/Hierarchies('Metrics Indicators')/Elements('Forecast Variance')"
+					},
+					{
+						"@id":"Dimensions('Metrics Indicators')/Hierarchies('Metrics Indicators')/Elements('Forecast Variance %')"
+					},
+					{
+						"@id":"Dimensions('Metrics Indicators')/Hierarchies('Metrics Indicators')/Elements('Forecast Score')"
+					}
+				]
+			}
+		}
+	],
+	"Rows":
+	[
+		{
+			"Subset":
+			{
+				"@id":"Dimensions('Month')/Hierarchies('Month')/Subsets('Default')"
+			}
+		}
+	],
+	"Titles":
+	[
+		{
+			"Subset":
+			{
+				"Hierarchy":
+				{
+					"@id":"Dimensions('Metrics')/Hierarchies('Metrics')"
+				},
+				"Elements":
+				[
+					{
+						"@id":"Dimensions('Metrics')/Hierarchies('Metrics')/Elements('4999')"
+					},
+					{
+						"@id":"Dimensions('Metrics')/Hierarchies('Metrics')/Elements('5999')"
+					},
+					{
+						"@id":"Dimensions('Metrics')/Hierarchies('Metrics')/Elements('GM')"
+					},
+					{
+						"@id":"Dimensions('Metrics')/Hierarchies('Metrics')/Elements('6099')"
+					},
+					{
+						"@id":"Dimensions('Metrics')/Hierarchies('Metrics')/Elements('6199')"
+					},
+					{
+						"@id":"Dimensions('Metrics')/Hierarchies('Metrics')/Elements('6299')"
+					},
+					{
+						"@id":"Dimensions('Metrics')/Hierarchies('Metrics')/Elements('6399')"
+					},
+					{
+						"@id":"Dimensions('Metrics')/Hierarchies('Metrics')/Elements('6499')"
+					},
+					{
+						"@id":"Dimensions('Metrics')/Hierarchies('Metrics')/Elements('6599')"
+					},
+					{
+						"@id":"Dimensions('Metrics')/Hierarchies('Metrics')/Elements('TE')"
+					},
+					{
+						"@id":"Dimensions('Metrics')/Hierarchies('Metrics')/Elements('NP')"
+					},
+					{
+						"@id":"Dimensions('Metrics')/Hierarchies('Metrics')/Elements('6699')"
+					},
+					{
+						"@id":"Dimensions('Metrics')/Hierarchies('Metrics')/Elements('NPAA')"
+					},
+					{
+						"@id":"Dimensions('Metrics')/Hierarchies('Metrics')/Elements('Statistics')"
+					}
+				]
+			},
+			"Selected":
+			{
+				"@id":"Dimensions('Metrics')/Hierarchies('Metrics')/Elements('4999')"
+			}
+		},
+		{
+			"Subset":
+			{
+				"Hierarchy":
+				{
+					"@id":"Dimensions('organization')/Hierarchies('organization')"
+				},
+				"Elements":
+				[
+					{
+						"@id":"Dimensions('organization')/Hierarchies('organization')/Elements('Total Company')"
+					},
+					{
+						"@id":"Dimensions('organization')/Hierarchies('organization')/Elements('100')"
+					},
+					{
+						"@id":"Dimensions('organization')/Hierarchies('organization')/Elements('101')"
+					},
+					{
+						"@id":"Dimensions('organization')/Hierarchies('organization')/Elements('102')"
+					},
+					{
+						"@id":"Dimensions('organization')/Hierarchies('organization')/Elements('103')"
+					},
+					{
+						"@id":"Dimensions('organization')/Hierarchies('organization')/Elements('200')"
+					},
+					{
+						"@id":"Dimensions('organization')/Hierarchies('organization')/Elements('201')"
+					},
+					{
+						"@id":"Dimensions('organization')/Hierarchies('organization')/Elements('202')"
+					},
+					{
+						"@id":"Dimensions('organization')/Hierarchies('organization')/Elements('300')"
+					},
+					{
+						"@id":"Dimensions('organization')/Hierarchies('organization')/Elements('301')"
+					},
+					{
+						"@id":"Dimensions('organization')/Hierarchies('organization')/Elements('302')"
+					},
+					{
+						"@id":"Dimensions('organization')/Hierarchies('organization')/Elements('400')"
+					},
+					{
+						"@id":"Dimensions('organization')/Hierarchies('organization')/Elements('401')"
+					},
+					{
+						"@id":"Dimensions('organization')/Hierarchies('organization')/Elements('402')"
+					},
+					{
+						"@id":"Dimensions('organization')/Hierarchies('organization')/Elements('403')"
+					}
+				]
+			},
+			"Selected":
+			{
+				"@id":"Dimensions('organization')/Hierarchies('organization')/Elements('Total Company')"
+			}
+		},
+		{
+			"Subset":
+			{
+				"Hierarchy":
+				{
+					"@id":"Dimensions('Year')/Hierarchies('Year')"
+				},
+				"Elements":
+				[
+					{
+						"@id":"Dimensions('Year')/Hierarchies('Year')/Elements('Y1')"
+					},
+					{
+						"@id":"Dimensions('Year')/Hierarchies('Year')/Elements('Y2')"
+					},
+					{
+						"@id":"Dimensions('Year')/Hierarchies('Year')/Elements('Y3')"
+					}
+				]
+			},
+			"Selected":
+			{
+				"@id":"Dimensions('Year')/Hierarchies('Year')/Elements('Y2')"
+			}
+		}
+	],
+	"SuppressEmptyColumns":false,
+	"SuppressEmptyRows":false,
+	"FormatString":"0.00"
+}

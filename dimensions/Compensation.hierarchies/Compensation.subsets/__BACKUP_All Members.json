@@ -1,0 +1,43 @@
+{
+	"@type":"Subset",
+	"Name":"__BACKUP_All Members",
+	"Elements":
+	[
+		{
+			"@id":"Dimensions('Compensation')/Hierarchies('Compensation')/Elements('FTE')"
+		},
+		{
+			"@id":"Dimensions('Compensation')/Hierarchies('Compensation')/Elements('Total Expense')"
+		},
+		{
+			"@id":"Dimensions('Compensation')/Hierarchies('Compensation')/Elements('Monthly Salary & Bonus')"
+		},
+		{
+			"@id":"Dimensions('Compensation')/Hierarchies('Compensation')/Elements('6000')"
+		},
+		{
+			"@id":"Dimensions('Compensation')/Hierarchies('Compensation')/Elements('6005')"
+		},
+		{
+			"@id":"Dimensions('Compensation')/Hierarchies('Compensation')/Elements('YTD Salary & Bonus')"
+		},
+		{
+			"@id":"Dimensions('Compensation')/Hierarchies('Compensation')/Elements('6010')"
+		},
+		{
+			"@id":"Dimensions('Compensation')/Hierarchies('Compensation')/Elements('Medical Exp')"
+		},
+		{
+			"@id":"Dimensions('Compensation')/Hierarchies('Compensation')/Elements('Other Benefits Exp')"
+		},
+		{
+			"@id":"Dimensions('Compensation')/Hierarchies('Compensation')/Elements('6015')"
+		},
+		{
+			"@id":"Dimensions('Compensation')/Hierarchies('Compensation')/Elements('FICA Exp')"
+		},
+		{
+			"@id":"Dimensions('Compensation')/Hierarchies('Compensation')/Elements('Medicare Exp')"
+		}
+	]
+}

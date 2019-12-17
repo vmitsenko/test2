@@ -1,0 +1,43 @@
+{
+	"@type":"Hierarchy",
+	"Name":"TrxMeasures",
+	"Elements":
+	[
+		{
+			"Name":"TrxDate",
+			"Type":"String"
+		},
+		{
+			"Name":"Organization",
+			"Type":"String"
+		},
+		{
+			"Name":"Account",
+			"Type":"String"
+		},
+		{
+			"Name":"Type",
+			"Type":"String"
+		},
+		{
+			"Name":"Source",
+			"Type":"String"
+		},
+		{
+			"Name":"Desc",
+			"Type":"String"
+		},
+		{
+			"Name":"Reference",
+			"Type":"String"
+		},
+		{
+			"Name":"Amount",
+			"Type":"Numeric"
+		}
+	],
+	"Subsets@Code.links":
+	[
+		"TrxMeasures.subsets/All Members.json"
+	]
+}

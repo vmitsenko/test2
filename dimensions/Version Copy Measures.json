@@ -1,0 +1,13 @@
+{
+	"@type":"Dimension",
+	"Name":"Version Copy Measures",
+	"AllLeavesHierarchyName":"",
+	"DefaultHierarchy":
+	{
+		"@id":"Dimensions('Version Copy Measures')/Hierarchies('Version Copy Measures')"
+	},
+	"Hierarchies@Code.links":
+	[
+		"Version Copy Measures.hierarchies/Version Copy Measures.json"
+	]
+}

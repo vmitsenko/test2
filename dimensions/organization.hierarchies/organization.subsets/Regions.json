@@ -1,0 +1,22 @@
+{
+	"@type":"Subset",
+	"Name":"Regions",
+	"Elements":
+	[
+		{
+			"@id":"Dimensions('organization')/Hierarchies('organization')/Elements('Total Company')"
+		},
+		{
+			"@id":"Dimensions('organization')/Hierarchies('organization')/Elements('100')"
+		},
+		{
+			"@id":"Dimensions('organization')/Hierarchies('organization')/Elements('200')"
+		},
+		{
+			"@id":"Dimensions('organization')/Hierarchies('organization')/Elements('300')"
+		},
+		{
+			"@id":"Dimensions('organization')/Hierarchies('organization')/Elements('400')"
+		}
+	]
+}

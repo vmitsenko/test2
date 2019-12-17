@@ -1,0 +1,38 @@
+{
+	"@type":"NativeView",
+	"Name":"Version Subset Control",
+	"Columns":
+	[
+		{
+			"Subset":
+			{
+				"@id":"Dimensions('Version Subset Measures')/Hierarchies('Version Subset Measures')/Subsets('All Members')"
+			}
+		}
+	],
+	"Rows":
+	[
+		{
+			"Subset":
+			{
+				"@id":"Dimensions('LineItemList')/Hierarchies('LineItemList')/Subsets('All Members')"
+			}
+		}
+	],
+	"Titles":
+	[
+		{
+			"Subset":
+			{
+				"@id":"Dimensions('Version Subsets')/Hierarchies('Version Subsets')/Subsets('All Members')"
+			},
+			"Selected":
+			{
+				"@id":"Dimensions('Version Subsets')/Hierarchies('Version Subsets')/Elements('Analysis')"
+			}
+		}
+	],
+	"SuppressEmptyColumns":false,
+	"SuppressEmptyRows":false,
+	"FormatString":"0.00"
+}

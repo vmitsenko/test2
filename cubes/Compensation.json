@@ -1,0 +1,33 @@
+{
+	"@type":"Cube",
+	"Name":"Compensation",
+	"Rules@Code.link":"Compensation.rules",
+	"Dimensions":
+	[
+		{
+			"@id":"Dimensions('organization')"
+		},
+		{
+			"@id":"Dimensions('EmployeeList')"
+		},
+		{
+			"@id":"Dimensions('Month')"
+		},
+		{
+			"@id":"Dimensions('Year')"
+		},
+		{
+			"@id":"Dimensions('Version')"
+		},
+		{
+			"@id":"Dimensions('Compensation')"
+		}
+	],
+	"Views@Code.links":
+	[
+		"Compensation.views/All.json",
+		"Compensation.views/Compensation.json",
+		"Compensation.views/Default.json",
+		"Compensation.views/Input.json"
+	]
+}

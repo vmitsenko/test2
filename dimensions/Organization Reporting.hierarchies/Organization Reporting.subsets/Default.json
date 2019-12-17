@@ -1,0 +1,34 @@
+{
+	"@type":"Subset",
+	"Name":"Default",
+	"Elements":
+	[
+		{
+			"@id":"Dimensions('Organization Reporting')/Hierarchies('Organization Reporting')/Elements('Total Company')"
+		},
+		{
+			"@id":"Dimensions('Organization Reporting')/Hierarchies('Organization Reporting')/Elements('100')"
+		},
+		{
+			"@id":"Dimensions('Organization Reporting')/Hierarchies('Organization Reporting')/Elements('200')"
+		},
+		{
+			"@id":"Dimensions('Organization Reporting')/Hierarchies('Organization Reporting')/Elements('300')"
+		},
+		{
+			"@id":"Dimensions('Organization Reporting')/Hierarchies('Organization Reporting')/Elements('400')"
+		},
+		{
+			"@id":"Dimensions('Organization Reporting')/Hierarchies('Organization Reporting')/Elements('Total by VP')"
+		},
+		{
+			"@id":"Dimensions('Organization Reporting')/Hierarchies('Organization Reporting')/Elements('Vice President 1')"
+		},
+		{
+			"@id":"Dimensions('Organization Reporting')/Hierarchies('Organization Reporting')/Elements('Vice President 2')"
+		},
+		{
+			"@id":"Dimensions('Organization Reporting')/Hierarchies('Organization Reporting')/Elements('Vice President 3')"
+		}
+	]
+}

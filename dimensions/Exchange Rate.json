@@ -1,0 +1,13 @@
+{
+	"@type":"Dimension",
+	"Name":"Exchange Rate",
+	"AllLeavesHierarchyName":"",
+	"DefaultHierarchy":
+	{
+		"@id":"Dimensions('Exchange Rate')/Hierarchies('Exchange Rate')"
+	},
+	"Hierarchies@Code.links":
+	[
+		"Exchange Rate.hierarchies/Exchange Rate.json"
+	]
+}

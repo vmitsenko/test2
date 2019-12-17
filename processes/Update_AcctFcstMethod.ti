@@ -1,0 +1,27 @@
+#region Prolog
+
+#****Begin: Generated Statements***
+OldCubeLogChanges = CUBEGETLOGCHANGES('}ElementAttributes_Account');
+CUBESETLOGCHANGES('}ElementAttributes_Account', 0);
+#****End: Generated Statements****
+
+
+SetUseActiveSandboxProperty(1);
+#endregion
+#region Metadata
+
+#****Begin: Generated Statements***
+#****End: Generated Statements****
+#endregion
+#region Data
+
+#****Begin: Generated Statements***
+if (VALUE_IS_STRING=1, CellPutS(SVALUE,'}ElementAttributes_Account',Account,FcstMethod), CellPutN(NVALUE, '}ElementAttributes_Account', Account,FcstMethod));
+#****End: Generated Statements****
+#endregion
+#region Epilog
+
+#****Begin: Generated Statements***
+CUBESETLOGCHANGES('}ElementAttributes_Account', OldCubeLogChanges);
+#****End: Generated Statements****
+#endregion

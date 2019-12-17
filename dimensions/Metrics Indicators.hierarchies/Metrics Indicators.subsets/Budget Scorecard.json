@@ -1,0 +1,25 @@
+{
+	"@type":"Subset",
+	"Name":"Budget Scorecard",
+	"Elements":
+	[
+		{
+			"@id":"Dimensions('Metrics Indicators')/Hierarchies('Metrics Indicators')/Elements('Actual')"
+		},
+		{
+			"@id":"Dimensions('Metrics Indicators')/Hierarchies('Metrics Indicators')/Elements('Target')"
+		},
+		{
+			"@id":"Dimensions('Metrics Indicators')/Hierarchies('Metrics Indicators')/Elements('Variance')"
+		},
+		{
+			"@id":"Dimensions('Metrics Indicators')/Hierarchies('Metrics Indicators')/Elements('Variance Percent')"
+		},
+		{
+			"@id":"Dimensions('Metrics Indicators')/Hierarchies('Metrics Indicators')/Elements('Status')"
+		},
+		{
+			"@id":"Dimensions('Metrics Indicators')/Hierarchies('Metrics Indicators')/Elements('Trend')"
+		}
+	]
+}

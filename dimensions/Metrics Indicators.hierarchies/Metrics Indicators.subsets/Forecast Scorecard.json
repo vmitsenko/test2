@@ -1,0 +1,25 @@
+{
+	"@type":"Subset",
+	"Name":"Forecast Scorecard",
+	"Elements":
+	[
+		{
+			"@id":"Dimensions('Metrics Indicators')/Hierarchies('Metrics Indicators')/Elements('Actual')"
+		},
+		{
+			"@id":"Dimensions('Metrics Indicators')/Hierarchies('Metrics Indicators')/Elements('Forecast')"
+		},
+		{
+			"@id":"Dimensions('Metrics Indicators')/Hierarchies('Metrics Indicators')/Elements('Forecast Variance')"
+		},
+		{
+			"@id":"Dimensions('Metrics Indicators')/Hierarchies('Metrics Indicators')/Elements('Forecast Variance %')"
+		},
+		{
+			"@id":"Dimensions('Metrics Indicators')/Hierarchies('Metrics Indicators')/Elements('Forecast Status')"
+		},
+		{
+			"@id":"Dimensions('Metrics Indicators')/Hierarchies('Metrics Indicators')/Elements('Forecast Trend')"
+		}
+	]
+}

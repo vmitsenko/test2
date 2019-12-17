@@ -1,0 +1,28 @@
+{
+	"@type":"Cube",
+	"Name":"Allocation Source Definition",
+	"Rules@Code.link":"Allocation Source Definition.rules",
+	"Dimensions":
+	[
+		{
+			"@id":"Dimensions('Allocation List')"
+		},
+		{
+			"@id":"Dimensions('Year')"
+		},
+		{
+			"@id":"Dimensions('Version')"
+		},
+		{
+			"@id":"Dimensions('Allocation Source Definition')"
+		}
+	],
+	"Views@Code.links":
+	[
+		"Allocation Source Definition.views/All.json",
+		"Allocation Source Definition.views/Allocation Source Definition.json",
+		"Allocation Source Definition.views/Default.json",
+		"Allocation Source Definition.views/Drill_Allocation Senders.json",
+		"Allocation Source Definition.views/zCopyFrom.json"
+	]
+}

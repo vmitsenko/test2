@@ -1,0 +1,19 @@
+{
+	"@type":"Subset",
+	"Name":"Act vs. Bud Variance",
+	"Elements":
+	[
+		{
+			"@id":"Dimensions('Metrics Indicators')/Hierarchies('Metrics Indicators')/Elements('Actual')"
+		},
+		{
+			"@id":"Dimensions('Metrics Indicators')/Hierarchies('Metrics Indicators')/Elements('Target')"
+		},
+		{
+			"@id":"Dimensions('Metrics Indicators')/Hierarchies('Metrics Indicators')/Elements('Variance')"
+		},
+		{
+			"@id":"Dimensions('Metrics Indicators')/Hierarchies('Metrics Indicators')/Elements('Variance Percent')"
+		}
+	]
+}

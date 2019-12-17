@@ -1,0 +1,33 @@
+{
+	"@type":"Cube",
+	"Name":"Income Statement Reporting",
+	"Rules@Code.link":"Income Statement Reporting.rules",
+	"DrillthroughRules@Code.link":"Income Statement Reporting.drillthrough.rules",
+	"Dimensions":
+	[
+		{
+			"@id":"Dimensions('Currency Calc')"
+		},
+		{
+			"@id":"Dimensions('Organization Reporting')"
+		},
+		{
+			"@id":"Dimensions('Year')"
+		},
+		{
+			"@id":"Dimensions('Month')"
+		},
+		{
+			"@id":"Dimensions('Account')"
+		},
+		{
+			"@id":"Dimensions('Version')"
+		}
+	],
+	"Views@Code.links":
+	[
+		"Income Statement Reporting.views/All.json",
+		"Income Statement Reporting.views/Default.json",
+		"Income Statement Reporting.views/Income Statement - Management.json"
+	]
+}

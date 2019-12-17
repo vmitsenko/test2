@@ -1,0 +1,19 @@
+{
+	"@type":"Subset",
+	"Name":"Task Overview",
+	"Elements":
+	[
+		{
+			"@id":"Dimensions('Task Workflow Measure')/Hierarchies('Task Workflow Measure')/Elements('Status')"
+		},
+		{
+			"@id":"Dimensions('Task Workflow Measure')/Hierarchies('Task Workflow Measure')/Elements('Due Date')"
+		},
+		{
+			"@id":"Dimensions('Task Workflow Measure')/Hierarchies('Task Workflow Measure')/Elements('Date Completed')"
+		},
+		{
+			"@id":"Dimensions('Task Workflow Measure')/Hierarchies('Task Workflow Measure')/Elements('Commentary')"
+		}
+	]
+}

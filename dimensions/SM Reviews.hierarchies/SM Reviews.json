@@ -1,0 +1,20 @@
+{
+	"@type":"Hierarchy",
+	"Name":"SM Reviews",
+	"Elements":
+	[
+		{
+			"Name":"Date",
+			"Type":"String"
+		},
+		{
+			"Name":"Rating",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"Comments",
+			"Type":"String"
+		}
+	],
+	"Subsets@Code.links":[]
+}

@@ -1,0 +1,34 @@
+{
+	"@type":"Cube",
+	"Name":"Revenue Reporting",
+	"Rules@Code.link":"Revenue Reporting.rules",
+	"Dimensions":
+	[
+		{
+			"@id":"Dimensions('organization')"
+		},
+		{
+			"@id":"Dimensions('Channel')"
+		},
+		{
+			"@id":"Dimensions('product')"
+		},
+		{
+			"@id":"Dimensions('Month')"
+		},
+		{
+			"@id":"Dimensions('Year')"
+		},
+		{
+			"@id":"Dimensions('Revenue')"
+		},
+		{
+			"@id":"Dimensions('Version')"
+		}
+	],
+	"Views@Code.links":
+	[
+		"Revenue Reporting.views/All.json",
+		"Revenue Reporting.views/Variance Analysis.json"
+	]
+}

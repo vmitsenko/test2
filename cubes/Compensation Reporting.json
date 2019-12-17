@@ -1,0 +1,37 @@
+{
+	"@type":"Cube",
+	"Name":"Compensation Reporting",
+	"Rules@Code.link":"Compensation Reporting.rules",
+	"Dimensions":
+	[
+		{
+			"@id":"Dimensions('Employee Name')"
+		},
+		{
+			"@id":"Dimensions('organization')"
+		},
+		{
+			"@id":"Dimensions('EmployeeList')"
+		},
+		{
+			"@id":"Dimensions('Month')"
+		},
+		{
+			"@id":"Dimensions('Year')"
+		},
+		{
+			"@id":"Dimensions('Version')"
+		},
+		{
+			"@id":"Dimensions('Compensation')"
+		}
+	],
+	"Views@Code.links":
+	[
+		"Compensation Reporting.views/All.json",
+		"Compensation Reporting.views/Compensation by Employee.json",
+		"Compensation Reporting.views/Compensation Review by Employee.json",
+		"Compensation Reporting.views/Default.json",
+		"Compensation Reporting.views/FTE by Employee.json"
+	]
+}

@@ -1,0 +1,42 @@
+{
+	"@type":"NativeView",
+	"Name":"zTaskWorkflowClear",
+	"Columns":[],
+	"Rows":
+	[
+		{
+			"Subset":
+			{
+				"Hierarchy":
+				{
+					"@id":"Dimensions('Task')/Hierarchies('Task')"
+				},
+				"Expression":"TM1SubsetAll([Task])"
+			}
+		},
+		{
+			"Subset":
+			{
+				"Hierarchy":
+				{
+					"@id":"Dimensions('organization')/Hierarchies('organization')"
+				},
+				"Expression":"TM1SubsetAll([organization])"
+			}
+		},
+		{
+			"Subset":
+			{
+				"Hierarchy":
+				{
+					"@id":"Dimensions('Task Workflow Measure')/Hierarchies('Task Workflow Measure')"
+				},
+				"Expression":"TM1SubsetAll([Task Workflow Measure])"
+			}
+		}
+	],
+	"Titles":[],
+	"SuppressEmptyColumns":false,
+	"SuppressEmptyRows":false,
+	"FormatString":"0.00"
+}

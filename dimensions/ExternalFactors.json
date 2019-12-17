@@ -1,0 +1,13 @@
+{
+	"@type":"Dimension",
+	"Name":"ExternalFactors",
+	"AllLeavesHierarchyName":"",
+	"DefaultHierarchy":
+	{
+		"@id":"Dimensions('ExternalFactors')/Hierarchies('ExternalFactors')"
+	},
+	"Hierarchies@Code.links":
+	[
+		"ExternalFactors.hierarchies/ExternalFactors.json"
+	]
+}

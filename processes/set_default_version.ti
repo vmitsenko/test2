@@ -1,0 +1,40 @@
+#region Prolog
+
+#****Begin: Generated Statements***
+#****End: Generated Statements****
+
+vDefaultVersionAlias='';
+
+IF(DIMIX('Version', pDefaultVersion) <=0);
+ ProcessError;
+ENDIF;
+
+CellPutS(pDefaultVersion, 'Calendar','Current Version','String');
+
+vDefaultVersionAlias=ATTRS('Version', pDefaultVersion,'Caption_Default');
+IF(vDefaultVersionAlias @= '');
+   vDefaultVersionAlias = pDefaultVersion;
+ENDIF;
+vDefaultVersionAlias=vDefaultVersionAlias|'.';
+
+AttrPutS(vDefaultVersionAlias, 'Version', 'Dashboard', 'Caption_Default');
+
+ExecuteProcess('create_default_subset', 'pSubsetName','Current');
+ExecuteProcess('create_default_subset', 'pSubsetName','Analysis');
+
+#endregion
+#region Metadata
+
+#****Begin: Generated Statements***
+#****End: Generated Statements****
+#endregion
+#region Data
+
+#****Begin: Generated Statements***
+#****End: Generated Statements****
+#endregion
+#region Epilog
+
+#****Begin: Generated Statements***
+#****End: Generated Statements****
+#endregion

@@ -1,0 +1,28 @@
+{
+	"@type":"Subset",
+	"Name":"Default",
+	"Elements":
+	[
+		{
+			"@id":"Dimensions('Revenue')/Hierarchies('Revenue')/Elements('Unit Price')"
+		},
+		{
+			"@id":"Dimensions('Revenue')/Hierarchies('Revenue')/Elements('Units Sold')"
+		},
+		{
+			"@id":"Dimensions('Revenue')/Hierarchies('Revenue')/Elements('Gross Revenue')"
+		},
+		{
+			"@id":"Dimensions('Revenue')/Hierarchies('Revenue')/Elements('Unit Cost')"
+		},
+		{
+			"@id":"Dimensions('Revenue')/Hierarchies('Revenue')/Elements('Cost of Sales')"
+		},
+		{
+			"@id":"Dimensions('Revenue')/Hierarchies('Revenue')/Elements('Gross Margin')"
+		},
+		{
+			"@id":"Dimensions('Revenue')/Hierarchies('Revenue')/Elements('Gross Margin %')"
+		}
+	]
+}

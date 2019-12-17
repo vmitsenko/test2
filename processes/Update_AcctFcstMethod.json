@@ -1,0 +1,37 @@
+{
+	"@type":"Process",
+	"Name":"Update_AcctFcstMethod",
+	"Code@Code.link":"Update_AcctFcstMethod.ti",
+	"DataSource":
+	{
+		"Type":"TM1CubeView",
+		"dataSourceNameForClient":"FcstMethod",
+		"dataSourceNameForServer":"FcstMethod",
+		"view":"CopyFrom"
+	},
+	"Parameters":[],
+	"Variables":
+	[
+		{
+			"Name":"Account",
+			"Type":"String",
+			"Position":1,
+			"StartByte":0,
+			"EndByte":0
+		},
+		{
+			"Name":"FcstMethod",
+			"Type":"String",
+			"Position":2,
+			"StartByte":0,
+			"EndByte":0
+		},
+		{
+			"Name":"Value",
+			"Type":"String",
+			"Position":3,
+			"StartByte":0,
+			"EndByte":0
+		}
+	]
+}

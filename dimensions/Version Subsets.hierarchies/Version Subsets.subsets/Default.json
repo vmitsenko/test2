@@ -1,0 +1,10 @@
+{
+	"@type":"Subset",
+	"Name":"Default",
+	"Elements":
+	[
+		{
+			"@id":"Dimensions('Version Subsets')/Hierarchies('Version Subsets')/Elements('Current')"
+		}
+	]
+}

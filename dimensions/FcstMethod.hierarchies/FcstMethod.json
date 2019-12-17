@@ -1,0 +1,12 @@
+{
+	"@type":"Hierarchy",
+	"Name":"FcstMethod",
+	"Elements":
+	[
+		{
+			"Name":"FcstMethod",
+			"Type":"String"
+		}
+	],
+	"Subsets@Code.links":[]
+}

@@ -1,0 +1,16 @@
+{
+	"@type":"Hierarchy",
+	"Name":"Exchange Rate",
+	"Elements":
+	[
+		{
+			"Name":"ExchangeRate",
+			"Type":"Numeric"
+		}
+	],
+	"Subsets@Code.links":
+	[
+		"Exchange Rate.subsets/All Members.json",
+		"Exchange Rate.subsets/Default.json"
+	]
+}

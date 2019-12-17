@@ -1,0 +1,58 @@
+{
+	"@type":"Process",
+	"Name":"cube Task Workflow reset Status",
+	"Code@Code.link":"cube Task Workflow reset Status.ti",
+	"DataSource":
+	{
+		"Type":"TM1CubeView",
+		"dataSourceNameForClient":"Task Workflow",
+		"dataSourceNameForServer":"Task Workflow",
+		"view":"z_TI_cube Task Workflow reset Status"
+	},
+	"Parameters":
+	[
+		{
+			"Name":"pDueDate",
+			"Prompt":"Due date to spread? DD/MM/YYYY",
+			"Value":"12/15/2013",
+			"Type":"String"
+		},
+		{
+			"Name":"pClearCube",
+			"Prompt":"Clear Cube? Y or N",
+			"Value":"Y",
+			"Type":"String"
+		}
+	],
+	"Variables":
+	[
+		{
+			"Name":"vTask",
+			"Type":"String",
+			"Position":1,
+			"StartByte":0,
+			"EndByte":0
+		},
+		{
+			"Name":"vOrg",
+			"Type":"String",
+			"Position":2,
+			"StartByte":0,
+			"EndByte":0
+		},
+		{
+			"Name":"vMeasure",
+			"Type":"String",
+			"Position":3,
+			"StartByte":0,
+			"EndByte":0
+		},
+		{
+			"Name":"vValue",
+			"Type":"String",
+			"Position":4,
+			"StartByte":0,
+			"EndByte":0
+		}
+	]
+}

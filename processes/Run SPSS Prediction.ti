@@ -1,0 +1,48 @@
+#region Prolog
+
+#****Begin: Generated Statements***
+#****End: Generated Statements****
+
+#
+# Update the Forecast Month on Version Dimension so that we can refer back to it
+#
+AttrPutS(pMonth, 'Version', pVersion, 'FcstMonth');
+
+#
+# Export Data Required by SPSS - Dimension Files, Units for Actuals and External Factors from Predictive Version
+#
+ExecuteProcess('Export UnitsSold to SPSS');
+ExecuteProcess('Export External Factors to SPSS','pVersion',pVersion);
+
+#
+# Run the SPSS Model
+#
+SPSSCmd = '"'|CellGetS( 'Calendar', 'SPSS Directory','String')|'ExecuteStreamExternal.bat"';
+ExecuteCommand(SPSSCmd,1);
+
+#
+# Load Data From SPSS Back into TM1
+#
+ExecuteProcess('Load UnitsSold from SPSS','pVersion',pVersion);
+#
+# The End
+#
+
+
+
+#endregion
+#region Metadata
+
+#****Begin: Generated Statements***
+#****End: Generated Statements****
+#endregion
+#region Data
+
+#****Begin: Generated Statements***
+#****End: Generated Statements****
+#endregion
+#region Epilog
+
+#****Begin: Generated Statements***
+#****End: Generated Statements****
+#endregion

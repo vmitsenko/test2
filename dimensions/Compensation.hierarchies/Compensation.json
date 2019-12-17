@@ -1,0 +1,118 @@
+{
+	"@type":"Hierarchy",
+	"Name":"Compensation",
+	"Elements":
+	[
+		{
+			"Name":"FTE",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"EmpID",
+			"Type":"String"
+		},
+		{
+			"Name":"YTD Salary & Bonus",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"Total Expense",
+			"Type":"Consolidated"
+		},
+		{
+			"Name":"Monthly Salary & Bonus",
+			"Type":"Consolidated"
+		},
+		{
+			"Name":"6000",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"6005",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"6010",
+			"Type":"Consolidated"
+		},
+		{
+			"Name":"Medical Exp",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"Other Benefits Exp",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"6015",
+			"Type":"Consolidated"
+		},
+		{
+			"Name":"FICA Exp",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"Medicare Exp",
+			"Type":"Numeric"
+		}
+	],
+	"Edges":
+	[
+		{
+			"ParentName":"Total Expense",
+			"ComponentName":"Monthly Salary & Bonus",
+			"Weight":1
+		},
+		{
+			"ParentName":"Total Expense",
+			"ComponentName":"6010",
+			"Weight":1
+		},
+		{
+			"ParentName":"Total Expense",
+			"ComponentName":"6015",
+			"Weight":1
+		},
+		{
+			"ParentName":"Monthly Salary & Bonus",
+			"ComponentName":"6000",
+			"Weight":1
+		},
+		{
+			"ParentName":"Monthly Salary & Bonus",
+			"ComponentName":"6005",
+			"Weight":1
+		},
+		{
+			"ParentName":"6010",
+			"ComponentName":"Medical Exp",
+			"Weight":1
+		},
+		{
+			"ParentName":"6010",
+			"ComponentName":"Other Benefits Exp",
+			"Weight":1
+		},
+		{
+			"ParentName":"6015",
+			"ComponentName":"FICA Exp",
+			"Weight":1
+		},
+		{
+			"ParentName":"6015",
+			"ComponentName":"Medicare Exp",
+			"Weight":1
+		}
+	],
+	"Subsets@Code.links":
+	[
+		"Compensation.subsets/__BACKUP_All Members.json",
+		"Compensation.subsets/All Members.json",
+		"Compensation.subsets/Compensation Review.json",
+		"Compensation.subsets/Compensation Review Chart.json",
+		"Compensation.subsets/Default.json",
+		"Compensation.subsets/Employee Summary.json",
+		"Compensation.subsets/Employee Summary Compensation.json",
+		"Compensation.subsets/FTE.json"
+	]
+}

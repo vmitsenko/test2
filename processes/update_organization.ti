@@ -1,0 +1,55 @@
+#region Prolog
+
+#****Begin: Generated Header****
+if (param_destroy = 1);
+   DimensionDestroy('organization');
+endif;
+if (param_createIfNotExist = 1);
+   if (0 = DimensionExists('organization'));
+      DimensionCreate('organization');
+      AttrInsert('organization', '', 'Caption_Default', 'A');
+      CellPutS('HIERARCHY', '}DimensionAttributes', 'organization', 'DIMENSION_TYPE');
+      SubsetCreateByMDX('All Members', '[organization].MEMBERS', 'organization');
+      SubsetAliasSet('organization', 'All Members', 'Caption_Default');
+   endif;
+   ATTRINSERT('organization', '', 'Label', 'A');
+endif;
+CellPutS('Organization', '}DimensionAttributes', 'organization', 'Caption_Default');
+#****End: Generated Header****
+
+#****Begin: Generated Statements***
+DimensionTopElementInsertDirect('organization', '', 'Total of Organization');
+DimensionSortOrder('organization', 'ByName', 'ASCENDING', 'ByName', 'ASCENDING');
+#****End: Generated Statements****
+#endregion
+#region Metadata
+
+#****Begin: Generated Statements***
+#****End: Generated Statements****
+#endregion
+#region Data
+
+
+
+#****Begin: Generated Statements***
+DimensionElementInsertDirect('organization', '', v_Number_0, 'n');
+DimensionElementInsertDirect('organization', '', v_Parent_1, 'c');
+DimensionElementComponentAddDirect('organization', v_Parent_1, v_Number_0, 1.0);
+ATTRPUTS(v_Label_2, 'organization', v_Number_0, 'Label');
+#****End: Generated Statements****
+#endregion
+#region Epilog
+
+#****Begin: Generated Statements***
+if (DNLEV('organization') = 3);
+   CellPutS('Total ', '}HierarchyProperties', 'organization', 'hierarchy0', 'level000');
+   CellPutS('Parent', '}HierarchyProperties', 'organization', 'hierarchy0', 'level001');
+   CellPutS('Number', '}HierarchyProperties', 'organization', 'hierarchy0', 'level002');
+elseif (DNLEV('organization') = 2);
+   CellPutS('Parent', '}HierarchyProperties', 'organization', 'hierarchy0', 'level000');
+   CellPutS('Number', '}HierarchyProperties', 'organization', 'hierarchy0', 'level001');
+else; itemReject('The resulting hierarchy for the dimension "organization" does not align with the level structure defined in the mapping.  When parent-child dimensions are being treated as level based or when level based dimensions are being constructed using source data containing non-unique member identifiers, unexpected hierarchy structures may result. For the case when non-unique member identifiers exist in the source data, turn on the "Qualify member names" dimension property in the mapping page.');
+endif;
+RefreshMDXHierarchy('organization');
+#****End: Generated Statements****
+#endregion

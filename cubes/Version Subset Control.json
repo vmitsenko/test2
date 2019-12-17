@@ -1,0 +1,23 @@
+{
+	"@type":"Cube",
+	"Name":"Version Subset Control",
+	"Rules@Code.link":"Version Subset Control.rules",
+	"Dimensions":
+	[
+		{
+			"@id":"Dimensions('Version Subsets')"
+		},
+		{
+			"@id":"Dimensions('LineItemList')"
+		},
+		{
+			"@id":"Dimensions('Version Subset Measures')"
+		}
+	],
+	"Views@Code.links":
+	[
+		"Version Subset Control.views/All.json",
+		"Version Subset Control.views/Default.json",
+		"Version Subset Control.views/Version Subset Control.json"
+	]
+}

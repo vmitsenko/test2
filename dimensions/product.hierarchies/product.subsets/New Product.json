@@ -1,0 +1,5 @@
+{
+	"@type":"Subset",
+	"Name":"New Product",
+	"Expression":"{FILTER( {TM1SUBSETALL( [Product] )}, [Product].[NewProduct] = \"Y\")}"
+}

@@ -1,0 +1,25 @@
+{
+	"@type":"Subset",
+	"Name":"Asset Type",
+	"Elements":
+	[
+		{
+			"@id":"Dimensions('Asset Types')/Hierarchies('Asset Types')/Elements('1200')"
+		},
+		{
+			"@id":"Dimensions('Asset Types')/Hierarchies('Asset Types')/Elements('1210')"
+		},
+		{
+			"@id":"Dimensions('Asset Types')/Hierarchies('Asset Types')/Elements('1220')"
+		},
+		{
+			"@id":"Dimensions('Asset Types')/Hierarchies('Asset Types')/Elements('1230')"
+		},
+		{
+			"@id":"Dimensions('Asset Types')/Hierarchies('Asset Types')/Elements('1240')"
+		},
+		{
+			"@id":"Dimensions('Asset Types')/Hierarchies('Asset Types')/Elements('1250')"
+		}
+	]
+}

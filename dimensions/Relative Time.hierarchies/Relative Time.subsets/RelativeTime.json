@@ -1,0 +1,31 @@
+{
+	"@type":"Subset",
+	"Name":"RelativeTime",
+	"Elements":
+	[
+		{
+			"@id":"Dimensions('Relative Time')/Hierarchies('Relative Time')/Elements('CM-1Y')"
+		},
+		{
+			"@id":"Dimensions('Relative Time')/Hierarchies('Relative Time')/Elements('M-1')"
+		},
+		{
+			"@id":"Dimensions('Relative Time')/Hierarchies('Relative Time')/Elements('CM-2Y')"
+		},
+		{
+			"@id":"Dimensions('Relative Time')/Hierarchies('Relative Time')/Elements('M-2')"
+		},
+		{
+			"@id":"Dimensions('Relative Time')/Hierarchies('Relative Time')/Elements('CM-3Y')"
+		},
+		{
+			"@id":"Dimensions('Relative Time')/Hierarchies('Relative Time')/Elements('M-3')"
+		},
+		{
+			"@id":"Dimensions('Relative Time')/Hierarchies('Relative Time')/Elements('CMPYY')"
+		},
+		{
+			"@id":"Dimensions('Relative Time')/Hierarchies('Relative Time')/Elements('CMPY')"
+		}
+	]
+}

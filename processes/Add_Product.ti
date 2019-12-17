@@ -1,0 +1,109 @@
+#region Prolog
+
+#****Begin: Generated Statements***
+#****End: Generated Statements****
+
+pParent=DimensionElementPrincipalName('Product',pParent);
+
+
+DimensionElementInsert('Product','',pNewNumber,'N');
+
+DimensionElementComponentAdd('Product',pParent,pNewNumber,1);
+
+###Check for Required Subsets###
+
+IF(SubsetExists('Product', 'New')=0);
+SubsetCreate('Product', 'New');
+ENDIF;
+
+IF(SubsetExists('Product', 'Compare')=0);
+SubsetCreate('Product', 'Compare');
+ENDIF;
+
+
+
+
+#endregion
+#region Metadata
+
+#****Begin: Generated Statements***
+#****End: Generated Statements****
+#endregion
+#region Data
+
+#****Begin: Generated Statements***
+#****End: Generated Statements****
+#endregion
+#region Epilog
+
+#****Begin: Generated Statements***
+#****End: Generated Statements****
+
+
+AttrPutS(pNewName, 'Product',pNewNumber,'Caption_Default');
+AttrPutS('Y','Product',pNewNumber,'NewProduct');
+
+
+IF(SubsetGetSize('Product','New')>0);
+SubsetDeleteAllElements('Product','New');
+ENDIF;
+SubsetElementInsert('Product','New',pNewNumber,1);
+
+
+###Update Price and Cost Assumptions###
+ExecuteProcess('Copy_RevAsmpt','pParent',pParent,'pNewNumber',pNewNumber);
+
+pFromSKU=SubsetGetElementName('Product', 'Compare', 1);
+
+ExecuteProcess('Copy_SKU_detail_BOM','pFromSKU',pFromSKU,'pToSKU',pNewNumber);
+ExecuteProcess('Copy_Product_SupplyChain','pCopyFrom',pFromSKU,'pCopyTo',pNewNumber);
+
+###Update Subsets###
+
+ProdSize=DimSiz('Product');
+IF(SubsetGetSize('Product','Gaming')>0);
+SubsetDeleteAllElements('Product','Gaming');
+ENDIF;
+SubsetElementInsert('Product','Gaming','Gaming',1);
+n=1;
+While(n<=ProdSize);
+Current=DIMNM('Product',n);
+IF(ELISANC('Product','Gaming',Current)=1);
+SubsetElementInsert('Product','Gaming',Current,0);
+ENDIF;
+n=n+1;
+END;
+
+ProdSize=DimSiz('Product');
+IF(SubsetGetSize('Product','Phones')>0);
+SubsetDeleteAllElements('Product','Phones');
+ENDIF;
+SubsetElementInsert('Product','Phones','Phones',1);
+n=1;
+While(n<=ProdSize);
+Current=DIMNM('Product',n);
+IF(ELISANC('Product','Phones',Current)=1);
+SubsetElementInsert('Product','Phones',Current,0);
+ENDIF;
+n=n+1;
+END;
+
+ProdSize=DimSiz('Product');
+IF(SubsetGetSize('Product','Tablets')>0);
+SubsetDeleteAllElements('Product','Tablets');
+ENDIF;
+SubsetElementInsert('Product','Tablets','Tablets',1);
+n=1;
+While(n<=ProdSize);
+Current=DIMNM('Product',n);
+IF(ELISANC('Product','Tablets',Current)=1);
+SubsetElementInsert('Product','Tablets',Current,0);
+ENDIF;
+n=n+1;
+END;
+
+
+
+
+
+#endregion

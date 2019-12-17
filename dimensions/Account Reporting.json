@@ -1,0 +1,13 @@
+{
+	"@type":"Dimension",
+	"Name":"Account Reporting",
+	"AllLeavesHierarchyName":"",
+	"DefaultHierarchy":
+	{
+		"@id":"Dimensions('Account Reporting')/Hierarchies('Account Reporting')"
+	},
+	"Hierarchies@Code.links":
+	[
+		"Account Reporting.hierarchies/Account Reporting.json"
+	]
+}

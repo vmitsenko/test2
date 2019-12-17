@@ -1,0 +1,46 @@
+{
+	"@type":"NativeView",
+	"Name":"All",
+	"Columns":
+	[
+		{
+			"Subset":
+			{
+				"@id":"Dimensions('organization')/Hierarchies('organization')/Subsets('All Members')"
+			}
+		}
+	],
+	"Rows":
+	[
+		{
+			"Subset":
+			{
+				"Hierarchy":
+				{
+					"@id":"Dimensions('BI Measure')/Hierarchies('BI Measure')"
+				},
+				"Expression":"[BI Measure].MEMBERS"
+			}
+		}
+	],
+	"Titles":
+	[
+		{
+			"Subset":
+			{
+				"Hierarchy":
+				{
+					"@id":"Dimensions('Workflow Info')/Hierarchies('Workflow Info')"
+				},
+				"Expression":"[Workflow Info].MEMBERS"
+			},
+			"Selected":
+			{
+				"@id":"Dimensions('Workflow Info')/Hierarchies('Workflow Info')/Elements('State')"
+			}
+		}
+	],
+	"SuppressEmptyColumns":false,
+	"SuppressEmptyRows":false,
+	"FormatString":"0.00"
+}

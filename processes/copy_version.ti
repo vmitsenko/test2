@@ -1,0 +1,166 @@
+#region Prolog
+
+#****Begin: Generated Statements***
+#****End: Generated Statements****
+
+StartTime=Time;
+
+DatasourceNameForServer=pCubeName;
+DatasourceCubeview='zCopyFrom';
+V1='';
+V2='';
+V3='';
+V4='';
+V5='';
+V6='';
+V7='';
+V8='';
+V9='';
+V10='';
+W1='';
+W2='';
+W3='';
+W4='';
+W5='';
+W6='';
+W7='';
+W8='';
+W9='';
+W10='';
+N1=0;
+S1='';
+
+
+
+
+
+#endregion
+#region Metadata
+
+#****Begin: Generated Statements***
+#****End: Generated Statements****
+#endregion
+#region Data
+
+#****Begin: Generated Statements***
+#****End: Generated Statements****
+
+
+
+IF(pStringDimLoc=4);vStringDimValue=V4;
+ELSEIF(pStringDimLoc=5);vStringDimValue=V5;
+ELSEIF(pStringDimLoc=6);vStringDimValue=V6;
+ELSEIF(pStringDimLoc=7);vStringDimValue=V7;
+ELSEIF(pStringDimLoc=8);vStringDimValue=V8;
+ELSEIF(pStringDimLoc=9);vStringDimValue=V9;
+ELSEIF(pStringDimLoc=10);vStringDimValue=V10;
+ELSEIF(pStringDimLoc=1);vStringDimValue=V1;
+ELSEIF(pStringDimLoc=2);vStringDimValue=V2;
+ELSEIF(pStringDimLoc=3);vStringDimValue=V3;
+ENDIF;
+
+W1=V1;
+W2=V2;
+W3=V3;
+W4=V4;
+W5=V5;
+W6=V6;
+W7=V7;
+W8=V8;
+W9=V9;
+W10=V10;
+
+IF (pVersionDimLoc = 5);W5=pToVersion;
+ELSEIF (pVersionDimLoc = 6);W6=pToVersion;
+ELSEIF (pVersionDimLoc = 7);W7=pToVersion;
+ELSEIF (pVersionDimLoc = 8);W8=pToVersion;
+ELSEIF (pVersionDimLoc = 9);W9=pToVersion;
+ELSEIF (pVersionDimLoc = 10);W10=pToVersion;
+ELSEIF (pVersionDimLoc = 1);W1=pToVersion;
+ELSEIF (pVersionDimLoc = 2);W2=pToVersion;
+ELSEIF (pVersionDimLoc = 3);W3=pToVersion;
+ELSEIF (pVersionDimLoc = 4);W4=pToVersion;
+ENDIF;
+
+IF (pNumberDims = 5);
+  IF (CellIsUpdateable (pCubeName,W1,W2,W3,W4,W5) = 1);
+    IF (DTYPE(pStringDimName, vStringDimValue) @= 'S');
+        S1=V6;
+         CellPutS(S1, pCubeName,W1,W2,W3,W4,W5);
+     ELSE;
+         N1=StringToNumber(V6);
+         CellPutN(N1,pCubeName,W1,W2,W3,W4,W5);
+    ENDIF;
+  ELSE;
+    ItemSkip;
+  ENDIF;
+ENDIF;
+
+IF (pNumberDims = 6);
+  IF (CellIsUpdateable (pCubeName,W1,W2,W3,W4,W5,W6) = 1);
+    IF (DTYPE(pStringDimName, vStringDimValue) @= 'S');
+         S1=V7;
+         CellPutS(S1, pCubeName,W1,W2,W3,W4,W5,W6);
+     ELSE;
+          N1=StringToNumber(V7);
+          CellPutN(N1,pCubeName,W1,W2,W3,W4,W5,W6);
+    ENDIF;
+  ELSE;
+    ItemSkip;
+  ENDIF;
+
+ELSEIF (pNumberDims = 7);
+  IF (CellIsUpdateable (pCubeName,W1,W2,W3,W4,W5,W6,W7) = 1);
+    IF (DTYPE(pStringDimName, vStringDimValue) @= 'S');
+         S1=V8;
+          CellPutS(S1, pCubeName,W1,W2,W3,W4,W5,W6,W7);
+     ELSE;
+         N1=StringToNumber(V8);
+          CellPutN(N1,pCubeName,W1,W2,W3,W4,W5,W6,W7);
+    ENDIF;
+  ELSE;
+    ItemSkip;
+  ENDIF;
+
+
+ELSEIF (pNumberDims = 3);
+  IF (CellIsUpdateable (pCubeName,W1,W2,W3) = 1);
+    IF (DTYPE(pStringDimName, vStringDimValue) @= 'S');
+         S1=V4;
+         CellPutS(S1, pCubeName,W1,W2,W3);
+     ELSE;
+           N1=StringToNumber(V4);
+           CellPutN(N1,pCubeName,W1,W2,W3);
+    ENDIF;
+  ELSE;
+    ItemSkip;
+  ENDIF;
+
+ELSEIF (pNumberDims = 4);
+  IF (CellIsUpdateable (pCubeName,W1,W2,W3,W4) = 1);
+    IF (DTYPE(pStringDimName, vStringDimValue) @= 'S');
+         S1=V5;
+         CellPutS(S1, pCubeName,W1,W2,W3,W4);
+     ELSE;
+          N1=StringToNumber(V5);
+          CellPutN(N1,pCubeName,W1,W2,W3,W4);
+    ENDIF;
+  ELSE;
+    ItemSkip;
+  ENDIF;
+ENDIF;
+
+
+# ASCIIOUTPUT('copydebug.txt','V',V1,V2,V3,V4,V5,V6,V7);
+# ASCIIOUTPUT('copydebug.txt','W',W1,W2,W3,W4,W5,W6,W7);
+
+
+#endregion
+#region Epilog
+
+#****Begin: Generated Statements***
+#****End: Generated Statements****
+
+ENDTime=Time;
+ #TextOUTPUT('copydebug.txt',pCubeName,StartTime,EndTime);
+#endregion

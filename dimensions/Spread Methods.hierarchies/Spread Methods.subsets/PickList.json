@@ -1,0 +1,37 @@
+{
+	"@type":"Subset",
+	"Name":"PickList",
+	"Elements":
+	[
+		{
+			"@id":"Dimensions('Spread Methods')/Hierarchies('Spread Methods')/Elements('Flat')"
+		},
+		{
+			"@id":"Dimensions('Spread Methods')/Hierarchies('Spread Methods')/Elements('445')"
+		},
+		{
+			"@id":"Dimensions('Spread Methods')/Hierarchies('Spread Methods')/Elements('Christmas Peak')"
+		},
+		{
+			"@id":"Dimensions('Spread Methods')/Hierarchies('Spread Methods')/Elements('Business Cycle')"
+		},
+		{
+			"@id":"Dimensions('Spread Methods')/Hierarchies('Spread Methods')/Elements('Even on Qtr End')"
+		},
+		{
+			"@id":"Dimensions('Spread Methods')/Hierarchies('Spread Methods')/Elements('Even on Qtr Start')"
+		},
+		{
+			"@id":"Dimensions('Spread Methods')/Hierarchies('Spread Methods')/Elements('Even on Q1')"
+		},
+		{
+			"@id":"Dimensions('Spread Methods')/Hierarchies('Spread Methods')/Elements('Even on Q2')"
+		},
+		{
+			"@id":"Dimensions('Spread Methods')/Hierarchies('Spread Methods')/Elements('Even on Q3')"
+		},
+		{
+			"@id":"Dimensions('Spread Methods')/Hierarchies('Spread Methods')/Elements('Even on Q4')"
+		}
+	]
+}

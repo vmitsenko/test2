@@ -1,0 +1,40 @@
+{
+	"@type":"Subset",
+	"Name":"Default",
+	"Elements":
+	[
+		{
+			"@id":"Dimensions('Supply Chain Measures')/Hierarchies('Supply Chain Measures')/Elements('Units Sold')"
+		},
+		{
+			"@id":"Dimensions('Supply Chain Measures')/Hierarchies('Supply Chain Measures')/Elements('Total Cost of Goods Sold - Regional')"
+		},
+		{
+			"@id":"Dimensions('Supply Chain Measures')/Hierarchies('Supply Chain Measures')/Elements('Direct Costs')"
+		},
+		{
+			"@id":"Dimensions('Supply Chain Measures')/Hierarchies('Supply Chain Measures')/Elements('Direct Material')"
+		},
+		{
+			"@id":"Dimensions('Supply Chain Measures')/Hierarchies('Supply Chain Measures')/Elements('Raw Material')"
+		},
+		{
+			"@id":"Dimensions('Supply Chain Measures')/Hierarchies('Supply Chain Measures')/Elements('Packaging Material')"
+		},
+		{
+			"@id":"Dimensions('Supply Chain Measures')/Hierarchies('Supply Chain Measures')/Elements('Pallets')"
+		},
+		{
+			"@id":"Dimensions('Supply Chain Measures')/Hierarchies('Supply Chain Measures')/Elements('Direct Labor')"
+		},
+		{
+			"@id":"Dimensions('Supply Chain Measures')/Hierarchies('Supply Chain Measures')/Elements('Indirect Costs')"
+		},
+		{
+			"@id":"Dimensions('Supply Chain Measures')/Hierarchies('Supply Chain Measures')/Elements('Overhead')"
+		},
+		{
+			"@id":"Dimensions('Supply Chain Measures')/Hierarchies('Supply Chain Measures')/Elements('Indirect Labor')"
+		}
+	]
+}

@@ -1,0 +1,5 @@
+{
+	"@type":"Subset",
+	"Name":"Driver",
+	"Expression":"TM1SubsetAll([LineItemDetail])"
+}

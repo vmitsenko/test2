@@ -1,0 +1,77 @@
+#region Prolog
+
+#****Begin: Generated Statements***
+#****End: Generated Statements****
+
+# Setup Global Variables
+Length=0;
+DirectorySeparator='\';
+BaseDir='';
+SPSSDir='';
+DataDir='';
+LogDir='';
+
+#
+# Get TM1 Logging Directory 
+#
+LogDir=GetProcessErrorFileDirectory;
+#
+# Get the Directory separator to deliniate between Unix and Windows
+#
+DirectorySeparator=CellGetS( 'Calendar', 'Directory Separator','String');
+#
+# Get the Base Directory
+#
+Length=LONG(LogDir);
+BaseDir=SUBST(LogDir,1,Length-5);
+SPSSDir=BaseDir|'spss'|DirectorySeparator;
+DataDir=BaseDir|'data'|DirectorySeparator;
+
+#
+# Write Parameters away to Calendar cube which is used to store system parameters
+#
+CellPutS(LogDir, 'Calendar', 'Log Directory','String');
+CellPutS(BaseDir, 'Calendar', 'Base Directory','String');
+CellPutS(SPSSDir, 'Calendar', 'SPSS Directory','String');
+CellPutS(DataDir, 'Calendar', 'Data Directory','String');
+
+
+#
+# Now create the batch files required to run the SPSS Integration
+# These need to be updated so that the smartco base directory can be changed
+#
+vFileName=SPSSDir|'ExecuteStream.bat';
+vFileNameExternal=SPSSDir|'ExecuteStreamExternal.bat';
+
+DatasourceASCIIQuoteCharacter='';
+vText = 'CD "'|CellGetS( 'Calendar', 'SPSS Modeler Install Directory','String')|'"';
+ASCIIOUTPUT(vFileName,vText);
+ASCIIOUTPUT(vFileNameExternal,vText);
+vText = 'clemb -stream "'|SPSSDir|'Create Model.str" -execute -log "'|SPSSDir|'Create Model.str.log"';
+ASCIIOUTPUT(vFileName,vText);
+
+vText = 'clemb -stream "'|SPSSDir|'Create Model External.str" -execute -log "'|SPSSDir|'Create Model External.str.log"';
+ASCIIOUTPUT(vFileNameExternal,vText);
+vText = 'clemb -stream "'|SPSSDir|'Charts and Graphs2.str" -execute -log "'|SPSSDir|'Charts and Graphs2.str.log"';
+ASCIIOUTPUT(vFileNameExternal,vText);
+
+
+
+
+
+#endregion
+#region Metadata
+
+#****Begin: Generated Statements***
+#****End: Generated Statements****
+#endregion
+#region Data
+
+#****Begin: Generated Statements***
+#****End: Generated Statements****
+#endregion
+#region Epilog
+
+#****Begin: Generated Statements***
+#****End: Generated Statements****
+#endregion

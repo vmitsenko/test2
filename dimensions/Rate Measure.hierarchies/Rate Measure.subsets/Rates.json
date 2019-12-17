@@ -1,0 +1,16 @@
+{
+	"@type":"Subset",
+	"Name":"Rates",
+	"Elements":
+	[
+		{
+			"@id":"Dimensions('Rate Measure')/Hierarchies('Rate Measure')/Elements('List Price')"
+		},
+		{
+			"@id":"Dimensions('Rate Measure')/Hierarchies('Rate Measure')/Elements('Discount Rate')"
+		},
+		{
+			"@id":"Dimensions('Rate Measure')/Hierarchies('Rate Measure')/Elements('National Average BOM')"
+		}
+	]
+}

@@ -1,0 +1,47 @@
+{
+	"@type":"NativeView",
+	"Name":"View1",
+	"Columns":
+	[
+		{
+			"Subset":
+			{
+				"Hierarchy":
+				{
+					"@id":"Dimensions('Version Copy Measures')/Hierarchies('Version Copy Measures')"
+				},
+				"Elements":
+				[
+					{
+						"@id":"Dimensions('Version Copy Measures')/Hierarchies('Version Copy Measures')/Elements('CubeName')"
+					},
+					{
+						"@id":"Dimensions('Version Copy Measures')/Hierarchies('Version Copy Measures')/Elements('NumberDims')"
+					},
+					{
+						"@id":"Dimensions('Version Copy Measures')/Hierarchies('Version Copy Measures')/Elements('VersionDimLoc')"
+					},
+					{
+						"@id":"Dimensions('Version Copy Measures')/Hierarchies('Version Copy Measures')/Elements('StringDimName')"
+					},
+					{
+						"@id":"Dimensions('Version Copy Measures')/Hierarchies('Version Copy Measures')/Elements('StringDimLoc')"
+					}
+				]
+			}
+		}
+	],
+	"Rows":
+	[
+		{
+			"Subset":
+			{
+				"@id":"Dimensions('LineItemList')/Hierarchies('LineItemList')/Subsets('Default')"
+			}
+		}
+	],
+	"Titles":[],
+	"SuppressEmptyColumns":false,
+	"SuppressEmptyRows":false,
+	"FormatString":"0.#########"
+}

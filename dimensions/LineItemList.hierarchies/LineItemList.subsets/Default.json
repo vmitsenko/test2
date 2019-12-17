@@ -1,0 +1,37 @@
+{
+	"@type":"Subset",
+	"Name":"Default",
+	"Elements":
+	[
+		{
+			"@id":"Dimensions('LineItemList')/Hierarchies('LineItemList')/Elements('1')"
+		},
+		{
+			"@id":"Dimensions('LineItemList')/Hierarchies('LineItemList')/Elements('2')"
+		},
+		{
+			"@id":"Dimensions('LineItemList')/Hierarchies('LineItemList')/Elements('3')"
+		},
+		{
+			"@id":"Dimensions('LineItemList')/Hierarchies('LineItemList')/Elements('4')"
+		},
+		{
+			"@id":"Dimensions('LineItemList')/Hierarchies('LineItemList')/Elements('5')"
+		},
+		{
+			"@id":"Dimensions('LineItemList')/Hierarchies('LineItemList')/Elements('6')"
+		},
+		{
+			"@id":"Dimensions('LineItemList')/Hierarchies('LineItemList')/Elements('7')"
+		},
+		{
+			"@id":"Dimensions('LineItemList')/Hierarchies('LineItemList')/Elements('8')"
+		},
+		{
+			"@id":"Dimensions('LineItemList')/Hierarchies('LineItemList')/Elements('9')"
+		},
+		{
+			"@id":"Dimensions('LineItemList')/Hierarchies('LineItemList')/Elements('10')"
+		}
+	]
+}

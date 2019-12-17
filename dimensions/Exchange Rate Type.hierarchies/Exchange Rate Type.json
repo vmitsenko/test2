@@ -1,0 +1,24 @@
+{
+	"@type":"Hierarchy",
+	"Name":"Exchange Rate Type",
+	"Elements":
+	[
+		{
+			"Name":"Average",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"Month End",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"Spot",
+			"Type":"Numeric"
+		}
+	],
+	"Subsets@Code.links":
+	[
+		"Exchange Rate Type.subsets/All Members.json",
+		"Exchange Rate Type.subsets/Default.json"
+	]
+}

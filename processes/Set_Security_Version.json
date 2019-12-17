@@ -1,0 +1,37 @@
+{
+	"@type":"Process",
+	"Name":"Set_Security_Version",
+	"Code@Code.link":"Set_Security_Version.ti",
+	"DataSource":
+	{
+		"Type":"TM1DimensionSubset",
+		"dataSourceNameForClient":"}Groups",
+		"dataSourceNameForServer":"}Groups",
+		"subset":"All"
+	},
+	"Parameters":
+	[
+		{
+			"Name":"pSecurityVersion",
+			"Prompt":"",
+			"Value":"",
+			"Type":"String"
+		},
+		{
+			"Name":"pSecurityVersionState",
+			"Prompt":"",
+			"Value":"",
+			"Type":"String"
+		}
+	],
+	"Variables":
+	[
+		{
+			"Name":"v_Group",
+			"Type":"String",
+			"Position":1,
+			"StartByte":0,
+			"EndByte":0
+		}
+	]
+}

@@ -1,0 +1,19 @@
+{
+	"@type":"Process",
+	"Name":"create_default_subset",
+	"Code@Code.link":"create_default_subset.ti",
+	"DataSource":
+	{
+		"Type":"None"
+	},
+	"Parameters":
+	[
+		{
+			"Name":"pSubsetName",
+			"Prompt":"Subset Name",
+			"Value":"",
+			"Type":"String"
+		}
+	],
+	"Variables":[]
+}

@@ -1,0 +1,13 @@
+{
+	"@type":"Dimension",
+	"Name":"CapitalList",
+	"AllLeavesHierarchyName":"",
+	"DefaultHierarchy":
+	{
+		"@id":"Dimensions('CapitalList')/Hierarchies('CapitalList')"
+	},
+	"Hierarchies@Code.links":
+	[
+		"CapitalList.hierarchies/CapitalList.json"
+	]
+}

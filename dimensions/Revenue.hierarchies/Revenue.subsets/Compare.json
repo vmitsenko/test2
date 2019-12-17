@@ -1,0 +1,10 @@
+{
+	"@type":"Subset",
+	"Name":"Compare",
+	"Elements":
+	[
+		{
+			"@id":"Dimensions('Revenue')/Hierarchies('Revenue')/Elements('Units Sold')"
+		}
+	]
+}

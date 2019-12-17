@@ -1,0 +1,109 @@
+{
+	"@type":"Hierarchy",
+	"Name":"Allocation List",
+	"Elements":
+	[
+		{
+			"Name":"Allocation 1",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"Allocation 2",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"Allocation 3",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"Allocation 4",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"Allocation 5",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"Allocation 6",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"Allocation 7",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"Allocation 8",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"Allocation 9",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"Allocation 10",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"All Allocations",
+			"Type":"Consolidated"
+		}
+	],
+	"Edges":
+	[
+		{
+			"ParentName":"All Allocations",
+			"ComponentName":"Allocation 1",
+			"Weight":1
+		},
+		{
+			"ParentName":"All Allocations",
+			"ComponentName":"Allocation 2",
+			"Weight":1
+		},
+		{
+			"ParentName":"All Allocations",
+			"ComponentName":"Allocation 3",
+			"Weight":1
+		},
+		{
+			"ParentName":"All Allocations",
+			"ComponentName":"Allocation 4",
+			"Weight":1
+		},
+		{
+			"ParentName":"All Allocations",
+			"ComponentName":"Allocation 5",
+			"Weight":1
+		},
+		{
+			"ParentName":"All Allocations",
+			"ComponentName":"Allocation 6",
+			"Weight":1
+		},
+		{
+			"ParentName":"All Allocations",
+			"ComponentName":"Allocation 7",
+			"Weight":1
+		},
+		{
+			"ParentName":"All Allocations",
+			"ComponentName":"Allocation 8",
+			"Weight":1
+		},
+		{
+			"ParentName":"All Allocations",
+			"ComponentName":"Allocation 9",
+			"Weight":1
+		},
+		{
+			"ParentName":"All Allocations",
+			"ComponentName":"Allocation 10",
+			"Weight":1
+		}
+	],
+	"Subsets@Code.links":
+	[
+		"Allocation List.subsets/All Members.json",
+		"Allocation List.subsets/Default.json"
+	]
+}

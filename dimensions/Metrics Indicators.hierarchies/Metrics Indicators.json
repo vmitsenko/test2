@@ -1,0 +1,100 @@
+{
+	"@type":"Hierarchy",
+	"Name":"Metrics Indicators",
+	"Elements":
+	[
+		{
+			"Name":"Status",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"Trend",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"Actual",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"Target",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"Tolerance",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"Variance",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"Variance Percent",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"Score",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"Score Change",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"Actual Change Percent",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"Status_1_Count",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"Status_0_Count",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"Status_-1_Count",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"Status_Incomplete_Count",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"Forecast Status",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"Forecast Trend",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"Forecast",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"Forecast Variance",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"Forecast Variance %",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"Forecast Score",
+			"Type":"Numeric"
+		}
+	],
+	"Subsets@Code.links":
+	[
+		"Metrics Indicators.subsets/Actual vs. Forecast Variance.json",
+		"Metrics Indicators.subsets/Act vs. Bud Variance.json",
+		"Metrics Indicators.subsets/All Members.json",
+		"Metrics Indicators.subsets/Budget Scorecard.json",
+		"Metrics Indicators.subsets/Budget Status.json",
+		"Metrics Indicators.subsets/Default.json",
+		"Metrics Indicators.subsets/Forecast Scorecard.json",
+		"Metrics Indicators.subsets/Forecast Status.json",
+		"Metrics Indicators.subsets/Full scorecard.json",
+		"Metrics Indicators.subsets/ScoreCardPA.json"
+	]
+}

@@ -1,0 +1,74 @@
+{
+	"@type":"Hierarchy",
+	"Name":"Asset Types",
+	"Elements":
+	[
+		{
+			"Name":"Asset Total",
+			"Type":"Consolidated"
+		},
+		{
+			"Name":"1200",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"1210",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"1220",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"1230",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"1240",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"1250",
+			"Type":"Numeric"
+		}
+	],
+	"Edges":
+	[
+		{
+			"ParentName":"Asset Total",
+			"ComponentName":"1200",
+			"Weight":1
+		},
+		{
+			"ParentName":"Asset Total",
+			"ComponentName":"1210",
+			"Weight":1
+		},
+		{
+			"ParentName":"Asset Total",
+			"ComponentName":"1220",
+			"Weight":1
+		},
+		{
+			"ParentName":"Asset Total",
+			"ComponentName":"1230",
+			"Weight":1
+		},
+		{
+			"ParentName":"Asset Total",
+			"ComponentName":"1240",
+			"Weight":1
+		},
+		{
+			"ParentName":"Asset Total",
+			"ComponentName":"1250",
+			"Weight":1
+		}
+	],
+	"Subsets@Code.links":
+	[
+		"Asset Types.subsets/All Members.json",
+		"Asset Types.subsets/Asset Type.json",
+		"Asset Types.subsets/Default.json"
+	]
+}

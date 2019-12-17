@@ -1,0 +1,48 @@
+#region Prolog
+
+#****Begin: Generated Statements***
+#****End: Generated Statements****
+#endregion
+#region Metadata
+
+#****Begin: Generated Statements***
+#****End: Generated Statements****
+#endregion
+#region Data
+
+#****Begin: Generated Statements***
+#****End: Generated Statements****
+
+
+
+
+#if (VALUE_IS_STRING=1, CellPutS(SVALUE,'Revenue Assumptions',product,Channel,vMonth,vYear,Version,RevenueAsmpt), CellPutN(NVALUE, 'Revenue Assumptions', product,Channel,vMonth,vYear,Version,RevenueAsmpt));
+
+
+
+IF(ELLEV('Channel',pChannel)=1);
+Members=ELCOMPN('Channel',pChannel);
+ELSE;
+Members=1;
+ENDIF;
+
+m=1;
+While(m<=Members);
+Member=ELCOMP('Channel',pChannel,m);
+
+IF('Revenue Assumptions'@='Unit Price');
+PUTVAL=pUnitPrice;
+ELSEIF('Revenue Assumptions'@='Unit Cost');
+PUTVAL=pUnitCost;
+ENDIF;
+
+CellPutN(PUTVAL, 'Revenue Assumptions', product,Channel,vMonth,vYear,Version,RevenueAsmpt);
+
+m=m+1;
+END;
+#endregion
+#region Epilog
+
+#****Begin: Generated Statements***
+#****End: Generated Statements****
+#endregion

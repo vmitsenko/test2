@@ -1,0 +1,44 @@
+#region Prolog
+
+#****Begin: Generated Statements***
+#****End: Generated Statements****
+
+SubsetDeleteAllElements('Version', 'zExportToSPSS');
+SubsetElementInsert('Version', 'zExportToSPSS', pVersion, 1);
+
+v_FileName = CellGetS( 'Calendar', 'SPSS Directory','String')|'ExternalFactorsDataSPSS.csv';
+
+v_Counter =1;
+v_ExternalFactor = 0.0;
+
+
+#endregion
+#region Metadata
+
+#****Begin: Generated Statements***
+#****End: Generated Statements****
+#endregion
+#region Data
+
+#****Begin: Generated Statements***
+#****End: Generated Statements****
+
+IF(vExternalFactors @= 'ActFor');
+  ItemSkip;
+ENDIF;
+
+IF (v_Counter = 1);
+  ASCIIOUTPUT(v_FileName,'Year','Month','Version','ExternalFactor','Value');
+ENDIF;
+
+ASCIIOUTPUT(v_FileName,vYear,vMonth,vVersion,vExternalFactors,NumberToString(Value));  
+
+v_Counter = v_Counter + 1;
+
+
+#endregion
+#region Epilog
+
+#****Begin: Generated Statements***
+#****End: Generated Statements****
+#endregion

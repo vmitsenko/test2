@@ -1,0 +1,13 @@
+{
+	"@type":"Dimension",
+	"Name":"Rate Measure",
+	"AllLeavesHierarchyName":"",
+	"DefaultHierarchy":
+	{
+		"@id":"Dimensions('Rate Measure')/Hierarchies('Rate Measure')"
+	},
+	"Hierarchies@Code.links":
+	[
+		"Rate Measure.hierarchies/Rate Measure.json"
+	]
+}

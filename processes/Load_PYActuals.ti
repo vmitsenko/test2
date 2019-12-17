@@ -1,0 +1,41 @@
+#region Prolog
+
+#****Begin: Generated Statements***
+OldCubeLogChanges = CUBEGETLOGCHANGES('Income Statement');
+CUBESETLOGCHANGES('Income Statement', 0);
+#****End: Generated Statements****
+
+
+CubeDataReservationAcquire('Income Statement', TM1User(), 0, '|||||') ;
+#endregion
+#region Metadata
+
+#****Begin: Generated Statements***
+tVersion='Actual';
+vValue=IF(Account@='6600',value,
+IF(Account@='6610',value,
+value*(.97+RAND*(.06))));
+vYr2011='Y1';
+#****End: Generated Statements****
+
+#endregion
+#region Data
+
+#****Begin: Generated Statements***
+tVersion='Actual';
+vValue=IF(Account@='6600',value,
+IF(Account@='6610',value,
+value*(.97+RAND*(.06))));
+vYr2011='Y1';
+CellPutN(vValue,'Income Statement',cCurrency,organization,vYr2011,vMonth,Account,tVersion);
+#****End: Generated Statements****
+
+
+
+#endregion
+#region Epilog
+
+#****Begin: Generated Statements***
+CUBESETLOGCHANGES('Income Statement', OldCubeLogChanges);
+#****End: Generated Statements****
+#endregion

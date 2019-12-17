@@ -1,0 +1,34 @@
+{
+	"@type":"NativeView",
+	"Name":"zCopyProduct",
+	"Columns":[],
+	"Rows":
+	[
+		{
+			"Subset":
+			{
+				"@id":"Dimensions('Spread Methods')/Hierarchies('Spread Methods')/Subsets('zCopyFrom')"
+			}
+		},
+		{
+			"Subset":
+			{
+				"Hierarchy":
+				{
+					"@id":"Dimensions('Month')/Hierarchies('Month')"
+				},
+				"Expression":"TM1SubsetAll([Month])"
+			}
+		},
+		{
+			"Subset":
+			{
+				"@id":"Dimensions('Version')/Hierarchies('Version')/Subsets('zCopyFrom')"
+			}
+		}
+	],
+	"Titles":[],
+	"SuppressEmptyColumns":false,
+	"SuppressEmptyRows":false,
+	"FormatString":"0.00"
+}

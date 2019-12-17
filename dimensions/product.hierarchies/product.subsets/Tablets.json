@@ -1,0 +1,34 @@
+{
+	"@type":"Subset",
+	"Name":"Tablets",
+	"Elements":
+	[
+		{
+			"@id":"Dimensions('product')/Hierarchies('product')/Elements('40000')"
+		},
+		{
+			"@id":"Dimensions('product')/Hierarchies('product')/Elements('41000')"
+		},
+		{
+			"@id":"Dimensions('product')/Hierarchies('product')/Elements('41010')"
+		},
+		{
+			"@id":"Dimensions('product')/Hierarchies('product')/Elements('41011')"
+		},
+		{
+			"@id":"Dimensions('product')/Hierarchies('product')/Elements('41012')"
+		},
+		{
+			"@id":"Dimensions('product')/Hierarchies('product')/Elements('42000')"
+		},
+		{
+			"@id":"Dimensions('product')/Hierarchies('product')/Elements('42001')"
+		},
+		{
+			"@id":"Dimensions('product')/Hierarchies('product')/Elements('42002')"
+		},
+		{
+			"@id":"Dimensions('product')/Hierarchies('product')/Elements('42003')"
+		}
+	]
+}

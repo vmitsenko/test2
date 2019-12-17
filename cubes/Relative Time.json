@@ -1,0 +1,24 @@
+{
+	"@type":"Cube",
+	"Name":"Relative Time",
+	"Rules@Code.link":"Relative Time.rules",
+	"Dimensions":
+	[
+		{
+			"@id":"Dimensions('Year')"
+		},
+		{
+			"@id":"Dimensions('Month')"
+		},
+		{
+			"@id":"Dimensions('Relative Time')"
+		}
+	],
+	"Views@Code.links":
+	[
+		"Relative Time.views/All.json",
+		"Relative Time.views/Default.json",
+		"Relative Time.views/Forecast Month.json",
+		"Relative Time.views/Relative Time.json"
+	]
+}

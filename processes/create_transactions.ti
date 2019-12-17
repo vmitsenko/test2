@@ -1,0 +1,95 @@
+#region Prolog
+
+#****Begin: Generated Statements***
+#****End: Generated Statements****
+
+# 
+# Clear down the transaction attributes
+#
+I=1;
+
+WHILE (I <= 3000);
+  AttrPutS('', 'TrxID', NUMBERTOSTRING(I), 'TrxDate');
+  AttrPutS('', 'TrxID', NUMBERTOSTRING(I), 'Type');
+  AttrPutS('', 'TrxID', NUMBERTOSTRING(I), 'Source'); 
+  AttrPutS('', 'TrxID', NUMBERTOSTRING(I), 'Desc');
+  AttrPutS('', 'TrxID', NUMBERTOSTRING(I), 'Reference');
+  AttrPutS('', 'TrxID', NUMBERTOSTRING(I), 'Organization');
+  AttrPutS('', 'TrxID', NUMBERTOSTRING(I), 'Account');
+  I=I+1;
+END;
+
+
+#;
+#Set Counters
+#;
+I=1;
+vDay=1;
+
+#
+# Clear down the transaction data
+#
+ViewZeroOut('GLTransactions', 'zDelete');
+
+
+
+
+
+
+
+
+#endregion
+#region Metadata
+
+#****Begin: Generated Statements***
+#****End: Generated Statements****
+#endregion
+#region Data
+
+#****Begin: Generated Header****
+# Double NVALUE
+# String SVALUE
+# Double VALUE_IS_STRING
+#
+# TextOutput('Example.csv', NumberToString(NVALUE), SVALUE, NumberToString(VALUE_IS_STRING));
+#****End: Generated Header****
+
+#****Begin: Generated Statements***
+#****End: Generated Statements****
+
+IF( I > 3000 );
+  ITEMSKIP;
+ENDIF;
+
+vTransactionAmount=v_Value\5;
+
+IF(vTransactionAmount = 0);
+  ITEMSKIP;
+ENDIF;
+
+vDay=1;
+
+WHILE (vDay <= 5);
+  vTrxDate=ATTRS('Year',v_Year,'Caption_Default')|'-'|v_Month|'-'|NUMBERTOSTRING(vDay);
+  vReference='Ref : '|NUMBERTOSTRING(I);
+  vDesc='Description : '|NUMBERTOSTRING(I);
+  v_Organization_Alias = ATTRS('Organization',v_Organization,'Caption_Default');
+  v_Account_Alias = ATTRS('Account',v_Account,'Caption_Default');
+  AttrPutS(vTrxDate, 'TrxID', NUMBERTOSTRING(I), 'TrxDate');
+  AttrPutS('INV', 'TrxID', NUMBERTOSTRING(I), 'Type');
+  AttrPutS('AP', 'TrxID', NUMBERTOSTRING(I), 'Source'); 
+  AttrPutS(vDesc, 'TrxID', NUMBERTOSTRING(I), 'Desc');
+  AttrPutS(vReference, 'TrxID', NUMBERTOSTRING(I), 'Reference');
+  AttrPutS(v_Organization_Alias, 'TrxID', NUMBERTOSTRING(I), 'Organization');
+  AttrPutS(v_Account_Alias, 'TrxID', NUMBERTOSTRING(I), 'Account');
+  CellPutN(vTransactionAmount, 'GLTransactions', NUMBERTOSTRING(I),v_Organization,v_Year,v_Month,v_Account,'Amount');
+  vDay=vDay+1;
+  I=I+1;
+END;
+
+#endregion
+#region Epilog
+
+#****Begin: Generated Statements***
+#****End: Generated Statements****
+#endregion

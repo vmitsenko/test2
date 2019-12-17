@@ -1,0 +1,27 @@
+{
+	"@type":"Cube",
+	"Name":"ExternalFactors",
+	"Rules@Code.link":"ExternalFactors.rules",
+	"Dimensions":
+	[
+		{
+			"@id":"Dimensions('Year')"
+		},
+		{
+			"@id":"Dimensions('Month')"
+		},
+		{
+			"@id":"Dimensions('Version')"
+		},
+		{
+			"@id":"Dimensions('ExternalFactors')"
+		}
+	],
+	"Views@Code.links":
+	[
+		"ExternalFactors.views/All.json",
+		"ExternalFactors.views/Default.json",
+		"ExternalFactors.views/ExportToSPSS.json",
+		"ExternalFactors.views/ExternalFactors.json"
+	]
+}

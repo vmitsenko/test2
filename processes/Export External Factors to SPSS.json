@@ -1,0 +1,59 @@
+{
+	"@type":"Process",
+	"Name":"Export External Factors to SPSS",
+	"Code@Code.link":"Export External Factors to SPSS.ti",
+	"DataSource":
+	{
+		"Type":"TM1CubeView",
+		"dataSourceNameForClient":"ExternalFactors",
+		"dataSourceNameForServer":"ExternalFactors",
+		"view":"ExportToSPSS"
+	},
+	"Parameters":
+	[
+		{
+			"Name":"pVersion",
+			"Prompt":"Enter the Version",
+			"Value":"Predictive",
+			"Type":"String"
+		}
+	],
+	"Variables":
+	[
+		{
+			"Name":"vYear",
+			"Type":"String",
+			"Position":1,
+			"StartByte":0,
+			"EndByte":0
+		},
+		{
+			"Name":"vMonth",
+			"Type":"String",
+			"Position":2,
+			"StartByte":0,
+			"EndByte":0
+		},
+		{
+			"Name":"vVersion",
+			"Type":"String",
+			"Position":3,
+			"StartByte":0,
+			"EndByte":0
+		},
+		{
+			"Name":"vExternalFactors",
+			"Type":"String",
+			"Position":4,
+			"StartByte":0,
+			"EndByte":0
+		},
+		{
+			"Name":"Value",
+			"Type":"Numeric",
+			"Position":5,
+			"StartByte":0,
+			"EndByte":0
+		}
+	]
+}

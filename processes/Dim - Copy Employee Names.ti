@@ -1,0 +1,30 @@
+#region Prolog
+
+#****Begin: Generated Statements***
+#****End: Generated Statements****
+
+ViewExtractSkipConsolidatedStringsSet ('Employee', 'Name', 1);
+
+VIEWZeroout('}ElementAttributes_Employee Name','Employees');
+#endregion
+#region Metadata
+
+#****Begin: Generated Statements***
+#****End: Generated Statements****
+
+
+vdata1=Cellgets('Employee',organization,EmployeeList,V3,Version,'EmpID');
+
+vdata2=Cellgets('Employee',organization,EmployeeList,V3,Version,'Name/Desc')|' '|vdata1;
+CELLPUTS(vdata2,'}ElementAttributes_Employee Name', vdata1,'Caption_default');
+#endregion
+#region Data
+
+#****Begin: Generated Statements***
+#****End: Generated Statements****
+#endregion
+#region Epilog
+
+#****Begin: Generated Statements***
+#****End: Generated Statements****
+#endregion

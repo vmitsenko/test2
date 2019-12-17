@@ -1,0 +1,28 @@
+{
+	"@type":"Subset",
+	"Name":"Office Expense",
+	"Elements":
+	[
+		{
+			"@id":"Dimensions('Account')/Hierarchies('Account')/Elements('6199')"
+		},
+		{
+			"@id":"Dimensions('Account')/Hierarchies('Account')/Elements('6100')"
+		},
+		{
+			"@id":"Dimensions('Account')/Hierarchies('Account')/Elements('6110')"
+		},
+		{
+			"@id":"Dimensions('Account')/Hierarchies('Account')/Elements('6120')"
+		},
+		{
+			"@id":"Dimensions('Account')/Hierarchies('Account')/Elements('6130')"
+		},
+		{
+			"@id":"Dimensions('Account')/Hierarchies('Account')/Elements('6140')"
+		},
+		{
+			"@id":"Dimensions('Account')/Hierarchies('Account')/Elements('6150')"
+		}
+	]
+}

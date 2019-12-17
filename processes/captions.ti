@@ -1,0 +1,25 @@
+#region Prolog
+
+#****Begin: Generated Statements***
+#****End: Generated Statements****
+
+#SubsetAttrPutS( 'Anne', 'Year', 'Caption', 'fr' );
+#SubsetAttrPutS( 'Anne', 'Year', 'Default', 'Caption', 'fr' );
+
+SubsetAttrInsert('Plant','', 'Caption', 'A');
+#endregion
+#region Metadata
+
+#****Begin: Generated Statements***
+#****End: Generated Statements****
+#endregion
+#region Data
+
+#****Begin: Generated Statements***
+#****End: Generated Statements****
+#endregion
+#region Epilog
+
+#****Begin: Generated Statements***
+#****End: Generated Statements****
+#endregion

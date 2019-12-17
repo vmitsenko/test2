@@ -1,0 +1,40 @@
+{
+	"@type":"Subset",
+	"Name":"Full scorecard",
+	"Elements":
+	[
+		{
+			"@id":"Dimensions('Metrics Indicators')/Hierarchies('Metrics Indicators')/Elements('Actual')"
+		},
+		{
+			"@id":"Dimensions('Metrics Indicators')/Hierarchies('Metrics Indicators')/Elements('Target')"
+		},
+		{
+			"@id":"Dimensions('Metrics Indicators')/Hierarchies('Metrics Indicators')/Elements('Variance')"
+		},
+		{
+			"@id":"Dimensions('Metrics Indicators')/Hierarchies('Metrics Indicators')/Elements('Variance Percent')"
+		},
+		{
+			"@id":"Dimensions('Metrics Indicators')/Hierarchies('Metrics Indicators')/Elements('Status')"
+		},
+		{
+			"@id":"Dimensions('Metrics Indicators')/Hierarchies('Metrics Indicators')/Elements('Trend')"
+		},
+		{
+			"@id":"Dimensions('Metrics Indicators')/Hierarchies('Metrics Indicators')/Elements('Forecast')"
+		},
+		{
+			"@id":"Dimensions('Metrics Indicators')/Hierarchies('Metrics Indicators')/Elements('Forecast Variance')"
+		},
+		{
+			"@id":"Dimensions('Metrics Indicators')/Hierarchies('Metrics Indicators')/Elements('Forecast Variance %')"
+		},
+		{
+			"@id":"Dimensions('Metrics Indicators')/Hierarchies('Metrics Indicators')/Elements('Forecast Status')"
+		},
+		{
+			"@id":"Dimensions('Metrics Indicators')/Hierarchies('Metrics Indicators')/Elements('Forecast Trend')"
+		}
+	]
+}

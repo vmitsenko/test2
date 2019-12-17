@@ -1,0 +1,22 @@
+{
+	"@type":"Subset",
+	"Name":"Travel",
+	"Elements":
+	[
+		{
+			"@id":"Dimensions('Account')/Hierarchies('Account')/Elements('6299')"
+		},
+		{
+			"@id":"Dimensions('Account')/Hierarchies('Account')/Elements('6200')"
+		},
+		{
+			"@id":"Dimensions('Account')/Hierarchies('Account')/Elements('6210')"
+		},
+		{
+			"@id":"Dimensions('Account')/Hierarchies('Account')/Elements('6220')"
+		},
+		{
+			"@id":"Dimensions('Account')/Hierarchies('Account')/Elements('6230')"
+		}
+	]
+}

@@ -1,0 +1,31 @@
+{
+	"@type":"Subset",
+	"Name":"Default",
+	"Elements":
+	[
+		{
+			"@id":"Dimensions('Capital')/Hierarchies('Capital')/Elements('Description')"
+		},
+		{
+			"@id":"Dimensions('Capital')/Hierarchies('Capital')/Elements('Purchase Cost')"
+		},
+		{
+			"@id":"Dimensions('Capital')/Hierarchies('Capital')/Elements('Purchase Period')"
+		},
+		{
+			"@id":"Dimensions('Capital')/Hierarchies('Capital')/Elements('In-Service Period')"
+		},
+		{
+			"@id":"Dimensions('Capital')/Hierarchies('Capital')/Elements('Project Code')"
+		},
+		{
+			"@id":"Dimensions('Capital')/Hierarchies('Capital')/Elements('Life')"
+		},
+		{
+			"@id":"Dimensions('Capital')/Hierarchies('Capital')/Elements('Monthly Expense')"
+		},
+		{
+			"@id":"Dimensions('Capital')/Hierarchies('Capital')/Elements('Justification')"
+		}
+	]
+}

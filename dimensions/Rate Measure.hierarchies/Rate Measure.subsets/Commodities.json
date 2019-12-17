@@ -1,0 +1,46 @@
+{
+	"@type":"Subset",
+	"Name":"Commodities",
+	"Elements":
+	[
+		{
+			"@id":"Dimensions('Rate Measure')/Hierarchies('Rate Measure')/Elements('Commodities')"
+		},
+		{
+			"@id":"Dimensions('Rate Measure')/Hierarchies('Rate Measure')/Elements('Commodity 1')"
+		},
+		{
+			"@id":"Dimensions('Rate Measure')/Hierarchies('Rate Measure')/Elements('PM 1')"
+		},
+		{
+			"@id":"Dimensions('Rate Measure')/Hierarchies('Rate Measure')/Elements('PM 2')"
+		},
+		{
+			"@id":"Dimensions('Rate Measure')/Hierarchies('Rate Measure')/Elements('PM 3')"
+		},
+		{
+			"@id":"Dimensions('Rate Measure')/Hierarchies('Rate Measure')/Elements('Commodity 2')"
+		},
+		{
+			"@id":"Dimensions('Rate Measure')/Hierarchies('Rate Measure')/Elements('PM 4')"
+		},
+		{
+			"@id":"Dimensions('Rate Measure')/Hierarchies('Rate Measure')/Elements('PM 5')"
+		},
+		{
+			"@id":"Dimensions('Rate Measure')/Hierarchies('Rate Measure')/Elements('Commodity 3')"
+		},
+		{
+			"@id":"Dimensions('Rate Measure')/Hierarchies('Rate Measure')/Elements('RM 6')"
+		},
+		{
+			"@id":"Dimensions('Rate Measure')/Hierarchies('Rate Measure')/Elements('RM 4')"
+		},
+		{
+			"@id":"Dimensions('Rate Measure')/Hierarchies('Rate Measure')/Elements('RM 5')"
+		},
+		{
+			"@id":"Dimensions('Rate Measure')/Hierarchies('Rate Measure')/Elements('RM 7')"
+		}
+	]
+}

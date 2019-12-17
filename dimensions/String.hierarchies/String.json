@@ -1,0 +1,16 @@
+{
+	"@type":"Hierarchy",
+	"Name":"String",
+	"Elements":
+	[
+		{
+			"Name":"String",
+			"Type":"String"
+		}
+	],
+	"Subsets@Code.links":
+	[
+		"String.subsets/All Members.json",
+		"String.subsets/Default.json"
+	]
+}

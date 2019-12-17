@@ -1,0 +1,44 @@
+{
+	"@type":"Hierarchy",
+	"Name":"Allocation Source Definition",
+	"Elements":
+	[
+		{
+			"Name":"Source Entity",
+			"Type":"String"
+		},
+		{
+			"Name":"Desc",
+			"Type":"String"
+		},
+		{
+			"Name":"Source Account",
+			"Type":"String"
+		},
+		{
+			"Name":"Source Amount",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"Pct to Allocate",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"Allocation Amount",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"Allocation Driver",
+			"Type":"String"
+		},
+		{
+			"Name":"zSource",
+			"Type":"String"
+		}
+	],
+	"Subsets@Code.links":
+	[
+		"Allocation Source Definition.subsets/All Members.json",
+		"Allocation Source Definition.subsets/Default.json"
+	]
+}

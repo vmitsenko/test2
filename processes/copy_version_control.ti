@@ -1,0 +1,106 @@
+#region Prolog
+
+#****Begin: Generated Statements***
+#****End: Generated Statements****
+
+IF ((pFromVersion @= '') % (pToVersion @=''));
+  ProcessError;
+ENDIF;
+
+IF(DIMIX('Version', pFromVersion) <= 0);
+  ProcessError;
+ENDIF;
+IF(DIMIX('Version', pToVersion) <= 0);
+  ProcessError;
+ENDIF;
+
+vLinkVersion=ATTRS('Version',pToVersion,'LinkVersion');
+
+
+IF(SubsetGetSize('Version', 'zCopyFrom')>=1);
+SubsetDeleteAllElements('Version', 'zCopyFrom');
+ENDIF;
+
+SubsetElementInsert('Version', 'zCopyFrom', pFromVersion, 1);
+
+
+vUser=TM1User();
+vAddress='';
+
+
+
+
+
+
+
+
+
+
+
+#endregion
+#region Metadata
+
+#****Begin: Generated Statements***
+#****End: Generated Statements****
+#endregion
+#region Data
+
+#****Begin: Generated Statements***
+#****End: Generated Statements****
+
+
+
+vCubeName = Value;
+vNumberDims=CELLGETN('Version Copy Control',LineItemList,'NumberDims');
+vVersionDimLoc=CELLGETN('Version Copy Control',LineItemList,'VersionDimLoc');
+vStringDimName=CELLGETS('Version Copy Control',LineItemList,'StringDimName');
+vStringDimLoc=CELLGETN('Version Copy Control',LineItemList,'StringDimLoc');
+vCopyWhenNoDrivers=CELLGETS('Version Copy Control',LineItemList,'CopyWhenNoDrivers');
+vAcquireReservation=CELLGETS('Version Copy Control',LineItemList,'AcquireReservation');
+
+
+IF(vCubeName@='');
+  ItemSkip;
+ENDIF;
+
+IF (vLinkVersion @='' & vCopyWhenNoDrivers @= 'N');
+  x=1;
+ELSE;
+  IF (vAcquireReservation @= 'Y');
+    I = 1;
+    vAddress='';
+    WHILE (I<=  vNumberDims);
+         IF (I = vVersionDimLoc);
+             vAddress=vAddress|pToVersion;
+         ENDIF;
+         IF(I<>vNumberDims);
+           vAddress=vAddress|'|';
+         ENDIF;
+       I=I+1;
+    END;
+    CubeDataReservationAcquire(vCubeName, vUser, 0, vAddress) ;
+  ENDIF;
+#vStartTime=Now;
+  ExecuteProcess('copy_version', 'pFromVersion',pFromVersion,'pToVersion',pToVersion,'pCubeName',vCubeName,'pNumberDims',vNumberDims,'pVersionDimLoc',vVersionDimLoc,'pStringDimName',vStringDimName,'pStringDimLoc',vStringDimLoc);
+#vEndTime=Now;
+ #ASCIIOUTPUT('c:\copydebug.txt',pToVersion,vCubeName,TIMST(vStartTime,'\i:\s'),TIMST(vEndTime,'\i:\s'));
+  IF (vAcquireReservation @= 'Y');
+    CubeDataReservationRelease(vCubeName, vUser, vAddress) ;
+  ENDIF;
+ENDIF;
+
+
+
+
+
+
+
+#endregion
+#region Epilog
+
+#****Begin: Generated Statements***
+#****End: Generated Statements****
+
+
+
+#endregion

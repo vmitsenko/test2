@@ -1,0 +1,5 @@
+{
+	"@type":"Subset",
+	"Name":"PL",
+	"Expression":"TM1SubsetAll([OpExSubset_Picklist])"
+}

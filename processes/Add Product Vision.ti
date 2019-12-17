@@ -1,0 +1,103 @@
+#region Prolog
+
+#****Begin: Generated Statements***
+#****End: Generated Statements****
+
+
+ASCIIOutput('guy.txt', pParent, pNewNumber,pNewName,pOrg,pChannel,pYear );
+
+# Declare Variables
+pNewName=TRIM(pNewName);
+vNewProduct = '';
+vNewProductAlias ='';
+i=1;
+vDimSize=0;
+#Clear old NewProduct Attribute
+VIEWZEROOUT('}ElementAttributes_product','OldNewProduct');
+
+#
+# Make sure that parent is indeed a parent
+#
+IF (ELLEV('product', pParent)<>1);
+  ProcessError;
+ENDIF;
+#
+# Make sure that you have write access to the cube
+#
+vUpdateable=CellIsUpdateable ('Revenue', pOrg, pChannel,'22002' ,'Jan',pYear,pVersion,'Units Sold');
+IF (vUpdateable=0);
+  ProcessError;
+ENDIF;
+#
+vNewProduct=SubsetGetElementName('product', 'New', 1);
+vNewProductAlias=ATTRS('product', vNewProduct, 'Caption_Default');
+pNewName = TRIM(pNewName);
+vProductCode='';
+vProductAlias='';
+vExistingCode='';
+vProductLevel=0;
+
+IF (pNewName @='');
+# Add in a random product so that the "New" Subset in the "product" dimension is always populated
+   SubsetDeleteAllElements('product', 'New');
+   SubsetElementInsert('product', 'New', '22001', 1);
+   ProcessQuit;
+ENDIF;
+
+vDimSize=DIMSIZ('product');
+
+i=1;
+WHILE (i<=vDimSize);
+   vProductCode= DIMNM('product', i);
+   vProductAlias= ATTRS('product', vProductCode, 'Caption_Default');
+   vProductLevel = ELLEV('product', vProductCode);
+   IF(vProductLevel >= 1 & pNewName @= vProductAlias);
+      ProcessError;
+   ENDIF;
+   IF(vProductAlias @= pNewName);
+      vExistingCode=vProductCode;
+   ENDIF;
+   i = i + 1;
+END;
+
+IF(vExistingCode @= '');
+  IF(SubsetExists('Organization', 'zCopyFrom')=0);
+    SubsetCreate('Organization', 'zCopyFrom');
+  ENDIF;
+  IF(SubsetGetSize('Organization','zCopyFrom')>0);
+    SubsetDeleteAllElements('Organization','zCopyFrom');
+  ENDIF;
+  SubsetElementInsert('Organization','zCopyFrom',pOrg,1);
+  ExecuteProcess('Add_Product', 'pParent', pParent,'pNewNumber', pNewNumber,'pNewName',pNewName);
+ELSE;
+   IF(SubsetGetSize('Product','New')>0);
+      SubsetDeleteAllElements('Product','New');
+   ENDIF;
+   SubsetElementInsert('Product','New',vExistingCode,1);
+ENDIF;
+
+
+
+
+#endregion
+#region Metadata
+
+#****Begin: Generated Statements***
+#****End: Generated Statements****
+#endregion
+#region Data
+
+#****Begin: Generated Statements***
+#****End: Generated Statements****
+#endregion
+#region Epilog
+
+#****Begin: Generated Statements***
+#****End: Generated Statements****
+
+#ASCIIOutput('c:\guy2.txt', pParent, pNewNumber,pNewName,pOrg,pChannel,pYear,pVersion,pProductDriver,pSpread,pUnitPrice,pUnitCost );
+
+ExecuteProcess('Update_NewProduct_Fcst', 'pOrg',pOrg,'pChannel',pChannel,'pYear',pYear,'pVersion',pVersion,'pUnitFcst',pUnitFcst,'pFcstMethod',pFcstMethod,'pProductDriver',pProductDriver,'pSpread',pSpread,'pUnitPrice',pUnitPrice,'pUnitCost',pUnitCost);
+
+
+#endregion

@@ -1,0 +1,63 @@
+#region Prolog
+
+#****Begin: Generated Statements***
+#****End: Generated Statements****
+
+#OldCubeLogChanges = CUBEGETLOGCHANGES('Revenue');
+#CUBESETLOGCHANGES('Revenue', 0);
+
+pCurrentProduct=SubsetGetElementName('Product', 'New', 1);
+
+#pCurrentProduct='22006';
+#endregion
+#region Metadata
+
+#****Begin: Generated Statements***
+vProduct=pCurrentProduct;
+#****End: Generated Statements****
+#endregion
+#region Data
+
+#****Begin: Generated Statements***
+vProduct=pCurrentProduct;
+#****End: Generated Statements****
+
+#Active=GetUseActiveSandboxProperty();
+SetUseActiveSandboxProperty(1);
+
+vProduct=pCurrentProduct;
+#if (VALUE_IS_STRING=1, CellPutS(SVALUE,'Revenue',organization,Channel,vProduct,vMonth,vYear,Version,Revenue), CellPutN(NVALUE, 'Revenue', organization,Channel,vProduct,vMonth,vYear,Version,Revenue));
+
+IF(ELLEV('Channel',pChannel)=1);
+Members=ELCOMPN('Channel',pChannel);
+Members=1;
+m=1;
+While(m<=Members);
+Member=ELCOMP('Channel',pChannel,m);
+if (VALUE_IS_STRING=1, CellPutS(SVALUE,'Revenue',organization,Member,vProduct,vMonth,vYear,Version,Revenue), CellPutN(NVALUE, 'Revenue', organization,Member,vProduct,vMonth,vYear,Version,Revenue));
+#if (VALUE_IS_STRING=1, CellPutS(SVALUE,'Revenue',vOrg,Member,vProduct,vMonth,vYear,Version,vRevenue), CellPutN(NVALUE, 'Revenue', vOrg,Member,vProduct,vMonth,vYear,Version,vRevenue));
+m=m+1;
+END;
+ENDIF;
+
+IF(ELLEV('Channel',pChannel)=0);
+
+#TextOutput('C:\TM1Models\SmartCo\Files\ProcessCheck.txt', NumberToString(NVALUE),organization,pChannel,vProduct,vMonth,vYear,Version,Revenue);
+
+if (VALUE_IS_STRING=1, CellPutS(SVALUE,'Revenue',organization,pChannel,vProduct,vMonth,vYear,Version,Revenue), CellPutN(NVALUE, 'Revenue', organization,pChannel,vProduct,vMonth,vYear,Version,Revenue));
+#if (VALUE_IS_STRING=1, CellPutS(SVALUE,'Revenue',vOrg,pChannel,vProduct,vMonth,vYear,Version,vRevenue), CellPutN(NVALUE, 'Revenue', vOrg,pChannel,vProduct,vMonth,vYear,Version,vRevenue));
+ENDIF;
+
+
+#CellPutProportionalSpread( pUnitFcst, 'Revenue',organization,Channel,vProduct,'Year',vYear,Version,Revenue);
+#endregion
+#region Epilog
+
+#****Begin: Generated Statements***
+#****End: Generated Statements****
+
+#CUBESETLOGCHANGES('Revenue', OldCubeLogChanges);
+
+
+CellPutProportionalSpread( pUnitFcst, 'Revenue',organization,pChannel,vProduct,'Year',vYear,Version,Revenue);
+#endregion

@@ -1,0 +1,19 @@
+{
+	"@type":"Subset",
+	"Name":"Product All",
+	"Elements":
+	[
+		{
+			"@id":"Dimensions('product')/Hierarchies('product')/Elements('Product Total')"
+		},
+		{
+			"@id":"Dimensions('product')/Hierarchies('product')/Elements('20000')"
+		},
+		{
+			"@id":"Dimensions('product')/Hierarchies('product')/Elements('30000')"
+		},
+		{
+			"@id":"Dimensions('product')/Hierarchies('product')/Elements('40000')"
+		}
+	]
+}

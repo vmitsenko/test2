@@ -1,0 +1,19 @@
+{
+	"@type":"Process",
+	"Name":"set_compare_version",
+	"Code@Code.link":"set_compare_version.ti",
+	"DataSource":
+	{
+		"Type":"None"
+	},
+	"Parameters":
+	[
+		{
+			"Name":"pCompareVersion",
+			"Prompt":"Default Version",
+			"Value":"",
+			"Type":"String"
+		}
+	],
+	"Variables":[]
+}

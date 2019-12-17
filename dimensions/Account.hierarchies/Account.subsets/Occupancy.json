@@ -1,0 +1,19 @@
+{
+	"@type":"Subset",
+	"Name":"Occupancy",
+	"Elements":
+	[
+		{
+			"@id":"Dimensions('Account')/Hierarchies('Account')/Elements('6399')"
+		},
+		{
+			"@id":"Dimensions('Account')/Hierarchies('Account')/Elements('6300')"
+		},
+		{
+			"@id":"Dimensions('Account')/Hierarchies('Account')/Elements('6310')"
+		},
+		{
+			"@id":"Dimensions('Account')/Hierarchies('Account')/Elements('6320')"
+		}
+	]
+}

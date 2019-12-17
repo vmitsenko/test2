@@ -1,0 +1,16 @@
+{
+	"@type":"Hierarchy",
+	"Name":"JobCodeAsmpt",
+	"Elements":
+	[
+		{
+			"Name":"50P Salary",
+			"Type":"Numeric"
+		}
+	],
+	"Subsets@Code.links":
+	[
+		"JobCodeAsmpt.subsets/All Members.json",
+		"JobCodeAsmpt.subsets/Default.json"
+	]
+}
